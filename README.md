@@ -7,12 +7,6 @@ Robotics Research Lab, Department of Computer Science, RPTU Kaiserslautern-Landa
 
 [Report](docs/report/hydraulic_manipulator_report_ieee.pdf) · [Setup](docs/SETUP.md) · [Full recordings](https://github.com/kevm98/hydraulic-manipulator-modeling/releases/tag/project-materials)
 
-## Simulation preview
-
-![MULAG FME 500 moving in Simscape Multibody](docs/assets/simulation-demo.gif)
-
-*Recorded motion of the integrated Simscape model. Coordinate frames show the link and actuator attachments.*
-
 This project connects the arm's CAD-derived geometry with a hydraulic supply, directional valves, and double-acting cylinders. Cylinder motion changes chamber pressure and flow; hydraulic forces drive the multibody mechanism. A joint-level controller tracks a mowing trajectory so that response timing and positioning error can be studied together.
 
 ## Model and workflows
