@@ -33,3 +33,21 @@ python3 scripts/build_figures.py
 ```
 
 The default uses the versioned CSVs; add `--extract-fig` to repeat the original FIG extraction with SciPy. The script produces vector PDF/SVG and 300 dpi PNG previews for the sensitivity, path, and functional-architecture figures. There is no smoothing, new simulation, or invented sample interpolation in the exported path curves. Connecting lines in the four-case sensitivity figure guide the eye.
+
+## Construction and network figures
+
+The report's construction diagrams are separate from result data:
+
+- `mechanical-topology.png` and `actuator-subsystem-original.png` are the embedded images from page 3 of the original written report, extracted without changing their content.
+- `integrated-model-original.png` is the integrated-system image embedded on slide 10 of the original presentation. It documents an earlier design view, including an accumulator that is disabled in the saved model.
+- `cylinder-construction` explains chamber geometry, CAD bodies, alignment joints, and the translational force/velocity interface. It is a schematic, not a dimensioned manufacturing drawing.
+- `hydraulic-network` reconstructs the saved top-level connection groups. N1/N2 denote the reservoir-connected and sensor/fluid-connected rails. Serialized endpoints are retained; flow direction and named port associations require confirmation in the loaded model.
+- `valve-routing` expands the active valve's configured positive, neutral, and negative metering paths. Its arrows are schematic valve-relative routing, not measured network flow.
+
+Rebuild the three vector schematics with:
+
+```bash
+python3 scripts/build_construction_figures.py
+```
+
+`scripts/extract_model_specification.py` writes `docs/model-specification.json` directly from the SLX XML. It records block settings and units, active/commented states, source members, and connection groups. Parameters in disabled alternatives are not substituted for active values. This inspection does not evaluate model-workspace expressions or run MATLAB.

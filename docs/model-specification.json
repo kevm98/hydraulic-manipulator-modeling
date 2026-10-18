@@ -1,0 +1,3622 @@
+{
+  "model": "models/Mulag_FME_500_with_cylinder.slx",
+  "sha256": "5ac3e53a12d0503da62f5acce52e2e69bbfe2bb1d5bd1202f2ba64386b3a153a",
+  "method": "Static XML inspection; no compiled or executed model.",
+  "systems": {
+    "simulink/systems/system_743.xml": {
+      "blocks": [
+        {
+          "sid": "2",
+          "name": "Ausleger_II_link_joint",
+          "source": "sm_lib/Joints/Revolute Joint",
+          "commented": "off",
+          "parameters": {
+            "TorqueActuationMode": {
+              "value": "NoTorque"
+            },
+            "MotionActuationMode": {
+              "value": "ComputedMotion"
+            },
+            "LowerLimitSpecify": {
+              "value": "on"
+            },
+            "UpperLimitSpecify": {
+              "value": "on"
+            },
+            "LowerLimitBound": {
+              "value": "-0.52",
+              "unit": "rad"
+            },
+            "UpperLimitBound": {
+              "value": "0.52",
+              "unit": "rad"
+            },
+            "DampingCoefficient": {
+              "value": "0",
+              "unit": "kg*m^2/(rad*s)"
+            }
+          }
+        },
+        {
+          "sid": "4",
+          "name": "Ausleger_I_link_joint",
+          "source": "sm_lib/Joints/Revolute Joint",
+          "commented": "off",
+          "parameters": {
+            "TorqueActuationMode": {
+              "value": "NoTorque"
+            },
+            "MotionActuationMode": {
+              "value": "ComputedMotion"
+            },
+            "LowerLimitSpecify": {
+              "value": "on"
+            },
+            "UpperLimitSpecify": {
+              "value": "on"
+            },
+            "LowerLimitBound": {
+              "value": "-0.52",
+              "unit": "rad"
+            },
+            "UpperLimitBound": {
+              "value": "0.52",
+              "unit": "rad"
+            },
+            "DampingCoefficient": {
+              "value": "0",
+              "unit": "kg*m^2/(rad*s)"
+            }
+          }
+        },
+        {
+          "sid": "10",
+          "name": "Drehzapfen_link_joint",
+          "source": "sm_lib/Joints/Revolute Joint",
+          "commented": "off",
+          "parameters": {
+            "TorqueActuationMode": {
+              "value": "NoTorque"
+            },
+            "MotionActuationMode": {
+              "value": "ComputedMotion"
+            },
+            "LowerLimitSpecify": {
+              "value": "on"
+            },
+            "UpperLimitSpecify": {
+              "value": "on"
+            },
+            "LowerLimitBound": {
+              "value": "-1.57",
+              "unit": "rad"
+            },
+            "UpperLimitBound": {
+              "value": "0.52",
+              "unit": "rad"
+            },
+            "DampingCoefficient": {
+              "value": "0",
+              "unit": "kg*m^2/(rad*s)"
+            }
+          }
+        },
+        {
+          "sid": "648",
+          "name": "Fixed-Displacement\nPump (IL)",
+          "source": "SimscapeFluids_lib/Isothermal Liquid/Pumps & Motors/Fixed-Displacement\nPump (IL)",
+          "commented": "off",
+          "parameters": {
+            "displacement": {
+              "value": "25",
+              "unit": "m^3/rad"
+            },
+            "omega_nominal": {
+              "value": "188",
+              "unit": "rad/s"
+            }
+          }
+        },
+        {
+          "sid": "1286",
+          "name": "Gas-Charged\nAccumulator (IL)",
+          "source": "SimscapeFluids_lib/Isothermal Liquid/Tanks & Accumulators/Gas-Charged\nAccumulator (IL)",
+          "commented": "on",
+          "parameters": {
+            "capacity": {
+              "value": "1e-3 ",
+              "unit": "m^3"
+            },
+            "dead_volume": {
+              "value": "5e-5",
+              "unit": "m^3"
+            },
+            "p_precharge": {
+              "value": "2",
+              "unit": "MPa"
+            },
+            "k_sh": {
+              "value": "1.4",
+              "unit": "1"
+            },
+            "dynamic_compressibility": {
+              "value": "true",
+              "unit": "1"
+            },
+            "stiff_coeff": {
+              "value": "1e3",
+              "unit": "MPa/m^3"
+            }
+          }
+        },
+        {
+          "sid": "519",
+          "name": "Hydraulic\nReference",
+          "source": "fl_lib/Isothermal Liquid/Elements/Reservoir (IL)",
+          "commented": "off",
+          "parameters": {
+            "pressure_spec": {
+              "value": "foundation.enum.pressure_spec.atmospheric",
+              "unit": "1"
+            },
+            "reservoir_pressure": {
+              "value": "0.101325",
+              "unit": "MPa"
+            }
+          }
+        },
+        {
+          "sid": "1339",
+          "name": "Hydraulic Fluid",
+          "source": "fl_lib/Isothermal Liquid/Utilities/Isothermal Liquid\nProperties (IL)",
+          "commented": "off",
+          "parameters": {
+            "rho_L_atm": {
+              "value": "845",
+              "unit": "kg/m^3"
+            },
+            "beta_L_atm": {
+              "value": "1.5",
+              "unit": "GPa"
+            },
+            "nu_atm": {
+              "value": "(52.6297)*(1)",
+              "unit": "cSt"
+            },
+            "air_fraction": {
+              "value": "0.004",
+              "unit": "1"
+            },
+            "bulk_modulus_model": {
+              "value": "foundation.enum.bulk_modulus_model.const",
+              "unit": "1"
+            }
+          }
+        },
+        {
+          "sid": "232",
+          "name": "Ideal Angular\nVelocity Source",
+          "source": "fl_lib/Mechanical/Mechanical Sources/Ideal Angular\nVelocity Source",
+          "commented": "off",
+          "parameters": {}
+        },
+        {
+          "sid": "517",
+          "name": "Isothermal Liquid\nProperties (IL)",
+          "source": "fl_lib/Isothermal Liquid/Utilities/Isothermal Liquid\nProperties (IL)",
+          "commented": "on",
+          "parameters": {
+            "rho_L_atm": {
+              "value": "870",
+              "unit": "kg/m^3"
+            },
+            "beta_L_atm": {
+              "value": "0.5",
+              "unit": "GPa"
+            },
+            "nu_atm": {
+              "value": "46",
+              "unit": "cSt"
+            },
+            "air_fraction": {
+              "value": "0.001",
+              "unit": "1"
+            },
+            "bulk_modulus_model": {
+              "value": "foundation.enum.bulk_modulus_model.const",
+              "unit": "1"
+            }
+          }
+        },
+        {
+          "sid": "233",
+          "name": "Mechanical\nRotational Reference",
+          "source": "fl_lib/Mechanical/Rotational Elements/Mechanical\nRotational Reference",
+          "commented": "off",
+          "parameters": {}
+        },
+        {
+          "sid": "20",
+          "name": "MechanismConfiguration",
+          "source": "sm_lib/Utilities/Mechanism\nConfiguration",
+          "commented": "off",
+          "parameters": {
+            "GravityVector": {
+              "value": "[0 0 -9.80665]",
+              "unit": "m/s^2"
+            }
+          }
+        },
+        {
+          "sid": "31",
+          "name": "Messerkopf_link_joint",
+          "source": "sm_lib/Joints/Revolute Joint",
+          "commented": "off",
+          "parameters": {
+            "TorqueActuationMode": {
+              "value": "InputTorque"
+            },
+            "MotionActuationMode": {
+              "value": "ComputedMotion"
+            },
+            "LowerLimitSpecify": {
+              "value": "on"
+            },
+            "UpperLimitSpecify": {
+              "value": "on"
+            },
+            "LowerLimitBound": {
+              "value": "0",
+              "unit": "rad"
+            },
+            "UpperLimitBound": {
+              "value": "0.000001",
+              "unit": "rad"
+            },
+            "DampingCoefficient": {
+              "value": "0",
+              "unit": "kg*m^2/(rad*s)"
+            }
+          }
+        },
+        {
+          "sid": "234",
+          "name": "PS Constant",
+          "source": "fl_lib/Physical Signals/Sources/PS Constant",
+          "commented": "on",
+          "parameters": {
+            "constant": {
+              "value": "190",
+              "unit": "rad/s"
+            }
+          }
+        },
+        {
+          "sid": "1340",
+          "name": "Pressure\nRelief\nValve",
+          "source": "SimscapeFluids_lib/Isothermal Liquid/Valves & Orifices/Pressure Control\nValves/Pressure Relief\nValve (IL)",
+          "commented": "off",
+          "parameters": {
+            "p_set_differential": {
+              "value": "27579000",
+              "unit": "Pa"
+            },
+            "p_range": {
+              "value": "2759000",
+              "unit": "Pa"
+            },
+            "pressure_spec": {
+              "value": "fluids.isothermal_liquid.valves_orifices.enum.pressure_control_spec.dp",
+              "unit": "1"
+            },
+            "area_max": {
+              "value": "0.002",
+              "unit": "m^2"
+            },
+            "area_leak": {
+              "value": "1e-09",
+              "unit": "m^2"
+            },
+            "Cd": {
+              "value": "0.7",
+              "unit": "1"
+            },
+            "Re_c": {
+              "value": "12",
+              "unit": "1"
+            },
+            "smoothing_factor": {
+              "value": "0",
+              "unit": "1"
+            },
+            "opening_dynamics": {
+              "value": "0",
+              "unit": "1"
+            }
+          }
+        },
+        {
+          "sid": "1027",
+          "name": "Pressure Relief\nValve (IL)1",
+          "source": "SimscapeFluids_lib/Isothermal Liquid/Valves & Orifices/Pressure Control\nValves/Pressure Relief\nValve (IL)",
+          "commented": "on",
+          "parameters": {
+            "p_set_differential": {
+              "value": "34",
+              "unit": "MPa"
+            },
+            "p_range": {
+              "value": "0.5",
+              "unit": "MPa"
+            },
+            "pressure_spec": {
+              "value": "fluids.isothermal_liquid.valves_orifices.enum.pressure_control_spec.dp",
+              "unit": "1"
+            },
+            "area_max": {
+              "value": "1e-4",
+              "unit": "m^2"
+            },
+            "area_leak": {
+              "value": "1e-10",
+              "unit": "m^2"
+            },
+            "Cd": {
+              "value": "0.64",
+              "unit": "1"
+            },
+            "Re_c": {
+              "value": "150",
+              "unit": "1"
+            },
+            "smoothing_factor": {
+              "value": "0.02",
+              "unit": "1"
+            },
+            "opening_dynamics": {
+              "value": "false",
+              "unit": "1"
+            }
+          }
+        },
+        {
+          "sid": "1341",
+          "name": "Pump\nSpeed",
+          "source": "fl_lib/Physical Signals/Sources/PS Constant",
+          "commented": "off",
+          "parameters": {
+            "constant": {
+              "value": "188",
+              "unit": "1"
+            }
+          }
+        },
+        {
+          "sid": "32",
+          "name": "Schwenkzylinder_001_link_joint",
+          "source": "sm_lib/Joints/Revolute Joint",
+          "commented": "off",
+          "parameters": {
+            "TorqueActuationMode": {
+              "value": "NoTorque"
+            },
+            "MotionActuationMode": {
+              "value": "ComputedMotion"
+            },
+            "LowerLimitSpecify": {
+              "value": "on"
+            },
+            "UpperLimitSpecify": {
+              "value": "on"
+            },
+            "LowerLimitBound": {
+              "value": "-0.52",
+              "unit": "rad"
+            },
+            "UpperLimitBound": {
+              "value": "0.52",
+              "unit": "rad"
+            },
+            "DampingCoefficient": {
+              "value": "0",
+              "unit": "kg*m^2/(rad*s)"
+            }
+          }
+        },
+        {
+          "sid": "158",
+          "name": "Solver\nConfiguration",
+          "source": "nesl_utility/Solver\nConfiguration",
+          "commented": "off",
+          "parameters": {}
+        },
+        {
+          "sid": "1283",
+          "name": "Spline",
+          "source": "sm_lib/Curves and Surfaces/Spline",
+          "commented": "off",
+          "parameters": {}
+        },
+        {
+          "sid": "1130",
+          "name": "Transform\nSensor",
+          "source": "sm_lib/Frames and\nTransforms/Transform\nSensor",
+          "commented": "off",
+          "parameters": {}
+        },
+        {
+          "sid": "33",
+          "name": "World",
+          "source": "sm_lib/Frames and\nTransforms/World Frame",
+          "commented": "off",
+          "parameters": {}
+        },
+        {
+          "sid": "1137",
+          "name": "World Frame",
+          "source": "sm_lib/Frames and\nTransforms/World Frame",
+          "commented": "off",
+          "parameters": {}
+        },
+        {
+          "sid": "1132",
+          "name": "Connection Port",
+          "source": null,
+          "commented": "off",
+          "parameters": {
+            "Side": {
+              "value": "Right"
+            }
+          }
+        }
+      ],
+      "connection_groups": [
+        {
+          "name": null,
+          "endpoints": [
+            "648#rconn:1",
+            "232#lconn:1"
+          ]
+        },
+        {
+          "name": null,
+          "endpoints": [
+            "648#lconn:1",
+            "633#lconn:1"
+          ]
+        },
+        {
+          "name": null,
+          "endpoints": [
+            "32#lconn:1",
+            "1#rconn:1"
+          ]
+        },
+        {
+          "name": null,
+          "endpoints": [
+            "188#rconn:1",
+            "1#lconn:2"
+          ]
+        },
+        {
+          "name": null,
+          "endpoints": [
+            "204#lconn:2",
+            "196#rconn:1"
+          ]
+        },
+        {
+          "name": null,
+          "endpoints": [
+            "9#lconn:1",
+            "10#rconn:1"
+          ]
+        },
+        {
+          "name": null,
+          "endpoints": [
+            "661#lconn:1",
+            "32#rconn:2"
+          ]
+        },
+        {
+          "name": null,
+          "endpoints": [
+            "25#lconn:1",
+            "32#rconn:1"
+          ]
+        },
+        {
+          "name": null,
+          "endpoints": [
+            "10#lconn:1",
+            "11#rconn:1"
+          ]
+        },
+        {
+          "name": null,
+          "endpoints": [
+            "188#lconn:1",
+            "3#rconn:2"
+          ]
+        },
+        {
+          "name": null,
+          "endpoints": [
+            "232#rconn:2",
+            "648#rconn:2",
+            "233#lconn:1"
+          ]
+        },
+        {
+          "name": null,
+          "endpoints": [
+            "1339#rconn:1",
+            "162#rconn:3",
+            "178#rconn:3",
+            "196#rconn:3",
+            "188#rconn:3",
+            "1340#rconn:1",
+            "633#rconn:1"
+          ]
+        },
+        {
+          "name": null,
+          "endpoints": [
+            "3#lconn:1",
+            "4#rconn:1"
+          ]
+        },
+        {
+          "name": null,
+          "endpoints": [
+            "747#out:1",
+            "162#in:1"
+          ]
+        },
+        {
+          "name": null,
+          "endpoints": [
+            "162#lconn:1",
+            "11#rconn:2"
+          ]
+        },
+        {
+          "name": null,
+          "endpoints": [
+            "178#lconn:1",
+            "9#rconn:2"
+          ]
+        },
+        {
+          "name": null,
+          "endpoints": [
+            "744#out:1",
+            "188#in:1"
+          ]
+        },
+        {
+          "name": null,
+          "endpoints": [
+            "204#lconn:1",
+            "1#rconn:2"
+          ]
+        },
+        {
+          "name": null,
+          "endpoints": [
+            "3#lconn:2",
+            "178#rconn:1"
+          ]
+        },
+        {
+          "name": null,
+          "endpoints": [
+            "745#out:1",
+            "196#in:1"
+          ]
+        },
+        {
+          "name": null,
+          "endpoints": [
+            "25#rconn:1",
+            "31#lconn:1"
+          ]
+        },
+        {
+          "name": null,
+          "endpoints": [
+            "204#rconn:1",
+            "25#lconn:2"
+          ]
+        },
+        {
+          "name": null,
+          "endpoints": [
+            "30#lconn:1",
+            "31#rconn:1"
+          ]
+        },
+        {
+          "name": null,
+          "endpoints": [
+            "1341#rconn:1",
+            "232#rconn:1"
+          ]
+        },
+        {
+          "name": null,
+          "endpoints": [
+            "33#rconn:1",
+            "1283#lconn:1",
+            "11#lconn:1",
+            "158#rconn:1",
+            "20#rconn:1"
+          ]
+        },
+        {
+          "name": null,
+          "endpoints": [
+            "4#lconn:1",
+            "9#rconn:1"
+          ]
+        },
+        {
+          "name": null,
+          "endpoints": [
+            "1#lconn:1",
+            "2#rconn:1"
+          ]
+        },
+        {
+          "name": null,
+          "endpoints": [
+            "162#rconn:1",
+            "9#lconn:2"
+          ]
+        },
+        {
+          "name": null,
+          "endpoints": [
+            "657#lconn:1",
+            "2#rconn:2"
+          ]
+        },
+        {
+          "name": null,
+          "endpoints": [
+            "649#lconn:1",
+            "10#rconn:2"
+          ]
+        },
+        {
+          "name": null,
+          "endpoints": [
+            "196#lconn:1",
+            "1#rconn:3"
+          ]
+        },
+        {
+          "name": null,
+          "endpoints": [
+            "653#lconn:1",
+            "4#rconn:2"
+          ]
+        },
+        {
+          "name": null,
+          "endpoints": [
+            "899#out:1",
+            "178#in:1"
+          ]
+        },
+        {
+          "name": null,
+          "endpoints": [
+            "946#lconn:1",
+            "31#rconn:2"
+          ]
+        },
+        {
+          "name": null,
+          "endpoints": [
+            "967#out:1",
+            "1107#in:1"
+          ]
+        },
+        {
+          "name": null,
+          "endpoints": [
+            "1063#lconn:1",
+            "10#rconn:3"
+          ]
+        },
+        {
+          "name": null,
+          "endpoints": [
+            "1067#lconn:1",
+            "4#rconn:3"
+          ]
+        },
+        {
+          "name": null,
+          "endpoints": [
+            "1071#lconn:1",
+            "2#rconn:3"
+          ]
+        },
+        {
+          "name": null,
+          "endpoints": [
+            "1075#lconn:1",
+            "32#rconn:3"
+          ]
+        },
+        {
+          "name": null,
+          "endpoints": [
+            "1107#rconn:1",
+            "31#lconn:2"
+          ]
+        },
+        {
+          "name": null,
+          "endpoints": [
+            "1111#lconn:1",
+            "31#rconn:3"
+          ]
+        },
+        {
+          "name": null,
+          "endpoints": [
+            "3#rconn:1",
+            "2#lconn:1"
+          ]
+        },
+        {
+          "name": null,
+          "endpoints": [
+            "30#rconn:1",
+            "1130#rconn:1"
+          ]
+        },
+        {
+          "name": null,
+          "endpoints": [
+            "1132#rconn:1",
+            "1130#rconn:2"
+          ]
+        },
+        {
+          "name": null,
+          "endpoints": [
+            "1137#rconn:1",
+            "1130#lconn:1"
+          ]
+        },
+        {
+          "name": null,
+          "endpoints": [
+            "1167#out:4",
+            "748#in:1"
+          ]
+        },
+        {
+          "name": null,
+          "endpoints": [
+            "1167#out:1",
+            "1015#in:1"
+          ]
+        },
+        {
+          "name": null,
+          "endpoints": [
+            "1167#out:6",
+            "1043#in:1"
+          ]
+        },
+        {
+          "name": null,
+          "endpoints": [
+            "519#lconn:1",
+            "648#rconn:3",
+            "1340#lconn:1",
+            "188#rconn:2",
+            "196#rconn:2",
+            "178#rconn:2",
+            "162#rconn:2"
+          ]
+        },
+        {
+          "name": null,
+          "endpoints": [
+            "1167#out:2",
+            "989#in:1"
+          ]
+        },
+        {
+          "name": null,
+          "endpoints": [
+            "1167#out:5",
+            "1087#in:1"
+          ]
+        }
+      ]
+    },
+    "simulink/systems/system_162.xml": {
+      "blocks": [
+        {
+          "sid": "466",
+          "name": "Cylindrical\nJoint",
+          "source": "sm_lib/Joints/Cylindrical\nJoint",
+          "commented": "off",
+          "parameters": {}
+        },
+        {
+          "sid": "1342",
+          "name": "Directional\nValve",
+          "source": "SimscapeFluids_lib/Isothermal Liquid/Valves & Orifices/Directional Control\nValves/4-Way 3-Position\nDirectional Valve\n(IL)",
+          "commented": "off",
+          "parameters": {
+            "area_spec": {
+              "value": "1",
+              "unit": "1"
+            },
+            "valve_spec": {
+              "value": "1",
+              "unit": "1"
+            },
+            "area_max": {
+              "value": "500",
+              "unit": "mm^2"
+            },
+            "area_leak": {
+              "value": "1e-12",
+              "unit": "m^2"
+            },
+            "del_S_max": {
+              "value": "(0.0050) - 1000000*(0.0050)/(500)*(1e-12)",
+              "unit": "m"
+            },
+            "Cd": {
+              "value": "0.7",
+              "unit": "1"
+            },
+            "Re_c": {
+              "value": "12",
+              "unit": "1"
+            },
+            "smoothing_factor": {
+              "value": "0",
+              "unit": "1"
+            },
+            "S_max_PA": {
+              "value": "-(-1e-4) + (0.0050)",
+              "unit": "m"
+            },
+            "S_max_PB": {
+              "value": "(-1e-4) - (0.0050)",
+              "unit": "m"
+            },
+            "S_max_AT": {
+              "value": " (-1e-4) - (0.0050)",
+              "unit": "m"
+            },
+            "S_max_BT": {
+              "value": "                            -(-1e-4) + (0.0050)",
+              "unit": "m"
+            },
+            "open_orifices_pos": {
+              "value": "fluids.isothermal_liquid.valves_orifices.directional_control_valves.enum.directional_valve_open_orifices_pos_neg.PA_BT",
+              "unit": "1"
+            },
+            "open_orifices_neu": {
+              "value": "fluids.isothermal_liquid.valves_orifices.directional_control_valves.enum.directional_valve_open_orifices_neutral.all_closed",
+              "unit": "1"
+            },
+            "open_orifices_neg": {
+              "value": "fluids.isothermal_liquid.valves_orifices.directional_control_valves.enum.directional_valve_open_orifices_pos_neg.PB_AT",
+              "unit": "1"
+            }
+          }
+        },
+        {
+          "sid": "1346",
+          "name": "Friction",
+          "source": "fl_lib/Mechanical/Translational\nElements/Translational\nFriction",
+          "commented": "off",
+          "parameters": {
+            "brkwy_frc": {
+              "value": "200000",
+              "unit": "N"
+            },
+            "brkwy_vel": {
+              "value": "0.060623",
+              "unit": "m/s"
+            },
+            "Col_frc": {
+              "value": "200000",
+              "unit": "N"
+            },
+            "visc_coef": {
+              "value": "100000000",
+              "unit": "N/(m/s)"
+            }
+          }
+        },
+        {
+          "sid": "1345",
+          "name": "Hydraulic Cylinder",
+          "source": "SimscapeFluids_lib/Isothermal Liquid/Actuators/Double-Acting\nActuator (IL)",
+          "commented": "off",
+          "parameters": {
+            "pressure_spec": {
+              "value": "foundation.enum.pressure_spec.atmospheric",
+              "unit": "1"
+            },
+            "piston_area_A": {
+              "value": "0.251327412287183",
+              "unit": "m^2"
+            },
+            "piston_area_B": {
+              "value": "0.251327412287183",
+              "unit": "m^2"
+            },
+            "stroke": {
+              "value": "1.850000000000000",
+              "unit": "m"
+            },
+            "dead_volume_A": {
+              "value": "1.000000000000000e-04",
+              "unit": "m^3"
+            },
+            "dead_volume_B": {
+              "value": "1.000000000000000e-04",
+              "unit": "m^3"
+            },
+            "p0_A": {
+              "value": " 3447375 + 101325",
+              "unit": "Pa"
+            },
+            "p0_B": {
+              "value": "24131625 + 101325",
+              "unit": "Pa"
+            },
+            "x0": {
+              "value": "(hydr_x0)-hydr_stroke",
+              "unit": "m"
+            },
+            "displacement_spec": {
+              "value": "foundation.enum.DisplacementSpec.InputSignal",
+              "unit": "1"
+            },
+            "dynamic_compressibility": {
+              "value": "true",
+              "unit": "1"
+            },
+            "friction_spec": {
+              "value": "false",
+              "unit": "1"
+            },
+            "leakage_spec": {
+              "value": "false",
+              "unit": "1"
+            },
+            "cushion_A_spec": {
+              "value": "false",
+              "unit": "1"
+            },
+            "cushion_B_spec": {
+              "value": "false",
+              "unit": "1"
+            },
+            "hardstop_model": {
+              "value": "3",
+              "unit": "1"
+            },
+            "stiff_coeff": {
+              "value": "1e+06",
+              "unit": "N/m"
+            },
+            "damping_coeff": {
+              "value": "150",
+              "unit": "N/(m/s)"
+            }
+          }
+        },
+        {
+          "sid": "251",
+          "name": "Mechanical\nTranslational\nReference",
+          "source": "fl_lib/Mechanical/Translational\nElements/Mechanical\nTranslational\nReference",
+          "commented": "off",
+          "parameters": {}
+        },
+        {
+          "sid": "171",
+          "name": "Prismatic\nJoint",
+          "source": "sm_lib/Joints/Prismatic\nJoint",
+          "commented": "off",
+          "parameters": {
+            "TorqueActuationMode": {
+              "value": "InputTorque"
+            },
+            "MotionActuationMode": {
+              "value": "ComputedMotion"
+            },
+            "LowerLimitSpecify": {
+              "value": "off"
+            },
+            "UpperLimitSpecify": {
+              "value": "off"
+            },
+            "LowerLimitBound": {
+              "value": "-0.05",
+              "unit": "m"
+            },
+            "UpperLimitBound": {
+              "value": "0.2",
+              "unit": "m"
+            },
+            "DampingCoefficient": {
+              "value": "0",
+              "unit": "N/(m/s)"
+            }
+          }
+        },
+        {
+          "sid": "468",
+          "name": "Spherical\nJoint",
+          "source": "sm_lib/Joints/Spherical\nJoint",
+          "commented": "off",
+          "parameters": {
+            "TorqueActuationMode": {
+              "value": "NoTorque"
+            },
+            "MotionActuationMode": {
+              "value": "ComputedMotion"
+            },
+            "LowerLimitSpecify": {
+              "value": "off"
+            },
+            "UpperLimitSpecify": {
+              "value": "off"
+            },
+            "LowerLimitBound": {
+              "value": "15",
+              "unit": "deg"
+            },
+            "UpperLimitBound": {
+              "value": "45",
+              "unit": "deg"
+            },
+            "DampingCoefficient": {
+              "value": "0",
+              "unit": "N*m/(deg/s)"
+            }
+          }
+        },
+        {
+          "sid": "243",
+          "name": "Translational\nMultibody Interface",
+          "source": "fl_lib/Mechanical/Multibody Interfaces/Translational\nMultibody Interface",
+          "commented": "off",
+          "parameters": {}
+        },
+        {
+          "sid": "163",
+          "name": "C1",
+          "source": null,
+          "commented": "off",
+          "parameters": {
+            "Side": {
+              "value": "Left"
+            }
+          }
+        },
+        {
+          "sid": "164",
+          "name": "R1",
+          "source": null,
+          "commented": "off",
+          "parameters": {
+            "Port": {
+              "value": "2"
+            },
+            "Side": {
+              "value": "Right"
+            }
+          }
+        },
+        {
+          "sid": "254",
+          "name": "P ",
+          "source": null,
+          "commented": "off",
+          "parameters": {
+            "Port": {
+              "value": "3"
+            },
+            "Side": {
+              "value": "Right"
+            }
+          }
+        },
+        {
+          "sid": "255",
+          "name": "T",
+          "source": null,
+          "commented": "off",
+          "parameters": {
+            "Port": {
+              "value": "4"
+            },
+            "Side": {
+              "value": "Right"
+            }
+          }
+        }
+      ],
+      "connection_groups": [
+        {
+          "name": null,
+          "endpoints": [
+            "251#lconn:1",
+            "1345#lconn:1",
+            "243#lconn:2",
+            "1346#rconn:1"
+          ]
+        },
+        {
+          "name": null,
+          "endpoints": [
+            "1345#rconn:2",
+            "1346#lconn:1",
+            "243#rconn:2"
+          ]
+        },
+        {
+          "name": null,
+          "endpoints": [
+            "255#rconn:1",
+            "1342#rconn:2"
+          ]
+        },
+        {
+          "name": null,
+          "endpoints": [
+            "1342#rconn:1",
+            "254#rconn:1"
+          ]
+        },
+        {
+          "name": null,
+          "endpoints": [
+            "7#rconn:1",
+            "171#lconn:1"
+          ]
+        },
+        {
+          "name": null,
+          "endpoints": [
+            "171#rconn:1",
+            "5#lconn:1"
+          ]
+        },
+        {
+          "name": null,
+          "endpoints": [
+            "466#rconn:1",
+            "164#rconn:1"
+          ]
+        },
+        {
+          "name": null,
+          "endpoints": [
+            "466#lconn:1",
+            "5#rconn:1"
+          ]
+        },
+        {
+          "name": null,
+          "endpoints": [
+            "468#lconn:1",
+            "163#rconn:1"
+          ]
+        },
+        {
+          "name": null,
+          "endpoints": [
+            "468#rconn:1",
+            "7#lconn:1"
+          ]
+        },
+        {
+          "name": null,
+          "endpoints": [
+            "243#lconn:1",
+            "673#rconn:1",
+            "171#lconn:2"
+          ]
+        },
+        {
+          "name": null,
+          "endpoints": [
+            "553#lconn:1",
+            "1345#lconn:2",
+            "1342#lconn:2"
+          ]
+        },
+        {
+          "name": null,
+          "endpoints": [
+            "559#lconn:1",
+            "1345#rconn:3",
+            "1342#lconn:3"
+          ]
+        },
+        {
+          "name": null,
+          "endpoints": [
+            "171#rconn:3",
+            "243#rconn:1"
+          ]
+        },
+        {
+          "name": null,
+          "endpoints": [
+            "171#rconn:2",
+            "1345#rconn:1",
+            "669#lconn:1"
+          ]
+        },
+        {
+          "name": null,
+          "endpoints": [
+            "1342#lconn:1",
+            "1103#rconn:1"
+          ]
+        },
+        {
+          "name": null,
+          "endpoints": [
+            "622#out:1",
+            "1103#in:1"
+          ]
+        }
+      ]
+    },
+    "simulink/systems/system_178.xml": {
+      "blocks": [
+        {
+          "sid": "527",
+          "name": "4-Way 3-Position\nDirectional Valve\n(IL)",
+          "source": "SimscapeFluids_lib/Isothermal Liquid/Valves & Orifices/Directional Control\nValves/4-Way 3-Position\nDirectional Valve\n(IL)",
+          "commented": "on",
+          "parameters": {
+            "area_spec": {
+              "value": "fluids.isothermal_liquid.valves_orifices.directional_control_valves.enum.directional_valve_area_spec.identical",
+              "unit": "1"
+            },
+            "valve_spec": {
+              "value": "fluids.isothermal_liquid.valves_orifices.directional_control_valves.enum.directional_valve_spec.linear",
+              "unit": "1"
+            },
+            "area_max": {
+              "value": "4.5e-4",
+              "unit": "m^2"
+            },
+            "area_leak": {
+              "value": "1e-7",
+              "unit": "m^2"
+            },
+            "del_S_max": {
+              "value": "0.025",
+              "unit": "m"
+            },
+            "Cd": {
+              "value": "0.7",
+              "unit": "1"
+            },
+            "Re_c": {
+              "value": "12",
+              "unit": "1"
+            },
+            "smoothing_factor": {
+              "value": "0.1",
+              "unit": "1"
+            },
+            "S_max_PA": {
+              "value": "0.025",
+              "unit": "m"
+            },
+            "S_max_PB": {
+              "value": "-0.025",
+              "unit": "m"
+            },
+            "S_max_AT": {
+              "value": "-0.025",
+              "unit": "m"
+            },
+            "S_max_BT": {
+              "value": "0.025",
+              "unit": "m"
+            },
+            "open_orifices_pos": {
+              "value": "fluids.isothermal_liquid.valves_orifices.directional_control_valves.enum.directional_valve_open_orifices_pos_neg.PA_BT",
+              "unit": "1"
+            },
+            "open_orifices_neu": {
+              "value": "fluids.isothermal_liquid.valves_orifices.directional_control_valves.enum.directional_valve_open_orifices_neutral.all_closed",
+              "unit": "1"
+            },
+            "open_orifices_neg": {
+              "value": "fluids.isothermal_liquid.valves_orifices.directional_control_valves.enum.directional_valve_open_orifices_pos_neg.PB_AT",
+              "unit": "1"
+            }
+          }
+        },
+        {
+          "sid": "469",
+          "name": "Cylindrical\nJoint",
+          "source": "sm_lib/Joints/Cylindrical\nJoint",
+          "commented": "off",
+          "parameters": {}
+        },
+        {
+          "sid": "1347",
+          "name": "Directional\nValve",
+          "source": "SimscapeFluids_lib/Isothermal Liquid/Valves & Orifices/Directional Control\nValves/4-Way 3-Position\nDirectional Valve\n(IL)",
+          "commented": "off",
+          "parameters": {
+            "area_spec": {
+              "value": "1",
+              "unit": "1"
+            },
+            "valve_spec": {
+              "value": "1",
+              "unit": "1"
+            },
+            "area_max": {
+              "value": "500",
+              "unit": "mm^2"
+            },
+            "area_leak": {
+              "value": "1e-12",
+              "unit": "m^2"
+            },
+            "del_S_max": {
+              "value": "(0.0050) - 1000000*(0.0050)/(500)*(1e-12)",
+              "unit": "m"
+            },
+            "Cd": {
+              "value": "0.7",
+              "unit": "1"
+            },
+            "Re_c": {
+              "value": "12",
+              "unit": "1"
+            },
+            "smoothing_factor": {
+              "value": "0",
+              "unit": "1"
+            },
+            "S_max_PA": {
+              "value": "-(-1e-4) + (0.0050)",
+              "unit": "m"
+            },
+            "S_max_PB": {
+              "value": "(-1e-4) - (0.0050)",
+              "unit": "m"
+            },
+            "S_max_AT": {
+              "value": " (-1e-4) - (0.0050)",
+              "unit": "m"
+            },
+            "S_max_BT": {
+              "value": "                            -(-1e-4) + (0.0050)",
+              "unit": "m"
+            },
+            "open_orifices_pos": {
+              "value": "fluids.isothermal_liquid.valves_orifices.directional_control_valves.enum.directional_valve_open_orifices_pos_neg.PA_BT",
+              "unit": "1"
+            },
+            "open_orifices_neu": {
+              "value": "fluids.isothermal_liquid.valves_orifices.directional_control_valves.enum.directional_valve_open_orifices_neutral.all_closed",
+              "unit": "1"
+            },
+            "open_orifices_neg": {
+              "value": "fluids.isothermal_liquid.valves_orifices.directional_control_valves.enum.directional_valve_open_orifices_pos_neg.PB_AT",
+              "unit": "1"
+            }
+          }
+        },
+        {
+          "sid": "526",
+          "name": "Double-Acting\nActuator (IL)",
+          "source": "SimscapeFluids_lib/Isothermal Liquid/Actuators/Double-Acting\nActuator (IL)",
+          "commented": "on",
+          "parameters": {
+            "pressure_spec": {
+              "value": "foundation.enum.pressure_spec.atmospheric",
+              "unit": "1"
+            },
+            "piston_area_A": {
+              "value": "0.1785",
+              "unit": "m^2"
+            },
+            "piston_area_B": {
+              "value": "0.1503",
+              "unit": "m^2"
+            },
+            "stroke": {
+              "value": "0.8",
+              "unit": "m"
+            },
+            "dead_volume_A": {
+              "value": "3.8e-2",
+              "unit": "m^3"
+            },
+            "dead_volume_B": {
+              "value": "3.8e-2",
+              "unit": "m^3"
+            },
+            "p0_A": {
+              "value": "0.10",
+              "unit": "MPa"
+            },
+            "p0_B": {
+              "value": "0.10",
+              "unit": "MPa"
+            },
+            "x0": {
+              "value": "0.3",
+              "unit": "m"
+            },
+            "displacement_spec": {
+              "value": "foundation.enum.DisplacementSpec.InputSignal",
+              "unit": "1"
+            },
+            "dynamic_compressibility": {
+              "value": "true",
+              "unit": "1"
+            },
+            "friction_spec": {
+              "value": "true",
+              "unit": "1"
+            },
+            "leakage_spec": {
+              "value": "true",
+              "unit": "1"
+            },
+            "cushion_A_spec": {
+              "value": "false",
+              "unit": "1"
+            },
+            "cushion_B_spec": {
+              "value": "false",
+              "unit": "1"
+            },
+            "hardstop_model": {
+              "value": "simscape.enum.hardstop.smooth",
+              "unit": "1"
+            },
+            "stiff_coeff": {
+              "value": "1e10",
+              "unit": "N/m"
+            },
+            "damping_coeff": {
+              "value": "150",
+              "unit": "N*s/m"
+            }
+          }
+        },
+        {
+          "sid": "1349",
+          "name": "Friction",
+          "source": "fl_lib/Mechanical/Translational\nElements/Translational\nFriction",
+          "commented": "off",
+          "parameters": {
+            "brkwy_frc": {
+              "value": "200000",
+              "unit": "N"
+            },
+            "brkwy_vel": {
+              "value": "0.060623",
+              "unit": "m/s"
+            },
+            "Col_frc": {
+              "value": "200000",
+              "unit": "N"
+            },
+            "visc_coef": {
+              "value": "100000000",
+              "unit": "N/(m/s)"
+            }
+          }
+        },
+        {
+          "sid": "13",
+          "name": "Hebezylinder_Kolben_link_joint",
+          "source": "sm_lib/Joints/Revolute Joint",
+          "commented": "on",
+          "parameters": {
+            "TorqueActuationMode": {
+              "value": "NoTorque"
+            },
+            "MotionActuationMode": {
+              "value": "ComputedMotion"
+            },
+            "LowerLimitSpecify": {
+              "value": "on"
+            },
+            "UpperLimitSpecify": {
+              "value": "off"
+            },
+            "LowerLimitBound": {
+              "value": "-3.14",
+              "unit": "rad"
+            },
+            "UpperLimitBound": {
+              "value": "3.14",
+              "unit": "rad"
+            },
+            "DampingCoefficient": {
+              "value": "0",
+              "unit": "kg*m^2/(rad*s)"
+            }
+          }
+        },
+        {
+          "sid": "15",
+          "name": "Hebezylinder_Rohr_link_joint",
+          "source": "sm_lib/Joints/Revolute Joint",
+          "commented": "on",
+          "parameters": {
+            "TorqueActuationMode": {
+              "value": "NoTorque"
+            },
+            "MotionActuationMode": {
+              "value": "ComputedMotion"
+            },
+            "LowerLimitSpecify": {
+              "value": "off"
+            },
+            "UpperLimitSpecify": {
+              "value": "off"
+            },
+            "LowerLimitBound": {
+              "value": "-3.14",
+              "unit": "rad"
+            },
+            "UpperLimitBound": {
+              "value": "3.14",
+              "unit": "rad"
+            },
+            "DampingCoefficient": {
+              "value": "0",
+              "unit": "kg*m^2/(rad*s)"
+            }
+          }
+        },
+        {
+          "sid": "1348",
+          "name": "Hydraulic Cylinder",
+          "source": "SimscapeFluids_lib/Isothermal Liquid/Actuators/Double-Acting\nActuator (IL)",
+          "commented": "off",
+          "parameters": {
+            "pressure_spec": {
+              "value": "foundation.enum.pressure_spec.atmospheric",
+              "unit": "1"
+            },
+            "piston_area_A": {
+              "value": "0.251327412287183",
+              "unit": "m^2"
+            },
+            "piston_area_B": {
+              "value": "0.251327412287183",
+              "unit": "m^2"
+            },
+            "stroke": {
+              "value": "1.850000000000000",
+              "unit": "m"
+            },
+            "dead_volume_A": {
+              "value": "1.000000000000000e-04",
+              "unit": "m^3"
+            },
+            "dead_volume_B": {
+              "value": "1.000000000000000e-04",
+              "unit": "m^3"
+            },
+            "p0_A": {
+              "value": " 3447375 + 101325",
+              "unit": "Pa"
+            },
+            "p0_B": {
+              "value": "24131625 + 101325",
+              "unit": "Pa"
+            },
+            "x0": {
+              "value": "(hydr_x0)-hydr_stroke",
+              "unit": "m"
+            },
+            "displacement_spec": {
+              "value": "foundation.enum.DisplacementSpec.InputSignal",
+              "unit": "1"
+            },
+            "dynamic_compressibility": {
+              "value": "true",
+              "unit": "1"
+            },
+            "friction_spec": {
+              "value": "false",
+              "unit": "1"
+            },
+            "leakage_spec": {
+              "value": "false",
+              "unit": "1"
+            },
+            "cushion_A_spec": {
+              "value": "false",
+              "unit": "1"
+            },
+            "cushion_B_spec": {
+              "value": "false",
+              "unit": "1"
+            },
+            "hardstop_model": {
+              "value": "3",
+              "unit": "1"
+            },
+            "stiff_coeff": {
+              "value": "1e+06",
+              "unit": "N/m"
+            },
+            "damping_coeff": {
+              "value": "150",
+              "unit": "N/(m/s)"
+            }
+          }
+        },
+        {
+          "sid": "300",
+          "name": "Mechanical\nTranslational\nReference",
+          "source": "fl_lib/Mechanical/Translational\nElements/Mechanical\nTranslational\nReference",
+          "commented": "off",
+          "parameters": {}
+        },
+        {
+          "sid": "185",
+          "name": "Prismatic\nJoint",
+          "source": "sm_lib/Joints/Prismatic\nJoint",
+          "commented": "off",
+          "parameters": {
+            "TorqueActuationMode": {
+              "value": "InputTorque"
+            },
+            "MotionActuationMode": {
+              "value": "ComputedMotion"
+            },
+            "LowerLimitSpecify": {
+              "value": "on"
+            },
+            "UpperLimitSpecify": {
+              "value": "on"
+            },
+            "LowerLimitBound": {
+              "value": "-0.2",
+              "unit": "m"
+            },
+            "UpperLimitBound": {
+              "value": "0.2",
+              "unit": "m"
+            },
+            "DampingCoefficient": {
+              "value": "5000",
+              "unit": "N/(m/s)"
+            }
+          }
+        },
+        {
+          "sid": "386",
+          "name": "Rigid\nTransform1",
+          "source": "sm_lib/Frames and\nTransforms/Rigid\nTransform",
+          "commented": "on",
+          "parameters": {}
+        },
+        {
+          "sid": "470",
+          "name": "Spherical\nJoint",
+          "source": "sm_lib/Joints/Spherical\nJoint",
+          "commented": "off",
+          "parameters": {
+            "TorqueActuationMode": {
+              "value": "NoTorque"
+            },
+            "MotionActuationMode": {
+              "value": "ComputedMotion"
+            },
+            "LowerLimitSpecify": {
+              "value": "off"
+            },
+            "UpperLimitSpecify": {
+              "value": "off"
+            },
+            "LowerLimitBound": {
+              "value": "15",
+              "unit": "deg"
+            },
+            "UpperLimitBound": {
+              "value": "45",
+              "unit": "deg"
+            },
+            "DampingCoefficient": {
+              "value": "0",
+              "unit": "N*m/(deg/s)"
+            }
+          }
+        },
+        {
+          "sid": "376",
+          "name": "Translational\nFriction",
+          "source": "fl_lib/Mechanical/Translational\nElements/Translational\nFriction",
+          "commented": "on",
+          "parameters": {
+            "brkwy_frc": {
+              "value": "200",
+              "unit": "N"
+            },
+            "brkwy_vel": {
+              "value": "1e-4",
+              "unit": "m/s"
+            },
+            "Col_frc": {
+              "value": "160",
+              "unit": "N"
+            },
+            "visc_coef": {
+              "value": "315",
+              "unit": "N*s/m"
+            }
+          }
+        },
+        {
+          "sid": "302",
+          "name": "Translational\nMultibody Interface",
+          "source": "fl_lib/Mechanical/Multibody Interfaces/Translational\nMultibody Interface",
+          "commented": "off",
+          "parameters": {}
+        },
+        {
+          "sid": "179",
+          "name": "C2",
+          "source": null,
+          "commented": "off",
+          "parameters": {
+            "Side": {
+              "value": "Left"
+            }
+          }
+        },
+        {
+          "sid": "180",
+          "name": "R2",
+          "source": null,
+          "commented": "off",
+          "parameters": {
+            "Port": {
+              "value": "2"
+            },
+            "Side": {
+              "value": "Right"
+            }
+          }
+        },
+        {
+          "sid": "303",
+          "name": "P ",
+          "source": null,
+          "commented": "off",
+          "parameters": {
+            "Port": {
+              "value": "3"
+            },
+            "Side": {
+              "value": "Right"
+            }
+          }
+        },
+        {
+          "sid": "304",
+          "name": "T",
+          "source": null,
+          "commented": "off",
+          "parameters": {
+            "Port": {
+              "value": "4"
+            },
+            "Side": {
+              "value": "Right"
+            }
+          }
+        }
+      ],
+      "connection_groups": [
+        {
+          "name": null,
+          "endpoints": [
+            "469#lconn:1",
+            "12#lconn:1"
+          ]
+        },
+        {
+          "name": null,
+          "endpoints": [
+            "469#rconn:1",
+            "180#rconn:1"
+          ]
+        },
+        {
+          "name": null,
+          "endpoints": [
+            "302#rconn:2",
+            "1349#lconn:1",
+            "1348#rconn:2"
+          ]
+        },
+        {
+          "name": null,
+          "endpoints": [
+            "300#lconn:1",
+            "1349#rconn:1",
+            "302#lconn:2",
+            "1348#lconn:1"
+          ]
+        },
+        {
+          "name": null,
+          "endpoints": [
+            "185#lconn:1",
+            "14#rconn:1"
+          ]
+        },
+        {
+          "name": null,
+          "endpoints": [
+            "12#rconn:1",
+            "185#rconn:1"
+          ]
+        },
+        {
+          "name": null,
+          "endpoints": [
+            "15#lconn:1"
+          ]
+        },
+        {
+          "name": null,
+          "endpoints": [
+            "15#rconn:1"
+          ]
+        },
+        {
+          "name": null,
+          "endpoints": [
+            "470#rconn:1",
+            "14#lconn:1"
+          ]
+        },
+        {
+          "name": null,
+          "endpoints": [
+            "470#lconn:1",
+            "179#rconn:1"
+          ]
+        },
+        {
+          "name": null,
+          "endpoints": [
+            "302#lconn:1",
+            "683#rconn:1",
+            "185#lconn:2"
+          ]
+        },
+        {
+          "name": null,
+          "endpoints": [
+            "583#lconn:1",
+            "1348#rconn:3",
+            "1347#lconn:3"
+          ]
+        },
+        {
+          "name": null,
+          "endpoints": [
+            "565#lconn:1",
+            "1348#lconn:2",
+            "1347#lconn:2"
+          ]
+        },
+        {
+          "name": null,
+          "endpoints": [
+            "1347#rconn:1",
+            "303#rconn:1"
+          ]
+        },
+        {
+          "name": null,
+          "endpoints": [
+            "304#rconn:1",
+            "1347#rconn:2"
+          ]
+        },
+        {
+          "name": null,
+          "endpoints": [
+            "1347#lconn:1",
+            "609#rconn:1"
+          ]
+        },
+        {
+          "name": null,
+          "endpoints": [
+            "608#out:1",
+            "609#in:1"
+          ]
+        },
+        {
+          "name": null,
+          "endpoints": [
+            "302#rconn:1",
+            "185#rconn:3"
+          ]
+        },
+        {
+          "name": null,
+          "endpoints": [
+            "679#lconn:1",
+            "1348#rconn:1",
+            "185#rconn:2"
+          ]
+        }
+      ]
+    },
+    "simulink/systems/system_188.xml": {
+      "blocks": [
+        {
+          "sid": "529",
+          "name": "4-Way 3-Position\nDirectional Valve\n(IL)",
+          "source": "SimscapeFluids_lib/Isothermal Liquid/Valves & Orifices/Directional Control\nValves/4-Way 3-Position\nDirectional Valve\n(IL)",
+          "commented": "on",
+          "parameters": {
+            "area_spec": {
+              "value": "fluids.isothermal_liquid.valves_orifices.directional_control_valves.enum.directional_valve_area_spec.identical",
+              "unit": "1"
+            },
+            "valve_spec": {
+              "value": "fluids.isothermal_liquid.valves_orifices.directional_control_valves.enum.directional_valve_spec.linear",
+              "unit": "1"
+            },
+            "area_max": {
+              "value": "2.5e-4",
+              "unit": "m^2"
+            },
+            "area_leak": {
+              "value": "1e-7",
+              "unit": "m^2"
+            },
+            "del_S_max": {
+              "value": "0.015",
+              "unit": "m"
+            },
+            "Cd": {
+              "value": "0.7",
+              "unit": "1"
+            },
+            "Re_c": {
+              "value": "12",
+              "unit": "1"
+            },
+            "smoothing_factor": {
+              "value": "0.1",
+              "unit": "1"
+            },
+            "S_max_PA": {
+              "value": "0.015",
+              "unit": "m"
+            },
+            "S_max_PB": {
+              "value": "-0.015",
+              "unit": "m"
+            },
+            "S_max_AT": {
+              "value": "-0.015",
+              "unit": "m"
+            },
+            "S_max_BT": {
+              "value": "0.015",
+              "unit": "m"
+            },
+            "open_orifices_pos": {
+              "value": "fluids.isothermal_liquid.valves_orifices.directional_control_valves.enum.directional_valve_open_orifices_pos_neg.PA_BT",
+              "unit": "1"
+            },
+            "open_orifices_neu": {
+              "value": "fluids.isothermal_liquid.valves_orifices.directional_control_valves.enum.directional_valve_open_orifices_neutral.all_closed",
+              "unit": "1"
+            },
+            "open_orifices_neg": {
+              "value": "fluids.isothermal_liquid.valves_orifices.directional_control_valves.enum.directional_valve_open_orifices_pos_neg.PB_AT",
+              "unit": "1"
+            }
+          }
+        },
+        {
+          "sid": "471",
+          "name": "Cylindrical\nJoint",
+          "source": "sm_lib/Joints/Cylindrical\nJoint",
+          "commented": "off",
+          "parameters": {}
+        },
+        {
+          "sid": "1350",
+          "name": "Directional\nValve",
+          "source": "SimscapeFluids_lib/Isothermal Liquid/Valves & Orifices/Directional Control\nValves/4-Way 3-Position\nDirectional Valve\n(IL)",
+          "commented": "off",
+          "parameters": {
+            "area_spec": {
+              "value": "1",
+              "unit": "1"
+            },
+            "valve_spec": {
+              "value": "1",
+              "unit": "1"
+            },
+            "area_max": {
+              "value": "500",
+              "unit": "mm^2"
+            },
+            "area_leak": {
+              "value": "1e-12",
+              "unit": "m^2"
+            },
+            "del_S_max": {
+              "value": "(0.0050) - 1000000*(0.0050)/(500)*(1e-12)",
+              "unit": "m"
+            },
+            "Cd": {
+              "value": "0.7",
+              "unit": "1"
+            },
+            "Re_c": {
+              "value": "12",
+              "unit": "1"
+            },
+            "smoothing_factor": {
+              "value": "0",
+              "unit": "1"
+            },
+            "S_max_PA": {
+              "value": "-(-1e-4) + (0.0050)",
+              "unit": "m"
+            },
+            "S_max_PB": {
+              "value": "(-1e-4) - (0.0050)",
+              "unit": "m"
+            },
+            "S_max_AT": {
+              "value": " (-1e-4) - (0.0050)",
+              "unit": "m"
+            },
+            "S_max_BT": {
+              "value": "                            -(-1e-4) + (0.0050)",
+              "unit": "m"
+            },
+            "open_orifices_pos": {
+              "value": "fluids.isothermal_liquid.valves_orifices.directional_control_valves.enum.directional_valve_open_orifices_pos_neg.PA_BT",
+              "unit": "1"
+            },
+            "open_orifices_neu": {
+              "value": "fluids.isothermal_liquid.valves_orifices.directional_control_valves.enum.directional_valve_open_orifices_neutral.all_closed",
+              "unit": "1"
+            },
+            "open_orifices_neg": {
+              "value": "fluids.isothermal_liquid.valves_orifices.directional_control_valves.enum.directional_valve_open_orifices_pos_neg.PB_AT",
+              "unit": "1"
+            }
+          }
+        },
+        {
+          "sid": "528",
+          "name": "Double-Acting\nActuator (IL)",
+          "source": "SimscapeFluids_lib/Isothermal Liquid/Actuators/Double-Acting\nActuator (IL)",
+          "commented": "on",
+          "parameters": {
+            "pressure_spec": {
+              "value": "foundation.enum.pressure_spec.atmospheric",
+              "unit": "1"
+            },
+            "piston_area_A": {
+              "value": "0.00603",
+              "unit": "m^2"
+            },
+            "piston_area_B": {
+              "value": "0.00406",
+              "unit": "m^2"
+            },
+            "stroke": {
+              "value": "0.5",
+              "unit": "m"
+            },
+            "dead_volume_A": {
+              "value": "6.3e-4",
+              "unit": "m^3"
+            },
+            "dead_volume_B": {
+              "value": "6.3e-4",
+              "unit": "m^3"
+            },
+            "p0_A": {
+              "value": "0.10",
+              "unit": "MPa"
+            },
+            "p0_B": {
+              "value": "0.10",
+              "unit": "MPa"
+            },
+            "x0": {
+              "value": "0.3",
+              "unit": "m"
+            },
+            "displacement_spec": {
+              "value": "foundation.enum.DisplacementSpec.InputSignal",
+              "unit": "1"
+            },
+            "dynamic_compressibility": {
+              "value": "true",
+              "unit": "1"
+            },
+            "friction_spec": {
+              "value": "false",
+              "unit": "1"
+            },
+            "leakage_spec": {
+              "value": "false",
+              "unit": "1"
+            },
+            "cushion_A_spec": {
+              "value": "false",
+              "unit": "1"
+            },
+            "cushion_B_spec": {
+              "value": "false",
+              "unit": "1"
+            },
+            "hardstop_model": {
+              "value": "simscape.enum.hardstop.smooth",
+              "unit": "1"
+            },
+            "stiff_coeff": {
+              "value": "1e10",
+              "unit": "N/m"
+            },
+            "damping_coeff": {
+              "value": "150",
+              "unit": "N*s/m"
+            }
+          }
+        },
+        {
+          "sid": "1352",
+          "name": "Friction",
+          "source": "fl_lib/Mechanical/Translational\nElements/Translational\nFriction",
+          "commented": "off",
+          "parameters": {
+            "brkwy_frc": {
+              "value": "1000",
+              "unit": "N"
+            },
+            "brkwy_vel": {
+              "value": "0.060623",
+              "unit": "m/s"
+            },
+            "Col_frc": {
+              "value": "1000",
+              "unit": "N"
+            },
+            "visc_coef": {
+              "value": "10000000",
+              "unit": "N/(m/s)"
+            }
+          }
+        },
+        {
+          "sid": "1351",
+          "name": "Hydraulic Cylinder",
+          "source": "SimscapeFluids_lib/Isothermal Liquid/Actuators/Double-Acting\nActuator (IL)",
+          "commented": "off",
+          "parameters": {
+            "pressure_spec": {
+              "value": "foundation.enum.pressure_spec.atmospheric",
+              "unit": "1"
+            },
+            "piston_area_A": {
+              "value": "0.12566",
+              "unit": "m^2"
+            },
+            "piston_area_B": {
+              "value": "0.12566",
+              "unit": "m^2"
+            },
+            "stroke": {
+              "value": "2.25",
+              "unit": "m"
+            },
+            "dead_volume_A": {
+              "value": "0.0001",
+              "unit": "m^3"
+            },
+            "dead_volume_B": {
+              "value": "0.0001",
+              "unit": "m^3"
+            },
+            "p0_A": {
+              "value": "7685550",
+              "unit": "Pa"
+            },
+            "p0_B": {
+              "value": "13890825",
+              "unit": "Pa"
+            },
+            "x0": {
+              "value": "(hydr_x0)-hydr_stroke",
+              "unit": "m"
+            },
+            "displacement_spec": {
+              "value": "foundation.enum.DisplacementSpec.InputSignal",
+              "unit": "1"
+            },
+            "dynamic_compressibility": {
+              "value": "true",
+              "unit": "1"
+            },
+            "friction_spec": {
+              "value": "false",
+              "unit": "1"
+            },
+            "leakage_spec": {
+              "value": "false",
+              "unit": "1"
+            },
+            "cushion_A_spec": {
+              "value": "false",
+              "unit": "1"
+            },
+            "cushion_B_spec": {
+              "value": "false",
+              "unit": "1"
+            },
+            "hardstop_model": {
+              "value": "3",
+              "unit": "1"
+            },
+            "stiff_coeff": {
+              "value": "1e+06",
+              "unit": "N/m"
+            },
+            "damping_coeff": {
+              "value": "150",
+              "unit": "N/(m/s)"
+            }
+          }
+        },
+        {
+          "sid": "17",
+          "name": "Knickzylinder_Kolben_link_joint",
+          "source": "sm_lib/Joints/Revolute Joint",
+          "commented": "on",
+          "parameters": {
+            "TorqueActuationMode": {
+              "value": "NoTorque"
+            },
+            "MotionActuationMode": {
+              "value": "ComputedMotion"
+            },
+            "LowerLimitSpecify": {
+              "value": "off"
+            },
+            "UpperLimitSpecify": {
+              "value": "off"
+            },
+            "LowerLimitBound": {
+              "value": "-3.14",
+              "unit": "rad"
+            },
+            "UpperLimitBound": {
+              "value": "3.14",
+              "unit": "rad"
+            },
+            "DampingCoefficient": {
+              "value": "0",
+              "unit": "kg*m^2/(rad*s)"
+            }
+          }
+        },
+        {
+          "sid": "19",
+          "name": "Knickzylinder_Rohr_link_joint",
+          "source": "sm_lib/Joints/Revolute Joint",
+          "commented": "on",
+          "parameters": {
+            "TorqueActuationMode": {
+              "value": "NoTorque"
+            },
+            "MotionActuationMode": {
+              "value": "ComputedMotion"
+            },
+            "LowerLimitSpecify": {
+              "value": "off"
+            },
+            "UpperLimitSpecify": {
+              "value": "off"
+            },
+            "LowerLimitBound": {
+              "value": "-3.14",
+              "unit": "rad"
+            },
+            "UpperLimitBound": {
+              "value": "3.14",
+              "unit": "rad"
+            },
+            "DampingCoefficient": {
+              "value": "0",
+              "unit": "kg*m^2/(rad*s)"
+            }
+          }
+        },
+        {
+          "sid": "335",
+          "name": "Mechanical\nTranslational\nReference",
+          "source": "fl_lib/Mechanical/Translational\nElements/Mechanical\nTranslational\nReference",
+          "commented": "off",
+          "parameters": {}
+        },
+        {
+          "sid": "193",
+          "name": "Prismatic\nJoint",
+          "source": "sm_lib/Joints/Prismatic\nJoint",
+          "commented": "off",
+          "parameters": {
+            "TorqueActuationMode": {
+              "value": "InputTorque"
+            },
+            "MotionActuationMode": {
+              "value": "ComputedMotion"
+            },
+            "LowerLimitSpecify": {
+              "value": "off"
+            },
+            "UpperLimitSpecify": {
+              "value": "off"
+            },
+            "LowerLimitBound": {
+              "value": "-0.05",
+              "unit": "m"
+            },
+            "UpperLimitBound": {
+              "value": "0.2",
+              "unit": "m"
+            },
+            "DampingCoefficient": {
+              "value": "5000",
+              "unit": "N/(m/s)"
+            }
+          }
+        },
+        {
+          "sid": "472",
+          "name": "Spherical\nJoint",
+          "source": "sm_lib/Joints/Spherical\nJoint",
+          "commented": "off",
+          "parameters": {
+            "TorqueActuationMode": {
+              "value": "NoTorque"
+            },
+            "MotionActuationMode": {
+              "value": "ComputedMotion"
+            },
+            "LowerLimitSpecify": {
+              "value": "off"
+            },
+            "UpperLimitSpecify": {
+              "value": "off"
+            },
+            "LowerLimitBound": {
+              "value": "15",
+              "unit": "deg"
+            },
+            "UpperLimitBound": {
+              "value": "45",
+              "unit": "deg"
+            },
+            "DampingCoefficient": {
+              "value": "0",
+              "unit": "N*m/(deg/s)"
+            }
+          }
+        },
+        {
+          "sid": "377",
+          "name": "Translational\nFriction",
+          "source": "fl_lib/Mechanical/Translational\nElements/Translational\nFriction",
+          "commented": "on",
+          "parameters": {
+            "brkwy_frc": {
+              "value": "200",
+              "unit": "N"
+            },
+            "brkwy_vel": {
+              "value": "1e-4",
+              "unit": "m/s"
+            },
+            "Col_frc": {
+              "value": "160",
+              "unit": "N"
+            },
+            "visc_coef": {
+              "value": "315",
+              "unit": "N*s/m"
+            }
+          }
+        },
+        {
+          "sid": "337",
+          "name": "Translational\nMultibody Interface",
+          "source": "fl_lib/Mechanical/Multibody Interfaces/Translational\nMultibody Interface",
+          "commented": "off",
+          "parameters": {}
+        },
+        {
+          "sid": "189",
+          "name": "C3",
+          "source": null,
+          "commented": "off",
+          "parameters": {
+            "Side": {
+              "value": "Left"
+            }
+          }
+        },
+        {
+          "sid": "190",
+          "name": "R3",
+          "source": null,
+          "commented": "off",
+          "parameters": {
+            "Port": {
+              "value": "2"
+            },
+            "Side": {
+              "value": "Right"
+            }
+          }
+        },
+        {
+          "sid": "338",
+          "name": "P ",
+          "source": null,
+          "commented": "off",
+          "parameters": {
+            "Port": {
+              "value": "3"
+            },
+            "Side": {
+              "value": "Right"
+            }
+          }
+        },
+        {
+          "sid": "339",
+          "name": "T",
+          "source": null,
+          "commented": "off",
+          "parameters": {
+            "Port": {
+              "value": "4"
+            },
+            "Side": {
+              "value": "Right"
+            }
+          }
+        }
+      ],
+      "connection_groups": [
+        {
+          "name": null,
+          "endpoints": [
+            "337#rconn:2",
+            "1352#lconn:1",
+            "1351#rconn:2"
+          ]
+        },
+        {
+          "name": null,
+          "endpoints": [
+            "335#lconn:1",
+            "1351#lconn:1",
+            "1352#rconn:1",
+            "337#lconn:2"
+          ]
+        },
+        {
+          "name": null,
+          "endpoints": [
+            "337#rconn:1",
+            "193#rconn:3"
+          ]
+        },
+        {
+          "name": null,
+          "endpoints": [
+            "337#lconn:1",
+            "691#rconn:1",
+            "193#lconn:2"
+          ]
+        },
+        {
+          "name": null,
+          "endpoints": [
+            "18#rconn:1",
+            "193#lconn:1"
+          ]
+        },
+        {
+          "name": null,
+          "endpoints": [
+            "193#rconn:1",
+            "16#rconn:1"
+          ]
+        },
+        {
+          "name": null,
+          "endpoints": [
+            "19#lconn:1"
+          ]
+        },
+        {
+          "name": null,
+          "endpoints": [
+            "19#rconn:1"
+          ]
+        },
+        {
+          "name": null,
+          "endpoints": [
+            "17#rconn:1"
+          ]
+        },
+        {
+          "name": null,
+          "endpoints": [
+            "17#lconn:1"
+          ]
+        },
+        {
+          "name": null,
+          "endpoints": [
+            "472#rconn:1",
+            "18#lconn:1"
+          ]
+        },
+        {
+          "name": null,
+          "endpoints": [
+            "472#lconn:1",
+            "189#rconn:1"
+          ]
+        },
+        {
+          "name": null,
+          "endpoints": [
+            "471#lconn:1",
+            "16#lconn:1"
+          ]
+        },
+        {
+          "name": null,
+          "endpoints": [
+            "471#rconn:1",
+            "190#rconn:1"
+          ]
+        },
+        {
+          "name": null,
+          "endpoints": [
+            "571#lconn:1",
+            "1351#lconn:2",
+            "1350#lconn:2"
+          ]
+        },
+        {
+          "name": null,
+          "endpoints": [
+            "589#lconn:1",
+            "1351#rconn:3",
+            "1350#lconn:3"
+          ]
+        },
+        {
+          "name": null,
+          "endpoints": [
+            "1350#rconn:1",
+            "338#rconn:1"
+          ]
+        },
+        {
+          "name": null,
+          "endpoints": [
+            "339#rconn:1",
+            "1350#rconn:2"
+          ]
+        },
+        {
+          "name": null,
+          "endpoints": [
+            "616#rconn:1",
+            "1350#lconn:1"
+          ]
+        },
+        {
+          "name": null,
+          "endpoints": [
+            "615#out:1",
+            "616#in:1"
+          ]
+        },
+        {
+          "name": null,
+          "endpoints": [
+            "687#lconn:1",
+            "1351#rconn:1",
+            "193#rconn:2"
+          ]
+        }
+      ]
+    },
+    "simulink/systems/system_196.xml": {
+      "blocks": [
+        {
+          "sid": "534",
+          "name": "4-Way 3-Position\nDirectional Valve\n(IL)",
+          "source": "SimscapeFluids_lib/Isothermal Liquid/Valves & Orifices/Directional Control\nValves/4-Way 3-Position\nDirectional Valve\n(IL)",
+          "commented": "on",
+          "parameters": {
+            "area_spec": {
+              "value": "fluids.isothermal_liquid.valves_orifices.directional_control_valves.enum.directional_valve_area_spec.identical",
+              "unit": "1"
+            },
+            "valve_spec": {
+              "value": "fluids.isothermal_liquid.valves_orifices.directional_control_valves.enum.directional_valve_spec.linear",
+              "unit": "1"
+            },
+            "area_max": {
+              "value": "1.2e-4",
+              "unit": "m^2"
+            },
+            "area_leak": {
+              "value": "1e-7",
+              "unit": "m^2"
+            },
+            "del_S_max": {
+              "value": "0.015",
+              "unit": "m"
+            },
+            "Cd": {
+              "value": "0.7",
+              "unit": "1"
+            },
+            "Re_c": {
+              "value": "12",
+              "unit": "1"
+            },
+            "smoothing_factor": {
+              "value": "0.015",
+              "unit": "1"
+            },
+            "S_max_PA": {
+              "value": "0.015",
+              "unit": "m"
+            },
+            "S_max_PB": {
+              "value": "-0.015",
+              "unit": "m"
+            },
+            "S_max_AT": {
+              "value": "-0.015",
+              "unit": "m"
+            },
+            "S_max_BT": {
+              "value": "0.015",
+              "unit": "m"
+            },
+            "open_orifices_pos": {
+              "value": "fluids.isothermal_liquid.valves_orifices.directional_control_valves.enum.directional_valve_open_orifices_pos_neg.PA_BT",
+              "unit": "1"
+            },
+            "open_orifices_neu": {
+              "value": "fluids.isothermal_liquid.valves_orifices.directional_control_valves.enum.directional_valve_open_orifices_neutral.all_closed",
+              "unit": "1"
+            },
+            "open_orifices_neg": {
+              "value": "fluids.isothermal_liquid.valves_orifices.directional_control_valves.enum.directional_valve_open_orifices_pos_neg.PB_AT",
+              "unit": "1"
+            }
+          }
+        },
+        {
+          "sid": "473",
+          "name": "Cylindrical\nJoint",
+          "source": "sm_lib/Joints/Cylindrical\nJoint",
+          "commented": "off",
+          "parameters": {}
+        },
+        {
+          "sid": "1353",
+          "name": "Directional\nValve",
+          "source": "SimscapeFluids_lib/Isothermal Liquid/Valves & Orifices/Directional Control\nValves/4-Way 3-Position\nDirectional Valve\n(IL)",
+          "commented": "off",
+          "parameters": {
+            "area_spec": {
+              "value": "1",
+              "unit": "1"
+            },
+            "valve_spec": {
+              "value": "1",
+              "unit": "1"
+            },
+            "area_max": {
+              "value": "500",
+              "unit": "mm^2"
+            },
+            "area_leak": {
+              "value": "1e-12",
+              "unit": "m^2"
+            },
+            "del_S_max": {
+              "value": "(0.0050) - 1000000*(0.0050)/(500)*(1e-12)",
+              "unit": "m"
+            },
+            "Cd": {
+              "value": "0.7",
+              "unit": "1"
+            },
+            "Re_c": {
+              "value": "12",
+              "unit": "1"
+            },
+            "smoothing_factor": {
+              "value": "0",
+              "unit": "1"
+            },
+            "S_max_PA": {
+              "value": "-(-1e-4) + (0.0050)",
+              "unit": "m"
+            },
+            "S_max_PB": {
+              "value": "(-1e-4) - (0.0050)",
+              "unit": "m"
+            },
+            "S_max_AT": {
+              "value": " (-1e-4) - (0.0050)",
+              "unit": "m"
+            },
+            "S_max_BT": {
+              "value": "                            -(-1e-4) + (0.0050)",
+              "unit": "m"
+            },
+            "open_orifices_pos": {
+              "value": "fluids.isothermal_liquid.valves_orifices.directional_control_valves.enum.directional_valve_open_orifices_pos_neg.PA_BT",
+              "unit": "1"
+            },
+            "open_orifices_neu": {
+              "value": "fluids.isothermal_liquid.valves_orifices.directional_control_valves.enum.directional_valve_open_orifices_neutral.all_closed",
+              "unit": "1"
+            },
+            "open_orifices_neg": {
+              "value": "fluids.isothermal_liquid.valves_orifices.directional_control_valves.enum.directional_valve_open_orifices_pos_neg.PB_AT",
+              "unit": "1"
+            }
+          }
+        },
+        {
+          "sid": "533",
+          "name": "Double-Acting\nActuator (IL)",
+          "source": "SimscapeFluids_lib/Isothermal Liquid/Actuators/Double-Acting\nActuator (IL)",
+          "commented": "on",
+          "parameters": {
+            "pressure_spec": {
+              "value": "foundation.enum.pressure_spec.atmospheric",
+              "unit": "1"
+            },
+            "piston_area_A": {
+              "value": "3.8e-4",
+              "unit": "m^2"
+            },
+            "piston_area_B": {
+              "value": "2.8e-4",
+              "unit": "m^2"
+            },
+            "stroke": {
+              "value": "0.3",
+              "unit": "m"
+            },
+            "dead_volume_A": {
+              "value": "0.00038",
+              "unit": "m^3"
+            },
+            "dead_volume_B": {
+              "value": "0.00038",
+              "unit": "m^3"
+            },
+            "p0_A": {
+              "value": "0.10",
+              "unit": "MPa"
+            },
+            "p0_B": {
+              "value": "0.10",
+              "unit": "MPa"
+            },
+            "x0": {
+              "value": "0.3",
+              "unit": "m"
+            },
+            "displacement_spec": {
+              "value": "foundation.enum.DisplacementSpec.InputSignal",
+              "unit": "1"
+            },
+            "dynamic_compressibility": {
+              "value": "true",
+              "unit": "1"
+            },
+            "friction_spec": {
+              "value": "true",
+              "unit": "1"
+            },
+            "leakage_spec": {
+              "value": "true",
+              "unit": "1"
+            },
+            "cushion_A_spec": {
+              "value": "false",
+              "unit": "1"
+            },
+            "cushion_B_spec": {
+              "value": "false",
+              "unit": "1"
+            },
+            "hardstop_model": {
+              "value": "simscape.enum.hardstop.smooth",
+              "unit": "1"
+            },
+            "stiff_coeff": {
+              "value": "1e10",
+              "unit": "N/m"
+            },
+            "damping_coeff": {
+              "value": "150",
+              "unit": "N*s/m"
+            }
+          }
+        },
+        {
+          "sid": "1355",
+          "name": "Friction",
+          "source": "fl_lib/Mechanical/Translational\nElements/Translational\nFriction",
+          "commented": "off",
+          "parameters": {
+            "brkwy_frc": {
+              "value": "2000",
+              "unit": "N"
+            },
+            "brkwy_vel": {
+              "value": "0.060623",
+              "unit": "m/s"
+            },
+            "Col_frc": {
+              "value": "2000",
+              "unit": "N"
+            },
+            "visc_coef": {
+              "value": "10000000",
+              "unit": "N/(m/s)"
+            }
+          }
+        },
+        {
+          "sid": "1354",
+          "name": "Hydraulic Cylinder",
+          "source": "SimscapeFluids_lib/Isothermal Liquid/Actuators/Double-Acting\nActuator (IL)",
+          "commented": "off",
+          "parameters": {
+            "pressure_spec": {
+              "value": "foundation.enum.pressure_spec.atmospheric",
+              "unit": "1"
+            },
+            "piston_area_A": {
+              "value": "0.12566",
+              "unit": "m^2"
+            },
+            "piston_area_B": {
+              "value": "0.12566",
+              "unit": "m^2"
+            },
+            "stroke": {
+              "value": "2.25",
+              "unit": "m"
+            },
+            "dead_volume_A": {
+              "value": "0.0001",
+              "unit": "m^3"
+            },
+            "dead_volume_B": {
+              "value": "0.0001",
+              "unit": "m^3"
+            },
+            "p0_A": {
+              "value": "7685550",
+              "unit": "Pa"
+            },
+            "p0_B": {
+              "value": "13890825",
+              "unit": "Pa"
+            },
+            "x0": {
+              "value": "(hydr_x0)-hydr_stroke",
+              "unit": "m"
+            },
+            "displacement_spec": {
+              "value": "foundation.enum.DisplacementSpec.InputSignal",
+              "unit": "1"
+            },
+            "dynamic_compressibility": {
+              "value": "true",
+              "unit": "1"
+            },
+            "friction_spec": {
+              "value": "false",
+              "unit": "1"
+            },
+            "leakage_spec": {
+              "value": "false",
+              "unit": "1"
+            },
+            "cushion_A_spec": {
+              "value": "false",
+              "unit": "1"
+            },
+            "cushion_B_spec": {
+              "value": "false",
+              "unit": "1"
+            },
+            "hardstop_model": {
+              "value": "3",
+              "unit": "1"
+            },
+            "stiff_coeff": {
+              "value": "1e+06",
+              "unit": "N/m"
+            },
+            "damping_coeff": {
+              "value": "150",
+              "unit": "N/(m/s)"
+            }
+          }
+        },
+        {
+          "sid": "342",
+          "name": "Mechanical\nTranslational\nReference",
+          "source": "fl_lib/Mechanical/Translational\nElements/Mechanical\nTranslational\nReference",
+          "commented": "off",
+          "parameters": {}
+        },
+        {
+          "sid": "27",
+          "name": "Messerkopf_Schwenkzylinder_Kolben_link_joint",
+          "source": "sm_lib/Joints/Revolute Joint",
+          "commented": "on",
+          "parameters": {
+            "TorqueActuationMode": {
+              "value": "NoTorque"
+            },
+            "MotionActuationMode": {
+              "value": "ComputedMotion"
+            },
+            "LowerLimitSpecify": {
+              "value": "off"
+            },
+            "UpperLimitSpecify": {
+              "value": "off"
+            },
+            "LowerLimitBound": {
+              "value": "-3.14",
+              "unit": "rad"
+            },
+            "UpperLimitBound": {
+              "value": "3.14",
+              "unit": "rad"
+            },
+            "DampingCoefficient": {
+              "value": "0",
+              "unit": "kg*m^2/(rad*s)"
+            }
+          }
+        },
+        {
+          "sid": "29",
+          "name": "Messerkopf_Schwenkzylinder_Rohr_link_joint",
+          "source": "sm_lib/Joints/Revolute Joint",
+          "commented": "on",
+          "parameters": {
+            "TorqueActuationMode": {
+              "value": "NoTorque"
+            },
+            "MotionActuationMode": {
+              "value": "ComputedMotion"
+            },
+            "LowerLimitSpecify": {
+              "value": "off"
+            },
+            "UpperLimitSpecify": {
+              "value": "off"
+            },
+            "LowerLimitBound": {
+              "value": "-3.14",
+              "unit": "rad"
+            },
+            "UpperLimitBound": {
+              "value": "3.14",
+              "unit": "rad"
+            },
+            "DampingCoefficient": {
+              "value": "0",
+              "unit": "kg*m^2/(rad*s)"
+            }
+          }
+        },
+        {
+          "sid": "199",
+          "name": "Prismatic\nJoint",
+          "source": "sm_lib/Joints/Prismatic\nJoint",
+          "commented": "off",
+          "parameters": {
+            "TorqueActuationMode": {
+              "value": "InputTorque"
+            },
+            "MotionActuationMode": {
+              "value": "ComputedMotion"
+            },
+            "LowerLimitSpecify": {
+              "value": "off"
+            },
+            "UpperLimitSpecify": {
+              "value": "off"
+            },
+            "LowerLimitBound": {
+              "value": "-0.05",
+              "unit": "m"
+            },
+            "UpperLimitBound": {
+              "value": "0.2",
+              "unit": "m"
+            },
+            "DampingCoefficient": {
+              "value": "5000",
+              "unit": "N/(m/s)"
+            }
+          }
+        },
+        {
+          "sid": "474",
+          "name": "Spherical\nJoint",
+          "source": "sm_lib/Joints/Spherical\nJoint",
+          "commented": "off",
+          "parameters": {
+            "TorqueActuationMode": {
+              "value": "NoTorque"
+            },
+            "MotionActuationMode": {
+              "value": "ComputedMotion"
+            },
+            "LowerLimitSpecify": {
+              "value": "off"
+            },
+            "UpperLimitSpecify": {
+              "value": "off"
+            },
+            "LowerLimitBound": {
+              "value": "15",
+              "unit": "deg"
+            },
+            "UpperLimitBound": {
+              "value": "45",
+              "unit": "deg"
+            },
+            "DampingCoefficient": {
+              "value": "0",
+              "unit": "N*m/(deg/s)"
+            }
+          }
+        },
+        {
+          "sid": "378",
+          "name": "Translational\nFriction",
+          "source": "fl_lib/Mechanical/Translational\nElements/Translational\nFriction",
+          "commented": "on",
+          "parameters": {
+            "brkwy_frc": {
+              "value": "110",
+              "unit": "N"
+            },
+            "brkwy_vel": {
+              "value": "1e-4",
+              "unit": "m/s"
+            },
+            "Col_frc": {
+              "value": "90",
+              "unit": "N"
+            },
+            "visc_coef": {
+              "value": "170",
+              "unit": "N*s/m"
+            }
+          }
+        },
+        {
+          "sid": "344",
+          "name": "Translational\nMultibody Interface",
+          "source": "fl_lib/Mechanical/Multibody Interfaces/Translational\nMultibody Interface",
+          "commented": "off",
+          "parameters": {}
+        },
+        {
+          "sid": "197",
+          "name": "C4",
+          "source": null,
+          "commented": "off",
+          "parameters": {
+            "Side": {
+              "value": "Left"
+            }
+          }
+        },
+        {
+          "sid": "198",
+          "name": "R4",
+          "source": null,
+          "commented": "off",
+          "parameters": {
+            "Port": {
+              "value": "2"
+            },
+            "Side": {
+              "value": "Right"
+            }
+          }
+        },
+        {
+          "sid": "345",
+          "name": "P ",
+          "source": null,
+          "commented": "off",
+          "parameters": {
+            "Port": {
+              "value": "3"
+            },
+            "Side": {
+              "value": "Right"
+            }
+          }
+        },
+        {
+          "sid": "346",
+          "name": "T",
+          "source": null,
+          "commented": "off",
+          "parameters": {
+            "Port": {
+              "value": "4"
+            },
+            "Side": {
+              "value": "Right"
+            }
+          }
+        }
+      ],
+      "connection_groups": [
+        {
+          "name": null,
+          "endpoints": [
+            "473#lconn:1",
+            "26#lconn:1"
+          ]
+        },
+        {
+          "name": null,
+          "endpoints": [
+            "473#rconn:1",
+            "198#rconn:1"
+          ]
+        },
+        {
+          "name": null,
+          "endpoints": [
+            "474#lconn:1",
+            "197#rconn:1"
+          ]
+        },
+        {
+          "name": null,
+          "endpoints": [
+            "344#rconn:2",
+            "1355#lconn:1",
+            "1354#rconn:2"
+          ]
+        },
+        {
+          "name": null,
+          "endpoints": [
+            "342#lconn:1",
+            "1355#rconn:1",
+            "344#lconn:2",
+            "1354#lconn:1"
+          ]
+        },
+        {
+          "name": null,
+          "endpoints": [
+            "344#rconn:1",
+            "199#rconn:3"
+          ]
+        },
+        {
+          "name": null,
+          "endpoints": [
+            "344#lconn:1",
+            "699#rconn:1",
+            "199#lconn:2"
+          ]
+        },
+        {
+          "name": null,
+          "endpoints": [
+            "28#rconn:1",
+            "199#lconn:1"
+          ]
+        },
+        {
+          "name": null,
+          "endpoints": [
+            "26#rconn:1",
+            "199#rconn:1"
+          ]
+        },
+        {
+          "name": null,
+          "endpoints": [
+            "474#rconn:1",
+            "28#lconn:1"
+          ]
+        },
+        {
+          "name": null,
+          "endpoints": [
+            "577#lconn:1",
+            "1354#lconn:2",
+            "1353#lconn:2"
+          ]
+        },
+        {
+          "name": null,
+          "endpoints": [
+            "595#lconn:1",
+            "1354#rconn:3",
+            "1353#lconn:3"
+          ]
+        },
+        {
+          "name": null,
+          "endpoints": [
+            "346#rconn:1",
+            "1353#rconn:2"
+          ]
+        },
+        {
+          "name": null,
+          "endpoints": [
+            "1353#rconn:1",
+            "345#rconn:1"
+          ]
+        },
+        {
+          "name": null,
+          "endpoints": [
+            "1353#lconn:1",
+            "602#rconn:1"
+          ]
+        },
+        {
+          "name": null,
+          "endpoints": [
+            "601#out:1",
+            "602#in:1"
+          ]
+        },
+        {
+          "name": null,
+          "endpoints": [
+            "695#lconn:1",
+            "1354#rconn:1",
+            "199#rconn:2"
+          ]
+        }
+      ]
+    },
+    "simulink/systems/system_1103.xml": {
+      "blocks": [
+        {
+          "sid": "1105",
+          "name": "Simulink-PS\nConverter",
+          "source": "nesl_utility/Simulink-PS\nConverter",
+          "commented": "off",
+          "parameters": {
+            "Unit": {
+              "value": "m"
+            },
+            "FilteringAndDerivatives": {
+              "value": "provide"
+            },
+            "UdotUserProvided": {
+              "value": "0"
+            },
+            "InputFilterTimeConstant": {
+              "value": "0.005"
+            }
+          }
+        },
+        {
+          "sid": "1106",
+          "name": "PS",
+          "source": null,
+          "commented": "off",
+          "parameters": {
+            "Side": {
+              "value": "Right"
+            }
+          }
+        }
+      ],
+      "connection_groups": [
+        {
+          "name": null,
+          "endpoints": [
+            "1106#rconn:1",
+            "1105#rconn:1"
+          ]
+        },
+        {
+          "name": null,
+          "endpoints": [
+            "1104#out:1",
+            "1105#in:1"
+          ]
+        }
+      ]
+    },
+    "simulink/systems/system_609.xml": {
+      "blocks": [
+        {
+          "sid": "613",
+          "name": "Simulink-PS\nConverter",
+          "source": "nesl_utility/Simulink-PS\nConverter",
+          "commented": "off",
+          "parameters": {
+            "Unit": {
+              "value": "m"
+            },
+            "FilteringAndDerivatives": {
+              "value": "provide"
+            },
+            "UdotUserProvided": {
+              "value": "0"
+            },
+            "InputFilterTimeConstant": {
+              "value": "0.005"
+            }
+          }
+        },
+        {
+          "sid": "614",
+          "name": "PS",
+          "source": null,
+          "commented": "off",
+          "parameters": {
+            "Side": {
+              "value": "Right"
+            }
+          }
+        }
+      ],
+      "connection_groups": [
+        {
+          "name": null,
+          "endpoints": [
+            "614#rconn:1",
+            "613#rconn:1"
+          ]
+        },
+        {
+          "name": null,
+          "endpoints": [
+            "610#out:1",
+            "613#in:1"
+          ]
+        }
+      ]
+    },
+    "simulink/systems/system_616.xml": {
+      "blocks": [
+        {
+          "sid": "620",
+          "name": "Simulink-PS\nConverter",
+          "source": "nesl_utility/Simulink-PS\nConverter",
+          "commented": "off",
+          "parameters": {
+            "Unit": {
+              "value": "m"
+            },
+            "FilteringAndDerivatives": {
+              "value": "provide"
+            },
+            "UdotUserProvided": {
+              "value": "0"
+            },
+            "InputFilterTimeConstant": {
+              "value": "0.005"
+            }
+          }
+        },
+        {
+          "sid": "621",
+          "name": "PS",
+          "source": null,
+          "commented": "off",
+          "parameters": {
+            "Side": {
+              "value": "Right"
+            }
+          }
+        }
+      ],
+      "connection_groups": [
+        {
+          "name": null,
+          "endpoints": [
+            "621#rconn:1",
+            "620#rconn:1"
+          ]
+        },
+        {
+          "name": null,
+          "endpoints": [
+            "617#out:1",
+            "620#in:1"
+          ]
+        }
+      ]
+    },
+    "simulink/systems/system_602.xml": {
+      "blocks": [
+        {
+          "sid": "606",
+          "name": "Simulink-PS\nConverter",
+          "source": "nesl_utility/Simulink-PS\nConverter",
+          "commented": "off",
+          "parameters": {
+            "Unit": {
+              "value": "m"
+            },
+            "FilteringAndDerivatives": {
+              "value": "provide"
+            },
+            "UdotUserProvided": {
+              "value": "0"
+            },
+            "InputFilterTimeConstant": {
+              "value": "0.005"
+            }
+          }
+        },
+        {
+          "sid": "607",
+          "name": "PS",
+          "source": null,
+          "commented": "off",
+          "parameters": {
+            "Side": {
+              "value": "Right"
+            }
+          }
+        }
+      ],
+      "connection_groups": [
+        {
+          "name": null,
+          "endpoints": [
+            "607#rconn:1",
+            "606#rconn:1"
+          ]
+        },
+        {
+          "name": null,
+          "endpoints": [
+            "603#out:1",
+            "606#in:1"
+          ]
+        }
+      ]
+    },
+    "simulink/systems/system_1107.xml": {
+      "blocks": [
+        {
+          "sid": "1109",
+          "name": "Simulink-PS\nConverter",
+          "source": "nesl_utility/Simulink-PS\nConverter",
+          "commented": "off",
+          "parameters": {
+            "Unit": {
+              "value": "1"
+            },
+            "FilteringAndDerivatives": {
+              "value": "provide"
+            },
+            "UdotUserProvided": {
+              "value": "0"
+            },
+            "InputFilterTimeConstant": {
+              "value": "0.005"
+            }
+          }
+        },
+        {
+          "sid": "1110",
+          "name": "PS",
+          "source": null,
+          "commented": "off",
+          "parameters": {
+            "Side": {
+              "value": "Right"
+            }
+          }
+        }
+      ],
+      "connection_groups": [
+        {
+          "name": null,
+          "endpoints": [
+            "1110#rconn:1",
+            "1109#rconn:1"
+          ]
+        },
+        {
+          "name": null,
+          "endpoints": [
+            "1108#out:1",
+            "1109#in:1"
+          ]
+        }
+      ]
+    }
+  }
+}

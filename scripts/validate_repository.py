@@ -60,14 +60,15 @@ for name,count in [('reference',3991),('measured',3550)]:
 with (ROOT/'data/figure-traces/bulk_modulus_summary.csv').open() as f:summary=list(csv.DictReader(f))
 check([float(r['j3_delay_ms']) for r in summary]==[186.3,168.8,149.9,152.4],'Unexpected joint-3 series')
 check([float(r['ee_mean_mm']) for r in summary]==[211.3,215.4,229.1,228.8],'Unexpected mean-error series')
-for name in ['bulk-modulus-sensitivity','task-space-path','coupled-architecture']:
+for name in ['bulk-modulus-sensitivity','task-space-path','coupled-architecture',
+             'cylinder-construction','hydraulic-network','valve-routing']:
     for ext in ['pdf','svg','png']:check((ROOT/f'docs/report/figures/{name}.{ext}').is_file(),'Missing figure: '+name+'.'+ext)
 
 for p in [ROOT/'README.md',*list((ROOT/'docs').glob('*.md'))]:
     for link in re.findall(r'\]\(([^)]+)\)',p.read_text()):
         if link.startswith(('https:','http:','#')):continue
         check((p.parent/unquote(link.split('#')[0])).exists(),'Broken link in '+str(p.relative_to(ROOT))+': '+link)
-tex=(ROOT/'docs/report/main.tex').read_text()
+tex='\n'.join(p.read_text() for p in (ROOT/'docs/report').glob('*.tex'))
 check('\\documentclass[conference,letterpaper]{IEEEtran}' in tex,'Incorrect report class')
 check('426167' not in tex,'Student number in revised report')
 check((ROOT/'docs/report/hydraulic_manipulator_report_ieee.pdf').is_file(),'Missing revised PDF')

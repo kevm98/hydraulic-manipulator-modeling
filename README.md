@@ -79,7 +79,8 @@ scripts/            Figure generation and repository checks
 
 ## Documentation
 
-- [Report](docs/report/hydraulic_manipulator_report_ieee.pdf) and [LaTeX source](docs/report/main.tex)
+- [Detailed report](docs/report/hydraulic_manipulator_report_ieee.pdf): actuator construction, hydraulic network, control, and results
+- [LaTeX source](docs/report/main.tex) and [saved model specification](docs/model-specification.json)
 - [Setup and compatibility](docs/SETUP.md)
 - [Data and figure notes](docs/DATA_AND_FIGURES.md)
 - [Implementation notes](docs/IMPLEMENTATION_NOTES.md)

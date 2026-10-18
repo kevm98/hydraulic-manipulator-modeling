@@ -12,7 +12,7 @@ RPTU Kaiserslautern-Landau\\Kaiserslautern, Germany}}
 \begin{document}
 \maketitle
 \begin{abstract}
-Hydraulic manipulators couple configuration-dependent mechanical loads with compressible-fluid dynamics and finite valve response. This project develops a Simscape model of the MULAG FME 500 embankment mower by combining CAD-derived geometry, a multibody mechanism, and valve-controlled hydraulic actuation. Cylinder geometry maps piston motion and axial force to joint motion and generalized torque. A joint-level feedback controller provides a repeatable trajectory-tracking task for studying plant sensitivity. Reported simulation results at four bulk moduli, from 0.5 to 2.0 GPa, show a decrease in the dominant joint's 50\% response delay from 847.4 to 649.7 ms and a decrease in end-effector RMS tracking error from 827.9 to 739.4 mm. The effects are not uniform: the fourth monitored joint's delay increases, while the mean tracking error is higher at the largest modulus than at the smallest. Numerical trajectory curves and tabulated results are preserved and redrawn as vector figures. The model supports virtual prototyping and control development; the available results establish simulation sensitivity rather than quantitative agreement with measured hardware. The report also identifies differences between the archived controller and the earlier written description so that future experiments can use a clearly specified implementation.
+Hydraulic manipulators couple configuration-dependent mechanical loads with compressible-fluid dynamics and finite valve response. This project develops a Simscape model of the MULAG FME 500 embankment mower by combining CAD-derived geometry, a multibody mechanism, and valve-controlled hydraulic actuation. Cylinder geometry maps piston motion and axial force to joint motion and generalized torque. A joint-level feedback controller provides a repeatable trajectory-tracking task for studying plant sensitivity. Reported simulation results at four bulk moduli, from 0.5 to 2.0 GPa, show a decrease in the dominant joint's 50\% response delay from 847.4 to 649.7 ms and a decrease in end-effector RMS tracking error from 827.9 to 739.4 mm. The effects are not uniform: the fourth monitored joint's delay increases, while the mean tracking error is higher at the largest modulus than at the smallest. Numerical trajectory curves and tabulated results are preserved and redrawn as vector figures. The report details cylinder assembly, liquid and mechanical ports, valve routing, the shared hydraulic network, and the reference/measurement paths. A block-level specification distinguishes active components from disabled alternatives and identifies parameter and unit checks needed for reproducibility. The available results establish reported simulation sensitivity rather than quantitative agreement with measured hardware.
 \end{abstract}
 \begin{IEEEkeywords}
 Hydraulic manipulator, multibody dynamics, Simscape, bulk modulus, trajectory tracking, virtual prototyping.
@@ -25,7 +25,7 @@ Hydraulic control models commonly combine fluid continuity, pressure-dependent o
 
 This project develops a coupled mechanical--hydraulic model of the MULAG FME 500 using MATLAB, Simulink, Simscape Multibody, and Simscape Fluids. The mechanical structure is derived from CAD and URDF assets; hydraulic actuators replace idealized actuation at the physical interface. A fixed joint-level controller is used to investigate the sensitivity of the simulated plant to bulk modulus. The contribution is the integrated modeling workflow and its documented sensitivity study, rather than a new controller stability theorem.
 
-The report presents the geometry and governing relations, describes the archived implementation, and examines the numerical results. The supplied project contains the editable model, reference trajectories, analysis scripts, a presentation, and saved MATLAB figures. A matching earlier written report supplies additional methodological context. The numerical curves and summary tables are reused without claiming that new simulations or hardware tests were performed for this revision.
+The report develops the assembly procedure, network construction, governing equations, and controller implementation, then evaluates the saved numerical curves and reported sensitivity cases. It introduces no new simulation or hardware results.
 
 \begin{figure}[t]
 \centering
@@ -36,9 +36,18 @@ The report presents the geometry and governing relations, describes the archived
 
 \section{Mechanical Model}
 \subsection{Geometry and Model Import}
-The arm is represented by five independent joint coordinates $q\in\R^5$. The project supplies several URDF descriptions: a six-link, five-revolute-joint representation for arm kinematics and a more detailed tree including actuator bodies. Extra joints in the detailed URDF are an import representation; they should not be interpreted as additional independently controlled arm degrees of freedom.
+The reference kinematic description uses five joint coordinates $q\in\R^5$. The project supplies several URDF descriptions: a six-link, five-revolute-joint representation for arm kinematics and a more detailed tree including actuator bodies. Extra joints in the detailed URDF represent actuator bodies and alignments; they should not be interpreted as additional independently controlled arm degrees of freedom. The saved dynamic model also constrains the final cutting-head joint to a very narrow interval, so its nominal five-coordinate description does not imply five unrestricted axes in every configuration.
 
 The CAD-to-URDF workflow provides link geometry, attachment frames, masses, and inertia tensors. URDF and rigid-body-tree models can be imported into Simscape Multibody using the supported model-import tools~\cite{smimport}. Inertial cross terms and the reference frame of each tensor must be preserved consistently. Geometry alone does not establish a measured mass distribution: density assignments, inertia reference frames, and imported units remain calibration inputs.
+
+Figure~\ref{fig:topology} identifies the imported links, revolute coordinates, and cylinder installations. The base-swing motion is driven by cylinder 1, the first and second booms by cylinders 2 and 3, and the cutting-head swivel linkage by cylinder 4. The final cutting-head coordinate has its own command path. The saved arm-joint bounds are $[-1.57,0.52]$~rad for the base swing, $[-0.52,0.52]$~rad for the two boom joints and swivel joint, and $[0,10^{-6}]$~rad for the final head joint. These are active model limits, not manufacturer-certified travel ranges. In particular, the last interval is effectively locked and differs from the controller's much wider reference-clipping interval.
+
+\begin{figure*}[t]
+\centering
+\includegraphics[width=.9\textwidth]{figures/mechanical-topology.png}
+\caption{Original annotated mechanical topology: base frame, five nominal revolute coordinates, arm links, and four cylinder installations. The image identifies physical placement; the selected model's active joint limits and direct fifth-axis command must additionally be considered when interpreting the available degrees of freedom.}
+\label{fig:topology}
+\end{figure*}
 
 For a chosen external-wrench convention, the joint-space equations may be written
 \begin{equation}
@@ -67,7 +76,7 @@ Virtual work gives the generalized torque contribution
 \end{equation}
 This map preserves instantaneous mechanical power: $\tau_a^\trans\dot q=F_h\dot s$. For multiple cylinders, the scalar extension rows are stacked into a matrix. Geometry-dependent leverage is therefore included without assuming a constant force-to-torque ratio.
 
-Cylinder attachments form closed mechanical loops in the assembled multibody model. The project describes spherical, prismatic, and cylindrical joint connections to provide axial extension and alignment freedom. Joint-frame inspection is essential because an incompatible connection can overconstrain a loop or change the sign of the actuator stroke. The earlier text also used an R--P--R description; the actual assembled joint topology should be taken from the selected model rather than assuming that the two descriptions are interchangeable.
+Cylinder attachments form closed mechanical loops in the assembled multibody model. The active actuator subsystems use spherical, prismatic, and cylindrical joint connections to provide axial extension and alignment freedom. Joint-frame inspection is essential because an incompatible connection can overconstrain a loop or change the sign of the actuator stroke. Section~\ref{sec:construction} details the actual construction and the separation between multibody frames, translational conserving ports, and physical signals.
 
 \subsection{Hydraulic Stiffness in Joint Coordinates}
 For a local closed-valve approximation with positive chamber volumes, the hydraulic contribution to axial stiffness is
@@ -83,22 +92,17 @@ The complete derivative of~\eqref{eq:force} can also contain geometric-stiffness
 
 The combination of slow arm motion and faster pressure dynamics can produce a stiff differential-algebraic system. The archived integrated model stores the implicit variable-step solver \textnormal{ode15s}; its stored relative tolerance is $10^{-3}$ and maximum step is 1.2~s. These are archived settings, not a verified accuracy recommendation. Step-size and tolerance convergence should be checked for each result~\cite{ode15s}.
 
-\begin{figure*}[t]
-\centering
-\includegraphics[width=\textwidth]{figures/coupled-architecture.pdf}
-\caption{Functional organization of the coupled model. Cylinder motion changes chamber flow and pressure, while joint feedback closes the tracking loop. The diagram summarizes physical and signal relationships rather than reproducing every Simulink connection.}
-\label{fig:architecture}
-\end{figure*}
+\input{construction}
 
 \section{Hydraulic Model}
 \subsection{Supply and Fluid Compressibility}
-The integrated model contains a fixed-displacement pump, pressure-relief elements, a gas-charged accumulator, directional valves, and double-acting actuators. The project presentation reports a nominal supply-flow scale of 40~L/min. A parameter helper specifies supply and tank pressures of 34 and 0.1~MPa, respectively; these helper values must not be assumed to override every block-level parameter.
+The active circuit contains a fixed-displacement pump, a reservoir boundary, a relief element, four directional valves, and four double-acting actuators. The accumulator and some earlier alternatives are disabled in the saved model, as summarized in Table~\ref{tab:state}. The governing relations below explain the component behavior; active block options and units determine the particular realization.
 
 For an ideal displacement pump,
 \begin{equation}
 Q_p=D_p\omega,
 \end{equation}
-when displacement $D_p$ is expressed per radian and $\omega$ in rad/s. If displacement is specified per revolution, the conversion must be included. An idealized accumulator gas law is $p_gV_g^\kappa=\mathrm{const}$ with absolute gas pressure $p_g$. Its effect depends on precharge, volume, and connection conditions.
+when displacement $D_p$ is expressed per radian and $\omega$ in rad/s~\cite{pump}. If displacement is specified per revolution, the conversion must be included. An idealized accumulator gas law is $p_gV_g^\kappa=\mathrm{const}$ with absolute gas pressure $p_g$. Its effect depends on precharge, volume, and connection conditions.
 
 Compressibility is described by an effective bulk modulus. A simple mixture approximation for liquid with local gas-volume fraction $\alpha$ is
 \begin{equation}
@@ -109,11 +113,11 @@ Compressibility is described by an effective bulk modulus. A simple mixture appr
 All terms have units of inverse pressure. This corrects the dimensionally incomplete volume-weighted expression in the earlier report. The sensitivity study varies a bulk-modulus parameter directly; it does not identify an entrained-air fraction from experiments.
 
 \subsection{Valve Dynamics and Flow}
-A first-order spool model describes finite valve response:
+If finite spool dynamics are explicitly enabled, a first-order approximation can be written as
 \begin{equation}
 \tau_v\dot x_v=k_uu-x_v.
 \end{equation}
-Here $u$ is the electrical or normalized command and $k_u$ maps that command to spool displacement. This conversion is required if $u$ and $x_v$ have different units. The open flow path follows the signed orifice relation
+Here $u$ is the electrical or normalized command and $k_u$ maps it to spool displacement. This conversion is required if $u$ and $x_v$ have different units. This differential equation is a modeling option; it is not asserted to be an enabled spool-lag state in the saved converter configuration. The open flow path follows the signed orifice relation
 \begin{equation}
 Q=C_dA_o(x_v)\operatorname{sgn}(\Delta p)
 \sqrt{\frac{2|\Delta p|}{\rho}}.
@@ -139,13 +143,13 @@ The pressure-force relation is
 \begin{equation}
 F_h=A_Ap_A-A_Bp_B-F_f(\dot s).
 \end{equation}
-Area asymmetry, dead volume, and piston motion affect the chamber pressures; these are also explicit features of the standard double-acting actuator formulation~\cite{actuator}.
+For this force relation, pressures are relative to the cylinder environment. With absolute pressures, subtract $(A_A-A_B)p_{\mathrm{env}}$ from the pressure-force term; this correction cancels for the saved equal-area blocks. Area asymmetry, dead volume, and piston motion affect the chamber pressures~\cite{actuator}.
 
 One regularized viscous/Coulomb friction model is
 \begin{equation}
 F_f(v)=b_vv+F_c\tanh(v/v_\epsilon).
 \end{equation}
-The archived custom cylinder implements this form with an optional efficiency multiplier. It does not implement the full Stribeck curve claimed in the earlier text. Likewise, its chamber equations omit an explicit internal-leakage term. The general equations above describe the modeling framework; individual block settings determine which effects are active in a selected implementation.
+The archived custom cylinder implements this regularized form with an optional efficiency multiplier and no explicit internal-leakage term. It is separate from the active stock actuator plus external Translational Friction blocks. The latter provide their own breakaway, Coulomb, and viscous parameterization; the active actuator's internal friction/leakage switches are off. The general equations above describe the physical framework, while Table~\ref{tab:cylinders} and the enabled block options identify the saved realization.
 
 \section{Trajectory and Feedback Control}
 \subsection{Reference Generation}
@@ -186,12 +190,12 @@ Joint & $c_1$ & $c_2$ & $K_I$ & $b$ & $|u|_{\max}$\\\hline
 \end{tabular}
 \end{table}
 
-The embedded integration interval is $T_s=0.005$~s, rather than the 0.01~s stated in the earlier report. The model's separate error-accumulation helper contains 0.01~s. The offline metric function uses the actual recorded time vector and trapezoidal integration, which avoids silently assigning the controller's interval to every log.
+The embedded integration interval is $T_s=0.005$~s, rather than the 0.01~s stated in the earlier report. The model's separate error-accumulation helper contains 0.01~s. The offline metric function uses the actual recorded time vector and trapezoidal integration, which avoids silently assigning the controller's interval to every log. A controller time constant stored in code is not proof that the MATLAB Function executes at that interval; reference sample times, inherited rates, and routing delays must be checked together.
 
 \begin{figure*}[t]
 \centering
 \includegraphics[width=\textwidth]{figures/task-space-path.pdf}
-\caption{Archived task-space reference and simulated response, redrawn directly from numerical curves in \textnormal{plot.fig}. Left: horizontal projection; right: vertical projection. The two curves contain 3,991 and 3,550 samples, respectively, and no shared time vector is stored with these extracted coordinates. This figure is a historical simulation visualization, not a new run or a recomputed tracking-error measurement.}
+\caption{Archived task-space reference and simulated response, redrawn directly from numerical curves in \textnormal{plot.fig}. Left: horizontal projection; right: vertical projection. The 3,991 reference and 3,550 response samples lack a shared time vector; these spatial traces cannot independently reproduce a tracking-error metric.}
 \label{fig:path}
 \end{figure*}
 
@@ -240,7 +244,7 @@ The offline function begins at the earliest valid command onset and uses time-we
 
 \section{Results and Discussion}
 \subsection{Available Numerical Evidence}
-The four reported cases use $\beta\in\{0.5,1.0,1.5,2.0\}$~GPa. Table~\ref{tab:results} and Fig.~\ref{fig:sensitivity} reproduce the supplied numerical summaries. The chosen joint-delay values agree between the source presentation, Table~I of the earlier report, and \textnormal{delaysvserror.m}. Table~II of the earlier report gives a different set of joint-3 intervals; those conflicting values are not combined with the consistent series. The disagreement is recorded in the repository's data-provenance notes.
+The four reported cases use $\beta\in\{0.5,1.0,1.5,2.0\}$~GPa. The archive does not bind each case to a complete evaluated block-parameter record, and the saved active replacements differ from some earlier presentation settings. The reported cases therefore remain historical summaries rather than verified reruns of the present saved configuration. Table~\ref{tab:results} and Fig.~\ref{fig:sensitivity} reproduce the supplied numerical summaries. The values agree with the presentation, Table~I of the earlier report, and \textnormal{delaysvserror.m}; a conflicting joint-3 series in the earlier Table~II is documented separately.
 
 \begin{table*}[t]
 \caption{Reported Simulation Summary Across Bulk-Modulus Cases}
@@ -276,16 +280,14 @@ The sweep establishes sensitivity of the simulated closed-loop system to a selec
 Similarly, the smooth normalized step responses in the original \textnormal{delay\_plots.m} script are generated from an assumed second-order model, fitted to reported crossing times. They are explanatory reconstructions, not raw hydraulic-simulation traces. They remain in the archive but are excluded from the revised report's result figures. The separate custom components and parameter helpers describe additional configurations; their constants should not be mixed with the integrated model's blocks as if all came from one run.
 
 \section{Reproducibility and Further Work}
-The organized repository separates the editable integrated model, earlier model variants, physical source components, canonical geometry, reference datasets, numerical plot exports, and documentation. Repeated mesh copies, simulation caches, autosaves, generated native binaries, and Blender backups are excluded from active source. The full original GitLab archive is retained as a release asset, with source hashes and a migration map.
+The repository retains the editable R2023b model, canonical meshes, reference datasets, analysis scripts, and numeric plot exports. Project-relative paths resolve geometry and Signal Editor files, while generated products go into a separate build directory. Equations, controller code, and solver settings are unchanged.
 
-The imported model was saved in MATLAB R2023b. Absolute Windows geometry references and Signal Editor file references are replaced by project-relative paths. The model's equations, controller code, and solver settings are preserved. The setup function adds the relevant folders to the MATLAB path and directs regenerated cache/code-generation files to a separate build directory. The revised documentation opens the editable \textnormal{.slx} model rather than a \textnormal{.slxc} simulation cache.
+A machine-readable specification records selected block settings, units, activation flags, XML members, and connection groups. Structural checks verify retained hashes, model archives, paths, numeric curves, and documentation. These checks do not compile or run MATLAB. No end-to-end simulation or hardware test was conducted for this report revision.
 
-Artifact checks verify retained-file hashes, model-archive integrity, geometry and input-file references, URDF mesh resolution, numeric-curve exports, report tables, and documentation links. They do not replace loading and running the project in a licensed MATLAB installation. No end-to-end MATLAB simulation or hardware test was conducted for this revision.
-
-Further work should first establish one versioned model configuration and timing contract. A reproducible sweep should save the controller gains, active block parameters, solver settings, reference trajectory, all event signals, and synchronized end-effector errors for each case. Tolerance studies should demonstrate convergence of the reported metrics. Physical validation should then compare measured and simulated pressure, stroke, force, and motion under matched inputs before the model is described as a calibrated digital twin.
+Further work should first reconcile the pump displacement unit, supply/return port associations, command-to-spool scale, effective cylinder areas, large friction coefficients, initialization offsets, and final-joint travel constraint. These are configuration checks, not a diagnosis that any one item explains a particular recorded motion. Then establish one versioned model configuration and timing contract. A reproducible sweep should save the controller gains, active block parameters, solver settings, reference trajectory, all event signals, and synchronized end-effector errors for each case. Tolerance studies should demonstrate convergence of the reported metrics. Physical validation should then compare measured and simulated pressure, stroke, force, and motion under matched inputs before the model is described as a calibrated digital twin.
 
 \section{Conclusion}
-The project couples a CAD-derived multibody arm with hydraulic supply, valve, and cylinder dynamics for virtual prototyping of an embankment mower. Geometry-dependent force transmission and fluid continuity connect the two physical domains. The reported parameter sweep shows that larger bulk modulus reduces the dominant joint's response interval and end-effector RMS error for the supplied task, while other joint intervals and mean error behave differently. These results motivate evaluating several metrics together and retaining the complete experimental configuration. The organized model and numerical assets provide a documented basis for further simulation, identification, and control development; agreement with physical hardware remains a separate validation task.
+The project constructs a coupled arm from CAD bodies, alignment joints, force-actuated prismatic joints, and a shared four-branch hydraulic network. A fifth command acts directly on the final revolute joint. The detailed actuator construction explains how chamber pressure generates axial force and how multibody position/velocity feed back into the hydraulic states. Geometry-dependent force transmission and fluid continuity connect the two physical domains. The reported parameter sweep shows that larger bulk modulus reduces the dominant joint's response interval and end-effector RMS error for the supplied task, while other joint intervals and mean error behave differently. These results motivate evaluating several metrics together and retaining the complete experimental configuration. The organized model and numerical assets provide a documented basis for further simulation, identification, and control development; agreement with physical hardware remains a separate validation task.
 
 \section*{Acknowledgment}
 This project was carried out at the Robotics Research Lab, RPTU Kaiserslautern-Landau.
