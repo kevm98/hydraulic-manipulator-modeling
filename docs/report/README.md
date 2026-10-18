@@ -1,6 +1,6 @@
 # Report source
 
-The revised manuscript uses unmodified IEEEtran conference mode with US letter paper, default two-column layout, numbered equations, and IEEEtran bibliography style. It retains Kevin Kudakwashe Murera's authorship and institutional affiliation without student identifiers. It is a project report, not an IEEE publication or a certified venue submission.
+The revised manuscript uses unmodified IEEEtran conference mode with US letter paper, default two-column layout, numbered equations, and IEEEtran bibliography style. It retains Kevin Kudakwashe Murera's authorship and institutional affiliation without student identifiers.
 
 ## Build
 
@@ -22,4 +22,4 @@ The main source is the earlier written report, supplemented by the GitLab presen
 
 Primary references were checked against [Wiley's Merritt record](https://www.wiley-vch.de/en/areas-interest/engineering/mechanical-engineering-10me/fluid-mechanics-10me3/hydraulic-control-systems-978-0-471-59617-2), [Springer's Jelali/Kroll record](https://link.springer.com/book/10.1007/978-1-4471-0099-7), and official MathWorks documentation for [model import](https://www.mathworks.com/help/sm/ref/smimport.html), [actuator equations](https://www.mathworks.com/help/hydro/ref/doubleactingactuatoril.html), and [stiff integration](https://www.mathworks.com/help/matlab/ref/ode15s.html).
 
-The format follows [IEEE conference author guidance](https://events.ieee.org/planning-basics/ieee-conference-publications/publishing-information-for-ieee-conference-authors/). A specific venue can impose additional page limits, anonymity, copyright, or PDF-validation requirements. Review the report's technical corrections and references before submitting it.
+The layout follows [IEEE conference author guidance](https://events.ieee.org/planning-basics/ieee-conference-publications/publishing-information-for-ieee-conference-authors/).

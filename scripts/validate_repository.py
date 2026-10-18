@@ -1,4 +1,4 @@
-"""Validate the migration and portable model references without MATLAB."""
+"""Validate retained files and portable model references without MATLAB."""
 from pathlib import Path
 import csv
 import hashlib

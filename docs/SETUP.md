@@ -2,7 +2,7 @@
 
 ## Required products
 
-The integrated model was saved in MATLAB R2023b. Use MATLAB, Simulink, Simscape, Simscape Multibody, and Simscape Fluids. Its active hydraulic blocks use the isothermal-liquid domain. Robotics System Toolbox is required for `importrobot`, rigidBodyTree, inverse kinematics, and related geometry scripts. A newer MATLAB release may request model upgrades; review them separately from this file migration.
+The integrated model was saved in MATLAB R2023b. Use MATLAB, Simulink, Simscape, Simscape Multibody, and Simscape Fluids. Its active hydraulic blocks use the isothermal-liquid domain. Robotics System Toolbox is required for `importrobot`, rigidBodyTree, inverse kinematics, and related geometry scripts. A newer MATLAB release may request model upgrades; review them separately from the current model configuration.
 
 ## Open and simulate
 
@@ -17,7 +17,7 @@ out = run_simulation;
 
 Open `models/Mulag_FME_500_with_cylinder.slx`, not an `.slxc` cache. Its Signal Editor files are the original position, velocity, acceleration, and end-effector datasets under `data/references/`. The setup does not load arbitrary MAT files into the base workspace or overwrite their contents.
 
-No MATLAB simulation was run during migration. Static checks verify the SLX archive and its referenced files; they cannot verify licensed block availability, algebraic-loop initialization, or numerical convergence.
+No MATLAB simulation was run in the current validation checks. Static checks verify the SLX archive and its referenced files; they cannot verify licensed block availability, algebraic-loop initialization, or numerical convergence.
 
 ## Archived model settings
 
