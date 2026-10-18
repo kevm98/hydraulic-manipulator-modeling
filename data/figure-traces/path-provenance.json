@@ -1,0 +1,16 @@
+{
+  "reference": {
+    "source": "archive/figures/plot.fig",
+    "display_name": "reference",
+    "samples": 3991,
+    "has_time_vector": false,
+    "method": "direct MATLAB FIG numeric XData/YData/ZData extraction"
+  },
+  "measured": {
+    "source": "archive/figures/plot.fig",
+    "display_name": "measured",
+    "samples": 3550,
+    "has_time_vector": false,
+    "method": "direct MATLAB FIG numeric XData/YData/ZData extraction"
+  }
+}

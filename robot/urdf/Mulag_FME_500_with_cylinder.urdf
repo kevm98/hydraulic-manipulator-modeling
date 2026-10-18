@@ -1,0 +1,275 @@
+<robot name="Mulag_FME_500_with_cylinder" version="1.0">
+  <joint name="Ausleger-Schwenkzylinder_Kolben_link_joint" type="revolute">
+    <limit lower="-3.14000" upper="3.14000" effort="0.00000" velocity="0.00000"/>
+    <origin rpy="1.57080 0.00000 -1.03620" xyz="0.17202 -0.12045 0.37049"/>
+    <parent link="Drehzapfen_link"/>
+    <child link="Ausleger-Schwenkzylinder_Kolben_link"/>
+    <axis xyz="0.00000 1.00000 0.00000"/>
+  </joint>
+  <joint name="Ausleger-Schwenkzylinder_Rohr_link_joint" type="revolute">
+    <limit lower="-3.14000" upper="3.14000" effort="0.00000" velocity="0.00000"/>
+    <origin rpy="1.57080 -0.00000 2.10539" xyz="0.05000 -0.54499 0.42096"/>
+    <parent link="Frontrahmen_link"/>
+    <child link="Ausleger-Schwenkzylinder_Rohr_link"/>
+    <axis xyz="0.00000 1.00000 0.00000"/>
+  </joint>
+  <joint name="Ausleger_II_link_joint" type="revolute">
+    <limit lower="-1.22111" upper="0.17444" effort="0.00000" velocity="0.00000"/>
+    <origin rpy="0.00000 -0.00000 1.78473" xyz="2.74998 -0.00009 0.00000"/>
+    <parent link="Ausleger_I_link"/>
+    <child link="Ausleger_II_link"/>
+    <axis xyz="0.00000 0.00000 1.00000"/>
+  </joint>
+  <joint name="Ausleger_I_link_joint" type="revolute">
+    <limit lower="-0.78500" upper="0.78500" effort="0.00000" velocity="0.00000"/>
+    <origin rpy="-1.57080 -0.60387 -1.57080" xyz="-0.00000 -0.06000 0.98999"/>
+    <parent link="Drehzapfen_link"/>
+    <child link="Ausleger_I_link"/>
+    <axis xyz="0.00000 0.00000 1.00000"/>
+  </joint>
+  <joint name="Drehzapfen_link_joint" type="revolute">
+    <limit lower="-1.57000" upper="0.52333" effort="0.00000" velocity="0.00000"/>
+    <origin rpy="0.00000 0.00000 0.00000" xyz="0.59500 0.00000 0.05047"/>
+    <parent link="Frontrahmen_link"/>
+    <child link="Drehzapfen_link"/>
+    <axis xyz="0.00000 0.00000 1.00000"/>
+  </joint>
+  <joint name="Hebezylinder_Kolben_link_joint" type="revolute">
+    <limit lower="-3.14000" upper="3.14000" effort="0.00000" velocity="0.00000"/>
+    <origin rpy="-2.36725 1.57080 0.58327" xyz="1.01048 0.13129 0.00000"/>
+    <parent link="Ausleger_I_link"/>
+    <child link="Hebezylinder_Kolben_link"/>
+    <axis xyz="-1.00000 0.00000 0.00000"/>
+  </joint>
+  <joint name="Hebezylinder_Rohr_link_joint" type="revolute">
+    <limit lower="-3.14000" upper="3.14000" effort="0.00000" velocity="0.00000"/>
+    <origin rpy="0.77586 0.00000 0.00000" xyz="0.00000 -0.22000 0.69499"/>
+    <parent link="Drehzapfen_link"/>
+    <child link="Hebezylinder_Rohr_link"/>
+    <axis xyz="1.00000 0.00000 0.00000"/>
+  </joint>
+  <joint name="Knickzylinder_Kolben_link_joint" type="revolute">
+    <limit lower="-3.14000" upper="3.14000" effort="0.00000" velocity="0.00000"/>
+    <origin rpy="-2.74577 1.57080 -1.23392" xyz="0.30639 0.04477 -0.00000"/>
+    <parent link="Ausleger_II_link"/>
+    <child link="Knickzylinder_Kolben_link"/>
+    <axis xyz="-1.00000 0.00000 0.00000"/>
+  </joint>
+  <joint name="Knickzylinder_Rohr_link_joint" type="revolute">
+    <limit lower="-3.14000" upper="3.14000" effort="0.00000" velocity="0.00000"/>
+    <origin rpy="-2.98661 -1.57080 0.00000" xyz="1.61246 0.12909 0.00000"/>
+    <parent link="Ausleger_I_link"/>
+    <child link="Knickzylinder_Rohr_link"/>
+    <axis xyz="1.00000 0.00000 0.00000"/>
+  </joint>
+  <joint name="Messerkopf-Schwenk_Link1_link_joint" type="revolute">
+    <limit lower="-3.14000" upper="3.14000" effort="0.00000" velocity="0.00000"/>
+    <origin rpy="1.89493 -1.57080 0.00000" xyz="2.53117 -0.01781 -0.00000"/>
+    <parent link="Ausleger_II_link"/>
+    <child link="Messerkopf-Schwenk_Link1_link"/>
+    <axis xyz="1.00000 0.00000 0.00000"/>
+  </joint>
+  <joint name="Messerkopf-Schwenk_Link2_link_joint" type="revolute">
+    <limit lower="-3.14000" upper="3.14000" effort="0.00000" velocity="0.00000"/>
+    <origin rpy="-2.60992 -1.57080 -3.01229" xyz="0.13783 -0.10523 -0.00250"/>
+    <parent link="Messerkopf-Schwenk_base_link"/>
+    <child link="Messerkopf-Schwenk_Link2_link"/>
+    <axis xyz="1.00000 0.00000 0.00000"/>
+  </joint>
+  <joint name="Messerkopf-Schwenkzylinder_Kolben_link_joint" type="revolute">
+    <limit lower="-3.14000" upper="3.14000" effort="0.00000" velocity="0.00000"/>
+    <origin rpy="0.68821 -0.00000 -3.14159" xyz="0.00750 0.00002 0.28472"/>
+    <parent link="Messerkopf-Schwenk_Link2_link"/>
+    <child link="Messerkopf-Schwenkzylinder_Kolben_link"/>
+    <axis xyz="-1.00000 0.00000 0.00000"/>
+  </joint>
+  <joint name="Messerkopf-Schwenkzylinder_Rohr_link_joint" type="revolute">
+    <limit lower="-3.14000" upper="3.14000" effort="0.00000" velocity="0.00000"/>
+    <origin rpy="3.09791 -1.57080 0.00000" xyz="1.58318 -0.23322 0.00019"/>
+    <parent link="Ausleger_II_link"/>
+    <child link="Messerkopf-Schwenkzylinder_Rohr_link"/>
+    <axis xyz="1.00000 0.00000 0.00000"/>
+  </joint>
+  <joint name="Messerkopf_link_joint" type="revolute">
+    <limit lower="-1.04667" upper="1.04667" effort="0.00000" velocity="0.00000"/>
+    <origin rpy="2.94854 -1.57080 0.59943" xyz="0.17693 -0.00007 0.00000"/>
+    <parent link="Messerkopf-Schwenk_base_link"/>
+    <child link="Messerkopf_link"/>
+    <axis xyz="0.00000 0.00000 1.00000"/>
+  </joint>
+  <joint name="Schwenkzylinder.001_link_joint" type="revolute">
+    <limit lower="-0.78500" upper="0.78500" effort="0.00000" velocity="0.00000"/>
+    <origin rpy="-0.00000 0.00000 -0.01644" xyz="2.71028 0.00005 -0.00000"/>
+    <parent link="Ausleger_II_link"/>
+    <child link="Messerkopf-Schwenk_base_link"/>
+    <axis xyz="0.00000 0.00000 1.00000"/>
+  </joint>
+  <link name="Ausleger-Schwenkzylinder_Kolben_link">
+    <visual name="Ausleger-Schwenkzylinder_Kolben">
+      <origin rpy="0.00000 0.00000 0.00000" xyz="0.00000 -0.00000 -0.00000"/>
+      <geometry>
+        <mesh filename="../meshes/stl/E-026502_FME 500_AP_stl.020.stl" scale="1.00000 1.00000 1.00000"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="Ausleger-Schwenkzylinder_Rohr_link">
+    <visual name="Ausleger-Schwenkzylinder_Rohr">
+      <origin rpy="-0.00000 0.00000 -0.00000" xyz="-0.00000 -0.00000 0.00000"/>
+      <geometry>
+        <mesh filename="../meshes/stl/E-026502_FME 500_AP_stl.019.stl" scale="1.00000 1.00000 1.00000"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="Ausleger_II_link">
+    <collision name="Ausleger_II_collision">
+      <origin rpy="0.00000 -0.00000 0.00000" xyz="1.52778 -0.08901 0.00000"/>
+      <geometry>
+        <box size="2.40000 0.35148 0.24781"/>
+      </geometry>
+    </collision>
+    <visual name="Ausleger_II">
+      <origin rpy="0.00000 -0.00000 0.00000" xyz="-0.00000 0.00000 -0.00000"/>
+      <geometry>
+        <mesh filename="../meshes/stl/E-026502_FME 500_AP_stl.006.stl" scale="1.00000 1.00000 1.00000"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="Ausleger_I_link">
+    <collision name="Ausleger_I_collision">
+      <origin rpy="0.00000 0.00000 -0.00000" xyz="1.37682 0.11409 0.00000"/>
+      <geometry>
+        <box size="2.30000 0.40000 0.24890"/>
+      </geometry>
+    </collision>
+    <visual name="Ausleger_I">
+      <origin rpy="0.00000 0.00000 0.00000" xyz="0.00000 0.00000 0.00000"/>
+      <geometry>
+        <mesh filename="../meshes/stl/E-026502_FME 500_AP_stl.004.stl" scale="1.00000 1.00000 1.00000"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="Drehzapfen_link">
+    <collision name="Drehzapfen_collision">
+      <origin rpy="0.00000 0.00000 0.00000" xyz="0.04191 -0.05484 0.63348"/>
+      <geometry>
+        <box size="0.34021 0.43031 0.50000"/>
+      </geometry>
+    </collision>
+    <visual name="Drehzapfen">
+      <origin rpy="0.00000 0.00000 0.00000" xyz="0.00000 0.00000 0.00000"/>
+      <geometry>
+        <mesh filename="../meshes/stl/E-026502_FME 500_AP_stl.002.stl" scale="1.00000 1.00000 1.00000"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="Frontrahmen_link">
+    <collision name="Frontrahmen_collision">
+      <origin rpy="0.00000 0.00000 0.00000" xyz="0.18231 -0.01350 0.14256"/>
+      <geometry>
+        <box size="0.60000 1.61698 0.45000"/>
+      </geometry>
+    </collision>
+    <collision name="Frontrahmen_collision.000">
+      <origin rpy="0.00000 0.00000 0.00000" xyz="-0.49687 -0.01350 0.31823"/>
+      <geometry>
+        <box size="0.76899 3.00000 1.80000"/>
+      </geometry>
+    </collision>
+    <visual name="Frontrahmen">
+      <origin rpy="0.00000 0.00000 0.00000" xyz="0.00000 0.00000 0.00000"/>
+      <geometry>
+        <mesh filename="../meshes/stl/E-026502_FME 500_AP_stl.003.stl" scale="1.00000 1.00000 1.00000"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="Hebezylinder_Kolben_link">
+    <visual name="Hebezylinder_Kolben">
+      <origin rpy="-0.00000 -0.00000 -0.00000" xyz="0.00000 -0.00000 0.00000"/>
+      <geometry>
+        <mesh filename="../meshes/stl/E-026502_FME 500_AP_stl.018.stl" scale="1.00000 1.00000 1.00000"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="Hebezylinder_Rohr_link">
+    <visual name="Hebezylinder_Rohr">
+      <origin rpy="-0.00000 0.00000 0.00000" xyz="-0.00000 -0.00000 -0.00000"/>
+      <geometry>
+        <mesh filename="../meshes/stl/E-026502_FME 500_AP_stl.017.stl" scale="1.00000 1.00000 1.00000"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="Knickzylinder_Kolben_link">
+    <visual name="Knickzylinder_Kolben">
+      <origin rpy="0.00000 -0.00000 -0.00000" xyz="-0.00000 -0.00000 0.00000"/>
+      <geometry>
+        <mesh filename="../meshes/stl/E-026502_FME 500_AP_stl.016.stl" scale="1.00000 1.00000 1.00000"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="Knickzylinder_Rohr_link">
+    <visual name="Knickzylinder_Rohr">
+      <origin rpy="0.00000 0.00000 -0.00000" xyz="-0.00000 -0.00000 -0.00000"/>
+      <geometry>
+        <mesh filename="../meshes/stl/E-026502_FME 500_AP_stl.015.stl" scale="1.00000 1.00000 1.00000"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="Messerkopf-Schwenk_Link1_link">
+    <visual name="Messerkopf-Schwenk_Link1">
+      <origin rpy="-0.00000 0.00000 -0.00000" xyz="0.00000 0.00000 -0.00000"/>
+      <geometry>
+        <mesh filename="../meshes/stl/E-026502_FME 500_AP_stl.012.stl" scale="1.00000 1.00000 1.00000"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="Messerkopf-Schwenk_Link2_link">
+    <visual name="Messerkopf-Schwenk_Link2">
+      <origin rpy="-0.00000 -0.00000 0.00000" xyz="-0.00000 0.00000 0.00000"/>
+      <geometry>
+        <mesh filename="../meshes/stl/E-026502_FME 500_AP_stl.011.stl" scale="1.00000 1.00000 1.00000"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="Messerkopf-Schwenk_base_link">
+    <visual name="Messerkopf-Schwenk_base">
+      <origin rpy="0.00000 -0.00000 0.00000" xyz="0.00000 0.00000 0.00000"/>
+      <geometry>
+        <mesh filename="../meshes/stl/E-026502_FME 500_AP_stl.001.stl" scale="1.00000 1.00000 1.00000"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="Messerkopf-Schwenkzylinder_Kolben_link">
+    <visual name="Messerkopf-Schwenkzylinder_Kolben">
+      <origin rpy="-0.00000 -0.00000 -0.00000" xyz="0.00000 0.00000 0.00000"/>
+      <geometry>
+        <mesh filename="../meshes/stl/E-026502_FME 500_AP_stl.014.stl" scale="1.00000 1.00000 1.00000"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="Messerkopf-Schwenkzylinder_Rohr_link">
+    <visual name="Messerkopf-Schwenkzylinder_Rohr">
+      <origin rpy="-0.00000 0.00000 0.00000" xyz="-0.00000 -0.00000 0.00000"/>
+      <geometry>
+        <mesh filename="../meshes/stl/E-026502_FME 500_AP_stl.013.stl" scale="1.00000 1.00000 1.00000"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="Messerkopf_link">
+    <collision name="Messerkopf_collision">
+      <origin rpy="-0.00000 -0.00000 -0.00000" xyz="0.37816 -0.03350 0.24927"/>
+      <geometry>
+        <box size="1.06631 1.45698 0.55755"/>
+      </geometry>
+    </collision>
+    <visual name="Messerkopf">
+      <origin rpy="-0.00000 -0.00000 -0.00000" xyz="-0.00000 -0.00000 0.00000"/>
+      <material name="Material.001"/>
+      <geometry>
+        <mesh filename="../meshes/stl/E-026502_FME 500_AP_stl.009.stl" scale="1.00000 1.00000 1.00000"/>
+      </geometry>
+    </visual>
+  </link>
+  <material name="Material.001">
+    <color rgba="0.80000 0.80000 0.80000 1.00000"/>
+  </material>
+</robot>

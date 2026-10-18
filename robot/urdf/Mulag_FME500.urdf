@@ -1,0 +1,162 @@
+<robot name="Unimog_Mulag_FME500" version="1.0">
+  <joint name="Drehzapfen_joint" type="revolute">
+    <dynamics damping="50.00000"/>
+    <limit lower="-1.57000" upper="0.52000" effort="50.00000" velocity="2.00000"/>
+    <origin rpy="0.00000 0.00000 0.00000" xyz="0.59497 0.00002 0.05046"/>
+    <parent link="Frontrahmen"/>
+    <child link="Drehzapfen"/>
+    <axis xyz="0.00000 0.00000 1.00000"/>
+  </joint>
+  <joint name="Ausleger_I_joint" type="revolute">
+    <dynamics damping="50.00000"/>
+    <limit lower="-0.52000" upper="0.52000" effort="50.00000" velocity="2.00000"/>
+    <origin rpy="-1.57080 -0.60387 -1.57080" xyz="0.00000 -0.06001 0.98999"/>
+    <parent link="Drehzapfen"/>
+    <child link="Ausleger_I"/>
+    <axis xyz="0.00000 0.00000 1.00000"/>
+  </joint>
+  <joint name="Ausleger_II_joint" type="revolute">
+    <dynamics damping="50.00000"/>
+    <limit lower="-0.52000" upper="0.52000" effort="50.00000" velocity="2.00000"/>
+    <origin rpy="-0.00000 0.00000 1.78473" xyz="2.74997 -0.00009 0.00000"/>
+    <parent link="Ausleger_I"/>
+    <child link="Ausleger_II"/>
+    <axis xyz="0.00000 0.00000 1.00000"/>
+  </joint>
+  <joint name="Messerkopf-Schwenk_joint" type="revolute">
+    <dynamics damping="50.00000"/>
+    <limit lower="-0.52000" upper="0.52000" effort="50.00000" velocity="2.00000"/>
+    <origin rpy="0.00000 -0.00000 -0.01644" xyz="2.71027 0.00003 0.00000"/>
+    <parent link="Ausleger_II"/>
+    <child link="Messerkopf-Schwenk"/>
+    <axis xyz="0.00000 0.00000 1.00000"/>
+  </joint>
+  <joint name="Messerkopf_joint" type="revolute">
+    <dynamics damping="50.00000"/>
+    <limit lower="-1.57000" upper="1.57000" effort="50.00000" velocity="2.00000"/>
+    <origin rpy="3.08430 -1.57080 0.46367" xyz="0.17694 -0.00006 0.00000"/>
+    <parent link="Messerkopf-Schwenk"/>
+    <child link="Messerkopf"/>
+    <axis xyz="0.00000 0.00000 1.00000"/>
+  </joint>
+  
+
+  <link name="Frontrahmen">
+    <collision name="Frontrahmen_collision">
+      <origin rpy="0.00000 0.00000 0.00000" xyz="0.35076 -0.01350 0.18981"/>
+      <geometry>
+        <box size="0.70000 1.61698 0.55000"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <inertia ixx="29.29286" ixy="-0.51650" ixz="0.52813" iyy="11.54738" iyz="0.57652" izz="32.68425"/>
+      <origin rpy="0.00000 0.00000 0.00000" xyz="0.24989 -0.04141 0.24252"/>
+      <mass value="226.20000"/>
+    </inertial>
+    <visual name="Frontrahmen._vis">
+      <origin rpy="0.00000 0.00000 0.00000" xyz="0.00000 0.00000 0.00000"/>
+      <material name="Yellow"/>
+      <geometry>
+        <mesh filename="../meshes/stl/E-026502_FME 500_AP_stl.003.stl" scale="1.00000 1.00000 1.00000"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="Drehzapfen">
+    <collision name="Drehzapfen_collision">
+      <origin rpy="0.00000 0.00000 0.00000" xyz="0.04191 -0.05484 0.68246"/>
+      <geometry>
+        <box size="0.34021 0.43031 0.50000"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <inertia ixx="4.53844" ixy="0.04055" ixz="0.20085" iyy="4.43113" iyz="0.30594" izz="0.64685"/>
+      <origin rpy="0.00000 0.00000 0.00000" xyz="0.00768 -0.05016 0.57203"/>
+      <mass value="78.00000"/>
+    </inertial>
+    <visual name="Drehzapfen_vis">
+      <origin rpy="0.00000 0.00000 0.00000" xyz="0.00000 0.00000 0.00000"/>
+      <material name="Yellow"/>
+      <geometry>
+        <mesh filename="../meshes/stl/E-026502_FME 500_AP_stl.002.stl" scale="1.00000 1.00000 1.00000"/>
+      </geometry>
+    </visual>
+  </link>
+    <link name="Ausleger_I">
+    <collision name="Ausleger_I_collision">
+      <origin rpy="-0.00000 -0.00000 -0.00000" xyz="1.35040 0.12224 0.00000"/>
+      <geometry>
+        <box size="2.20000 0.40000 0.24890"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <inertia ixx="79.71091" ixy="0.00829" ixz="-0.00674" iyy="26.11404" iyz="37.18349" izz="53.93508"/>
+      <origin rpy="0.00000 0.00000 0.00000" xyz="1.37548 0.00615 -0.00003"/>
+      <mass value="109.20000"/>
+    </inertial>
+    <visual name="Ausleger_I_vis">
+      <origin rpy="-0.00000 0.00000 -0.00000" xyz="-0.00000 -0.00000 -0.00000"/>
+      <material name="Yellow"/>
+      <geometry>
+        <mesh filename="../meshes/stl/E-026502_FME 500_AP_stl.004.stl" scale="1.00000 1.00000 1.00000"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="Ausleger_II">
+    <collision name="Ausleger_II_collision">
+      <origin rpy="-0.00000 0.00000 -0.00000" xyz="1.51446 -0.13969 0.00000"/>
+      <geometry>
+        <box size="2.30000 0.35148 0.24781"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <inertia ixx="51.21949" ixy="-0.00393" ixz="-0.00687" iyy="44.12979" iyz="-17.19674" izz="7.26963"/>
+      <origin rpy="0.00000 0.00000 0.00000" xyz="1.16587 -0.09974 0.00014"/>
+      <mass value="85.50000"/>
+    </inertial>
+    <visual name="Ausleger_II_vis">
+      <origin rpy="-0.00000 0.00000 -0.00000" xyz="-0.00000 -0.00000 -0.00000"/>
+      <material name="Yellow"/>
+      <geometry>
+        <mesh filename="../meshes/stl/E-026502_FME 500_AP_stl.006.stl" scale="1.00000 1.00000 1.00000"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="Messerkopf-Schwenk">
+    <inertial>
+      <inertia ixx="0.09130" ixy="-0.00095" ixz="0.00186" iyy="0.08009" iyz="-0.00393" izz="0.09989"/>
+      <origin rpy="0.00000 0.00000 0.00000" xyz="0.08365 -0.00278 0.00014"/>
+      <mass value="15.60000"/>
+    </inertial>
+    <visual name="Messerkopf-Schwenk_base">
+      <origin rpy="-0.00000 0.00000 0.00000" xyz="0.00000 -0.00000 -0.00000"/>
+      <material name="Yellow"/>
+      <geometry>
+        <mesh filename="../meshes/stl/E-026502_FME 500_AP_stl.001.stl" scale="1.00000 1.00000 1.00000"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="Messerkopf">
+    <collision name="Messerkopf_collision">
+      <origin rpy="-0.00000 0.00000 0.00000" xyz="0.37816 -0.03350 0.24927"/>
+      <geometry>
+        <box size="1.06631 1.45698 0.55755"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <inertia ixx="36.79160" ixy="2.31614" ixz="-2.38571" iyy="15.97443" iyz="0.98712" izz="46.45072"/>
+      <origin rpy="0.00000 0.00000 0.00000" xyz="0.34269 -0.02063 0.19496"/>
+      <mass value="218.39999"/>
+    </inertial>
+    <visual name="Messerkopf_vis">
+      <origin rpy="-0.00000 0.00000 -0.00000" xyz="0.00000 0.00000 0.00000"/>
+      <material name="Yellow"/>
+      <geometry>
+        <mesh filename="../meshes/stl/E-026502_FME 500_AP_stl.009.stl" scale="1.00000 1.00000 1.00000"/>
+      </geometry>
+    </visual>
+  </link>
+
+  <material name="Yellow">
+    <color rgba="0.75686 0.12549 0.00392 1.00000"/>
+  </material>
+</robot>

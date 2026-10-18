@@ -1,0 +1,64 @@
+component hyd_valve_4way
+% 4/3 directional valve with first-order control; single component ONLY.
+
+nodes
+  P = foundation.hydraulic.hydraulic;
+  T = foundation.hydraulic.hydraulic;
+  A = foundation.hydraulic.hydraulic;
+  B = foundation.hydraulic.hydraulic;
+end
+
+inputs
+  Uin = {0,'V'};   % reference signal
+end
+
+outputs
+  U = {0,'V'};     % filtered spool signal
+end
+
+parameters
+  Cv  = {7.4e-8,'m^3/(s*V*Pa^0.5)'};
+  tau = {0.07,'s'};
+end
+
+variables
+  % Pressure differences
+  dP_PA = {0,'Pa'}; dP_BT = {0,'Pa'};
+  dP_PB = {0,'Pa'}; dP_AT = {0,'Pa'};
+  
+  % Flow rates (added these)
+  QPA = {0,'m^3/s'}; QBT = {0,'m^3/s'};
+  QPB = {0,'m^3/s'}; QAT = {0,'m^3/s'};
+  
+  % State variable
+  Ustate = {0,'V'};
+end
+
+branches
+  QPA : P.q -> A.q;
+  QBT : B.q -> T.q;
+  QPB : P.q -> B.q;
+  QAT : A.q -> T.q;
+end
+
+equations
+  tau * Ustate.der == Uin - Ustate;
+  U == Ustate;
+
+  dP_PA == P.p - A.p;   dP_BT == B.p - T.p;
+  dP_PB == P.p - B.p;   dP_AT == A.p - T.p;
+
+  if U > 0
+    QPA == Cv * U * sign(dP_PA) * sqrt(abs(dP_PA));
+    QBT == Cv * U * sign(dP_BT) * sqrt(abs(dP_BT));
+    QPB == {0,'m^3/s'}; QAT == {0,'m^3/s'};
+  elseif U < 0
+    QPB == Cv * (-U) * sign(dP_PB) * sqrt(abs(dP_PB));
+    QAT == Cv * (-U) * sign(dP_AT) * sqrt(abs(dP_AT));
+    QPA == {0,'m^3/s'}; QBT == {0,'m^3/s'};
+  else
+    QPA == {0,'m^3/s'}; QBT == {0,'m^3/s'};
+    QPB == {0,'m^3/s'}; QAT == {0,'m^3/s'};
+  end
+end
+end

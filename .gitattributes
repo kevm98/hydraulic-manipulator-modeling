@@ -1,0 +1,6 @@
+*.csv text eol=lf
+docs/report/IEEEtran.cls linguist-vendored
+docs/report/IEEEtran.bst linguist-vendored
+docs/report/figures/*.svg linguist-generated
+archive/** linguist-vendored
+robot/meshes/** linguist-vendored

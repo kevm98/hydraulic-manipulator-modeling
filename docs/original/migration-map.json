@@ -1,0 +1,1155 @@
+{
+  "files": [
+    {
+      "source": "meshes/stl/E-026502_FME 500_AP_stl.014.stl",
+      "target": "robot/meshes/stl/E-026502_FME 500_AP_stl.014.stl",
+      "sha256": "3d186889770f2040e4c4641c310a478e30f1249dd49857a2e6dfbca9f00f891e",
+      "modified": false
+    },
+    {
+      "source": "meshes/stl/E-026502_FME 500_AP_stl.001.stl",
+      "target": "robot/meshes/stl/E-026502_FME 500_AP_stl.001.stl",
+      "sha256": "d7b5b04c9f02af1303c1b16f1138f5b5556f2d029c0be98f5cc8f90d5aab00aa",
+      "modified": false
+    },
+    {
+      "source": "meshes/stl/E-026502_FME 500_AP_stl.015.stl",
+      "target": "robot/meshes/stl/E-026502_FME 500_AP_stl.015.stl",
+      "sha256": "d336c1c979013e7f464c0a621ef3c481bcd9783fe337bed497919cc7f6d18bae",
+      "modified": false
+    },
+    {
+      "source": "meshes/stl/E-026502_FME 500_AP_stl.003.stl",
+      "target": "robot/meshes/stl/E-026502_FME 500_AP_stl.003.stl",
+      "sha256": "439b2a6e67a0ae29a10070b2a74b0de226c058423b198b1003a6ffed95022110",
+      "modified": false
+    },
+    {
+      "source": "meshes/stl/E-026502_FME 500_AP_stl.017.stl",
+      "target": "robot/meshes/stl/E-026502_FME 500_AP_stl.017.stl",
+      "sha256": "a0ab359f0929c087857b673c00974cd56ef55d38cdf5168890f2b95e19ee7fd0",
+      "modified": false
+    },
+    {
+      "source": "meshes/stl/E-026502_FME 500_AP_stl.016.stl",
+      "target": "robot/meshes/stl/E-026502_FME 500_AP_stl.016.stl",
+      "sha256": "c89e76258eaabf8ea373ef5b20a0af1550921a4b45c3ca55d249bdc703898923",
+      "modified": false
+    },
+    {
+      "source": "meshes/stl/E-026502_FME 500_AP_stl.002.stl",
+      "target": "robot/meshes/stl/E-026502_FME 500_AP_stl.002.stl",
+      "sha256": "82ccb3b2290529141c7cada47b21eec3c965d71c91ce6fb7b1367de6e2e690ba",
+      "modified": false
+    },
+    {
+      "source": "meshes/stl/E-026502_FME 500_AP_stl.006.stl",
+      "target": "robot/meshes/stl/E-026502_FME 500_AP_stl.006.stl",
+      "sha256": "06054fdfa2d3570f5dfcc863d1c0a6cfd1c5ee346a6bd4d62610b0910cd11a1a",
+      "modified": false
+    },
+    {
+      "source": "meshes/stl/E-026502_FME 500_AP_stl.012.stl",
+      "target": "robot/meshes/stl/E-026502_FME 500_AP_stl.012.stl",
+      "sha256": "6de1f70041b8050d66dfc15f8e52aa1719541221d473a5b63034a2165e3aa68c",
+      "modified": false
+    },
+    {
+      "source": "meshes/stl/E-026502_FME 500_AP_stl.013.stl",
+      "target": "robot/meshes/stl/E-026502_FME 500_AP_stl.013.stl",
+      "sha256": "e7ec19080496bd9ad43c5d80d1f8715370df9e6323560e59ea9b38ce4bf3e79a",
+      "modified": false
+    },
+    {
+      "source": "meshes/stl/E-026502_FME 500_AP_stl.011.stl",
+      "target": "robot/meshes/stl/E-026502_FME 500_AP_stl.011.stl",
+      "sha256": "846e69dd93f23ee9c81defb2331c2c5d6487862a656c5db2ff3ba7015f7a0511",
+      "modified": false
+    },
+    {
+      "source": "meshes/stl/E-026502_FME 500_AP_stl.004.stl",
+      "target": "robot/meshes/stl/E-026502_FME 500_AP_stl.004.stl",
+      "sha256": "15061e97cd91ab5bbb326173a2a529883f4601ce3ff2a148d893c52b4699883b",
+      "modified": false
+    },
+    {
+      "source": "meshes/stl/E-026502_FME 500_AP_stl.009.stl",
+      "target": "robot/meshes/stl/E-026502_FME 500_AP_stl.009.stl",
+      "sha256": "8f47bb4fff3c3b50c7752f1b9aaa2e842921823e755462bbbd753f3c17c779ae",
+      "modified": false
+    },
+    {
+      "source": "meshes/stl/E-026502_FME 500_AP_stl.020.stl",
+      "target": "robot/meshes/stl/E-026502_FME 500_AP_stl.020.stl",
+      "sha256": "9c32075725cf495b7ffb87d1109457e4824419cac4de2c5f419c2a4575216c11",
+      "modified": false
+    },
+    {
+      "source": "meshes/stl/E-026502_FME 500_AP_stl.018.stl",
+      "target": "robot/meshes/stl/E-026502_FME 500_AP_stl.018.stl",
+      "sha256": "a9a8153bb584d6e0484cb68b67ce4dd0116144c0a17070232736802311ed0abd",
+      "modified": false
+    },
+    {
+      "source": "meshes/stl/E-026502_FME 500_AP_stl.019.stl",
+      "target": "robot/meshes/stl/E-026502_FME 500_AP_stl.019.stl",
+      "sha256": "098a3471eeaff9edcb8623ebd43a5e008335c4e890d489e2aa43876ee255ae36",
+      "modified": false
+    },
+    {
+      "source": "Mulag_FME_500.urdf",
+      "target": "robot/urdf/Mulag_FME_500.urdf",
+      "sha256": "35d5180405a5c668ecb285f2117596707dbfa494ed76fd4350c89a3bae0d9f70",
+      "modified": false
+    },
+    {
+      "source": "Mulag_FME500.urdf",
+      "target": "robot/urdf/Mulag_FME500.urdf",
+      "sha256": "ede95f9a94be74fedee9f0a170c97ce3c66a9e4ce9379bccb80f7c3559b17713",
+      "modified": false
+    },
+    {
+      "source": "Mulag_FME_500_with_cylinder.urdf",
+      "target": "robot/urdf/Mulag_FME_500_with_cylinder.urdf",
+      "sha256": "db8376fe4ab9167d15d1be90dc2ac227808329eed5723c285e879eced3c17e94",
+      "modified": false
+    },
+    {
+      "source": "Joint_References/joint_accelerations.mat",
+      "target": "data/references/joint_accelerations.mat",
+      "sha256": "3871d1b26b8c6bb28706f660e56f940a64a284f6cbf0bca89337e6c2cc48fa37",
+      "modified": false
+    },
+    {
+      "source": "Joint_References/joint_references_dq.mat",
+      "target": "data/references/joint_references_dq.mat",
+      "sha256": "a85e6f9303efad03e3977de2a00226128a32cdda0ebdb1c1a7d5a3a2925b3780",
+      "modified": false
+    },
+    {
+      "source": "Joint_References/JointName_references.mat",
+      "target": "data/references/JointName_references.mat",
+      "sha256": "c733e3796fdb72fe0a083a1448923cfc495eb63b1ce292546dd7bb52e389b735",
+      "modified": false
+    },
+    {
+      "source": "Joint_References/mulag_ground_pose.mat",
+      "target": "data/references/mulag_ground_pose.mat",
+      "sha256": "ff2775985e1b820f125db8eecf17672eddac715e305b3c0bdc09121d07aff252",
+      "modified": false
+    },
+    {
+      "source": "Joint_References/JointPosition_references.mat",
+      "target": "data/references/JointPosition_references.mat",
+      "sha256": "940d408eed63d4e74ec53d74afa29a54bfc26c4880fd647d6b65e316729cccce",
+      "modified": false
+    },
+    {
+      "source": "Joint_References/Drehzapfen_joint_references.mat",
+      "target": "data/references/Drehzapfen_joint_references.mat",
+      "sha256": "4a995fa691d9a516a9da72054d210579f04c05c6e148a7fef0865baa02d6b6c7",
+      "modified": false
+    },
+    {
+      "source": "Joint_References/joint_velocities.mat",
+      "target": "data/references/joint_velocities.mat",
+      "sha256": "5736f2019eb9290ad249a2816d4f0a818cb1ef99c0eada0229b1534bddf90bb5",
+      "modified": false
+    },
+    {
+      "source": "Joint_References/joint_references.mat",
+      "target": "data/references/joint_references.mat",
+      "sha256": "263b961ed85b503cc9e7caa5ea715e64310fac71705dec162a559afcf20092b2",
+      "modified": false
+    },
+    {
+      "source": "Joint_References/Messerkopf_joint_references.mat",
+      "target": "data/references/Messerkopf_joint_references.mat",
+      "sha256": "b38915f165f7ac390f16a248c61ff71446db110298899a93b167aed9bb989fd9",
+      "modified": false
+    },
+    {
+      "source": "Joint_References/Ausleger_I_joint_references.mat",
+      "target": "data/references/Ausleger_I_joint_references.mat",
+      "sha256": "a1e8a85396d724df172dfc3cb06ee04ab7b4dad6c0a99c506905a97ed888418e",
+      "modified": false
+    },
+    {
+      "source": "Joint_References/mower_trajectory.mat",
+      "target": "data/references/mower_trajectory.mat",
+      "sha256": "16c142492f55c88990702f4557eb7b14a2c1c12697f0bec4cd872608979df997",
+      "modified": false
+    },
+    {
+      "source": "Joint_References/hydraulic_params_initial.mat",
+      "target": "data/references/hydraulic_params_initial.mat",
+      "sha256": "c77a345cc6e8abe3618cce06fdb4d64267596b28464a77942fe42393061362e9",
+      "modified": false
+    },
+    {
+      "source": "Joint_References/joint_references_ddq.mat",
+      "target": "data/references/joint_references_ddq.mat",
+      "sha256": "365f0b6a5978f53f6cb7f610db47bd08d6e83b29d377902a7c51706c4d36fcaf",
+      "modified": false
+    },
+    {
+      "source": "Joint_References/Messerkopf-Schwenk_joint_references.mat",
+      "target": "data/references/Messerkopf-Schwenk_joint_references.mat",
+      "sha256": "05a7b0ffd75e19d52454dfbe075732d18eb20441ee993c3ea2441c2a8b0bfaf5",
+      "modified": false
+    },
+    {
+      "source": "Joint_References/ee_trajectory.mat",
+      "target": "data/references/ee_trajectory.mat",
+      "sha256": "f9f43993b5fdcfe6455525fc966f02bd5c831f6ad269403d07809d588eef5c78",
+      "modified": false
+    },
+    {
+      "source": "Joint_References/joint_positions.mat",
+      "target": "data/references/joint_positions.mat",
+      "sha256": "22e5da8c1b78d24d62a338377a62601d50ce00e38faff040061100e3d416f0b5",
+      "modified": false
+    },
+    {
+      "source": "Joint_References/dynamics_tables.mat",
+      "target": "data/references/dynamics_tables.mat",
+      "sha256": "4429c8bb32e7357230b130de26b3f408a81105c94725c45506578b8dda7f25b2",
+      "modified": false
+    },
+    {
+      "source": "Joint_References/Ausleger_II_joint_references.mat",
+      "target": "data/references/Ausleger_II_joint_references.mat",
+      "sha256": "9e18991d794a9e4135a775ee7c9b231daf889f679816c0128f2b68bc5b2de28e",
+      "modified": false
+    },
+    {
+      "source": "Joint_References/joint_references_s_curves.mat",
+      "target": "data/references/joint_references_s_curves.mat",
+      "sha256": "c9863b2681a2fa2f656a0e28be97b784440e30f62604f076dbc920d7dc31538b",
+      "modified": false
+    },
+    {
+      "source": "Delay_metrics/myDelays.mat",
+      "target": "data/results/myDelays.mat",
+      "sha256": "c51611334bde4b0d9a72592852a6b69a204c2bb28fe2f4515378c11da9f117e2",
+      "modified": false
+    },
+    {
+      "source": "+custom_component/hyd_valve_4way.ssc",
+      "target": "src/+custom_component/hyd_valve_4way.ssc",
+      "sha256": "be25bc4a55753cb5f308e4c12dbf728cb7aaa183987b77353aab5ee4ba1c09ed",
+      "modified": false
+    },
+    {
+      "source": "+custom_component/hyd_cylinder.ssc",
+      "target": "src/+custom_component/hyd_cylinder.ssc",
+      "sha256": "f8869a63ca6024191e545a2c0ed8225d84bcac7862c33c8bd851ea3b9238d53c",
+      "modified": false
+    },
+    {
+      "source": "inverse_kinematics_with_cylinders.m",
+      "target": "src/kinematics/inverse_kinematics_with_cylinders.m",
+      "sha256": "d75e2ef0c3c0dad7df6f50287931b1609b1eb6f6d29903319fcef1b33e8fd756",
+      "modified": false
+    },
+    {
+      "source": "Link_Poses.m",
+      "target": "src/kinematics/Link_Poses.m",
+      "sha256": "d770f1bc50343490967a3aa8639152e97bba328ef0615d7c6701205d4f18898d",
+      "modified": false
+    },
+    {
+      "source": "cylinder_actuator_vertices.m",
+      "target": "src/kinematics/cylinder_actuator_vertices.m",
+      "sha256": "be481eb60ae37a7337fe51fcff8eb57bc9680c32f3f0ec3a767fbe963d1bac67",
+      "modified": false
+    },
+    {
+      "source": "kinematic_model_export.m",
+      "target": "src/kinematics/kinematic_model_export.m",
+      "sha256": "3a3e183a187104bdeed76b13820b5454e52bc5cffec2a31fd72e8baf37d5ed51",
+      "modified": false
+    },
+    {
+      "source": "urdf_import.m",
+      "target": "src/kinematics/urdf_import.m",
+      "sha256": "99435ab77da99ed0477d5e51878c4ac1d70dc84844087b0031fd7e87d198b3a6",
+      "modified": false
+    },
+    {
+      "source": "IK_solver/IK_solver_kinematic.m",
+      "target": "src/kinematics/IK_solver_kinematic.m",
+      "sha256": "5587a35b8aa918403ce30dbd590fae27dd71d4cdc72b01f9e30009224b787703",
+      "modified": false
+    },
+    {
+      "source": "Models/IK_solver_kinematic.m",
+      "target": "archive/scripts/IK_solver_kinematic_variant.m",
+      "sha256": "61892240e55ba3961d31b6b6f224021c41e38b64985e9e1a7ddb7f33ee06e09a",
+      "modified": false
+    },
+    {
+      "source": "Delay_Metrics.m",
+      "target": "src/analysis/Delay_Metrics.m",
+      "sha256": "78afa3d3da719fc1c7c9187655adbd5b73e60d6d6c7a707e2e7cb31ba7869f20",
+      "modified": false
+    },
+    {
+      "source": "plot_mulag_path.m",
+      "target": "src/analysis/plot_mulag_path.m",
+      "sha256": "827f2778eeca7b6702ac5bc61f214bd381d32a060cd1c545e875ec25ca152047",
+      "modified": false
+    },
+    {
+      "source": "Delay_metrics/delay_plots.m",
+      "target": "archive/scripts/delay_plots.m",
+      "sha256": "44b6e7f9e192c617b1b70b54c9029558caac407294d76b31c65baabfd26fc38e",
+      "modified": false
+    },
+    {
+      "source": "Delay_metrics/delaysvserror.m",
+      "target": "archive/scripts/delaysvserror.m",
+      "sha256": "378943a0ad47c460acaf41c13de747e4a412f0dc85bc52f0d2630ff3f003e4fb",
+      "modified": false
+    },
+    {
+      "source": "default_cfg.m",
+      "target": "src/parameters/default_cfg.m",
+      "sha256": "1d9209ace2d1b3452e4ed741a9b8f34aa5380b567dc52fe852a645f76f3bef83",
+      "modified": false
+    },
+    {
+      "source": "makeHydroParams.m",
+      "target": "src/parameters/makeHydroParams.m",
+      "sha256": "ed1caa255d97edd662f457ca9063dbff55a2b4703a8610776b3be254802fabc1",
+      "modified": false
+    },
+    {
+      "source": "mulag.m",
+      "target": "src/robot/mulag.m",
+      "sha256": "4420fa504550d01052732e526281a2f3c7f1d034e7eea9d10633b6777f873c75",
+      "modified": false
+    },
+    {
+      "source": "loadMulagFME500.m",
+      "target": "src/robot/loadMulagFME500.m",
+      "sha256": "6a005cdd5a452ca0ed8be7637a5d4b18c28824382301d6f1ef05be3d2201cd96",
+      "modified": false
+    },
+    {
+      "source": "untitled.m",
+      "target": "archive/scripts/untitled.m",
+      "sha256": "f1abea647b601add44d4622e83c3939f078b522651a00d86e1dfe434e7ca834d",
+      "modified": false
+    },
+    {
+      "source": "untitled5.m",
+      "target": "archive/scripts/untitled5.m",
+      "sha256": "ead1830ee9f3932e8a8f8f42bffa5164af86ea94d6576d1d58701f4a50a43bed",
+      "modified": false
+    },
+    {
+      "source": "untitled2.m",
+      "target": "archive/scripts/untitled2.m",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "modified": false
+    },
+    {
+      "source": "untitled6.m",
+      "target": "archive/scripts/untitled6.m",
+      "sha256": "5d0d07d9e6c5f66476d53d44623ad50667933bcafa3a18a776e579d2b90ea612",
+      "modified": false
+    },
+    {
+      "source": "untitled3.m",
+      "target": "archive/scripts/untitled3.m",
+      "sha256": "04ed7b321c19d9ca5062077294e4414ce789613a50aed90aea0fd2ed38c4d6d9",
+      "modified": false
+    },
+    {
+      "source": "untitled4.m",
+      "target": "archive/scripts/untitled4.m",
+      "sha256": "18229510cad6e3027adcb62937f86450f26445bfca259f8abaf76ba7b979ddba",
+      "modified": false
+    },
+    {
+      "source": "IK_solver/untitled7.m",
+      "target": "archive/scripts/untitled7.m",
+      "sha256": "1bf135d0d61d04a3d391a12964c33b9d25a1413158dfb2952681e88408f66082",
+      "modified": false
+    },
+    {
+      "source": "cylinder_2.stl",
+      "target": "robot/meshes/stl/cylinder_2.stl",
+      "sha256": "0884dd9d640a8cc8cb61677cb85a963302dc35780fff03734e1b49319945e9f7",
+      "modified": false
+    },
+    {
+      "source": "plot.fig",
+      "target": "archive/figures/plot.fig",
+      "sha256": "fc2b298e2775c119963037e862dd033d764eb41a01d249a75213a69fb4d9b443",
+      "modified": false
+    },
+    {
+      "source": "inverse_kinematics_plots.fig",
+      "target": "archive/figures/inverse_kinematics_plots.fig",
+      "sha256": "d7cc0e8fd21734b16972a10e1cca53c792937912b76197c5335a24dc2771c046",
+      "modified": false
+    },
+    {
+      "source": "Best_and_worst_cases.fig",
+      "target": "archive/figures/Best_and_worst_cases.fig",
+      "sha256": "185e9d0fc7e6bf7e40bb3fea3e62b1d17fe06991b33864ebd7dd28a93f16a049",
+      "modified": false
+    },
+    {
+      "source": "Best_and_worst_cases.jpg",
+      "target": "archive/figures/Best_and_worst_cases.jpg",
+      "sha256": "d087036f3394c8fd78a5cbd02a0d9dd05b52a1106e7d672ebbed83d1990596c9",
+      "modified": false
+    },
+    {
+      "source": "README.md",
+      "target": "docs/original/README.gitlab.md",
+      "sha256": "00d8e863fb341cab387011f0e830a07def8d0c09a9648666f043bc059a56d581",
+      "modified": false
+    },
+    {
+      "source": "Papers/OM_FME500_2016-01_en.pdf",
+      "target": "docs/original/OM_FME500_2016-01_en.pdf",
+      "sha256": "d624f4df836613d72214099600f61e1ceb9a974a49d39d6ffc599ff658ba6191",
+      "modified": false
+    },
+    {
+      "source": "Papers/Mechanical_Hydraulic_Modeling_of_ an_Embankment_Mower_ in_Simscape .pdf",
+      "target": "docs/presentations/mechanical_hydraulic_modeling.pdf",
+      "sha256": "180a670e758858b472e377afb6b69a957e1a5403900d3aa3bf22855acf122709",
+      "modified": false
+    },
+    {
+      "source": "Papers/Mechanical_Hydraulic_Modeling_of_ an_Embankment_Mower_ in_Simscape .pptx",
+      "target": "docs/presentations/mechanical_hydraulic_modeling.pptx",
+      "sha256": "4416bb58b3d94d3adfe8a6a96cbeb100a27f1ede3fd5319d86a61b52ede733c7",
+      "modified": false
+    },
+    {
+      "source": "Images/Mulag_FME500.PNG",
+      "target": "docs/assets/Mulag_FME500.PNG",
+      "sha256": "12075d114d454a0a47e2301c18603d8f0576814f1bad253418b0fb4083cee94e",
+      "modified": false
+    },
+    {
+      "source": "Picture_Masks/Link_5.PNG",
+      "target": "docs/assets/parts/Link_5.PNG",
+      "sha256": "068aa92f70250dd4a403b7a25766f48b3c27c712030b0985a13b1ae9fee1761e",
+      "modified": false
+    },
+    {
+      "source": "Picture_Masks/Link_4.PNG",
+      "target": "docs/assets/parts/Link_4.PNG",
+      "sha256": "0412b08cfa8e1f2af7d1e53f54a363684fca9fe03d7148a78d9ec0c47cad2ee6",
+      "modified": false
+    },
+    {
+      "source": "Picture_Masks/Link_0.PNG",
+      "target": "docs/assets/parts/Link_0.PNG",
+      "sha256": "860dc45d4c57fb82a464d1be5358c3f29f12137b6e5e2985467c0ebb6f925b21",
+      "modified": false
+    },
+    {
+      "source": "Picture_Masks/Link_1.PNG",
+      "target": "docs/assets/parts/Link_1.PNG",
+      "sha256": "92b2e8f2cbbec7b8906def370bc5384f0d08991683445528752a43494c325ad9",
+      "modified": false
+    },
+    {
+      "source": "Picture_Masks/Link_3.PNG",
+      "target": "docs/assets/parts/Link_3.PNG",
+      "sha256": "9abfc1decd5ca1e9e567e5f3d112987e4aeee63f35de7ec63c40125884196950",
+      "modified": false
+    },
+    {
+      "source": "Picture_Masks/Link_2.PNG",
+      "target": "docs/assets/parts/Link_2.PNG",
+      "sha256": "27c6f95afafa6dbea3d0727290aad6fbd1cdb98bdc674f7dd374e4467f89fdd2",
+      "modified": false
+    },
+    {
+      "source": "Picture_Masks/cylinder.PNG",
+      "target": "docs/assets/parts/cylinder.PNG",
+      "sha256": "b52b50342dff0ca8ac5ea7d2844f5ea9f13bb60ad74b67583962f2735c058a94",
+      "modified": false
+    },
+    {
+      "source": "Mulag_FME_500_with_cylinder.slx",
+      "target": "models/Mulag_FME_500_with_cylinder.slx",
+      "sha256": "41d53b4c1672d506add897696bb1a9492a7c3b7af7efb2624db6425dca27a2b3",
+      "modified": true,
+      "changes": [
+        {
+          "member": "simulink/systems/system_5.xml",
+          "field": "ExtGeomFileName",
+          "old": "C:\\Users\\Kevin\\Desktop\\hydraulic_manipulator\\meshes\\stl\\E-026502_FME 500_AP_stl.020.stl",
+          "new": "robot/meshes/stl/E-026502_FME 500_AP_stl.020.stl"
+        },
+        {
+          "member": "simulink/systems/system_7.xml",
+          "field": "ExtGeomFileName",
+          "old": "C:\\Users\\Kevin\\Desktop\\hydraulic_manipulator\\meshes\\stl\\E-026502_FME 500_AP_stl.019.stl",
+          "new": "robot/meshes/stl/E-026502_FME 500_AP_stl.019.stl"
+        },
+        {
+          "member": "simulink/systems/system_12.xml",
+          "field": "ExtGeomFileName",
+          "old": "C:\\Users\\Kevin\\Desktop\\hydraulic_manipulator\\meshes\\stl\\E-026502_FME 500_AP_stl.018.stl",
+          "new": "robot/meshes/stl/E-026502_FME 500_AP_stl.018.stl"
+        },
+        {
+          "member": "simulink/systems/system_14.xml",
+          "field": "ExtGeomFileName",
+          "old": "C:\\Users\\Kevin\\Desktop\\hydraulic_manipulator\\meshes\\stl\\E-026502_FME 500_AP_stl.017.stl",
+          "new": "robot/meshes/stl/E-026502_FME 500_AP_stl.017.stl"
+        },
+        {
+          "member": "simulink/systems/system_16.xml",
+          "field": "ExtGeomFileName",
+          "old": "C:\\Users\\Kevin\\Desktop\\hydraulic_manipulator\\meshes\\stl\\E-026502_FME 500_AP_stl.016.stl",
+          "new": "robot/meshes/stl/E-026502_FME 500_AP_stl.016.stl"
+        },
+        {
+          "member": "simulink/systems/system_18.xml",
+          "field": "ExtGeomFileName",
+          "old": "C:\\Users\\Kevin\\Desktop\\hydraulic_manipulator\\meshes\\stl\\E-026502_FME 500_AP_stl.015.stl",
+          "new": "robot/meshes/stl/E-026502_FME 500_AP_stl.015.stl"
+        },
+        {
+          "member": "simulink/systems/system_26.xml",
+          "field": "ExtGeomFileName",
+          "old": "C:\\Users\\Kevin\\Desktop\\hydraulic_manipulator\\meshes\\stl\\E-026502_FME 500_AP_stl.014.stl",
+          "new": "robot/meshes/stl/E-026502_FME 500_AP_stl.014.stl"
+        },
+        {
+          "member": "simulink/systems/system_28.xml",
+          "field": "ExtGeomFileName",
+          "old": "C:\\Users\\Kevin\\Desktop\\hydraulic_manipulator\\meshes\\stl\\E-026502_FME 500_AP_stl.013.stl",
+          "new": "robot/meshes/stl/E-026502_FME 500_AP_stl.013.stl"
+        },
+        {
+          "member": "simulink/systems/system_1.xml",
+          "field": "ExtGeomFileName",
+          "old": "C:\\Users\\Kevin\\Desktop\\hydraulic_manipulator\\meshes\\stl\\E-026502_FME 500_AP_stl.006.stl",
+          "new": "robot/meshes/stl/E-026502_FME 500_AP_stl.006.stl"
+        },
+        {
+          "member": "simulink/systems/system_3.xml",
+          "field": "ExtGeomFileName",
+          "old": "C:\\Users\\Kevin\\Desktop\\hydraulic_manipulator\\meshes\\stl\\E-026502_FME 500_AP_stl.004.stl",
+          "new": "robot/meshes/stl/E-026502_FME 500_AP_stl.004.stl"
+        },
+        {
+          "member": "simulink/systems/system_9.xml",
+          "field": "ExtGeomFileName",
+          "old": "C:\\Users\\Kevin\\Desktop\\hydraulic_manipulator\\meshes\\stl\\E-026502_FME 500_AP_stl.002.stl",
+          "new": "robot/meshes/stl/E-026502_FME 500_AP_stl.002.stl"
+        },
+        {
+          "member": "simulink/systems/system_11.xml",
+          "field": "ExtGeomFileName",
+          "old": "C:\\Users\\Kevin\\Desktop\\hydraulic_manipulator\\meshes\\stl\\E-026502_FME 500_AP_stl.003.stl",
+          "new": "robot/meshes/stl/E-026502_FME 500_AP_stl.003.stl"
+        },
+        {
+          "member": "simulink/systems/system_25.xml",
+          "field": "ExtGeomFileName",
+          "old": "C:\\Users\\Kevin\\Desktop\\hydraulic_manipulator\\meshes\\stl\\E-026502_FME 500_AP_stl.001.stl",
+          "new": "robot/meshes/stl/E-026502_FME 500_AP_stl.001.stl"
+        },
+        {
+          "member": "simulink/systems/system_30.xml",
+          "field": "ExtGeomFileName",
+          "old": "C:\\Users\\Kevin\\Desktop\\hydraulic_manipulator\\meshes\\stl\\E-026502_FME 500_AP_stl.009.stl",
+          "new": "robot/meshes/stl/E-026502_FME 500_AP_stl.009.stl"
+        },
+        {
+          "member": "simulink/systems/system_21.xml",
+          "field": "ExtGeomFileName",
+          "old": "C:\\Users\\Kevin\\Desktop\\hydraulic_manipulator\\meshes\\stl\\E-026502_FME 500_AP_stl.012.stl",
+          "new": "robot/meshes/stl/E-026502_FME 500_AP_stl.012.stl"
+        },
+        {
+          "member": "simulink/systems/system_23.xml",
+          "field": "ExtGeomFileName",
+          "old": "C:\\Users\\Kevin\\Desktop\\hydraulic_manipulator\\meshes\\stl\\E-026502_FME 500_AP_stl.011.stl",
+          "new": "robot/meshes/stl/E-026502_FME 500_AP_stl.011.stl"
+        },
+        {
+          "member": "simulink/systems/system_1150.xml",
+          "field": "FileName",
+          "old": "ee_trajectory.mat",
+          "new": "data/references/ee_trajectory.mat"
+        },
+        {
+          "member": "simulink/systems/system_1150.xml",
+          "field": "FileName",
+          "old": "joint_positions.mat",
+          "new": "data/references/joint_positions.mat"
+        },
+        {
+          "member": "simulink/systems/system_1150.xml",
+          "field": "FileName",
+          "old": "joint_velocities.mat",
+          "new": "data/references/joint_velocities.mat"
+        },
+        {
+          "member": "simulink/systems/system_1150.xml",
+          "field": "FileName",
+          "old": "joint_accelerations.mat",
+          "new": "data/references/joint_accelerations.mat"
+        }
+      ],
+      "zip_member_sha256": {
+        "metadata/thumbnail.png": "8b7472213038176a0284ec83247b8772fbb4d09d5200c0f42235255b6fd5c65d",
+        "simulink/modelWorkspace.mxarray": "b1f03a4305056279f19442cbdb65fd531140375e4b325894aae9cd18317e20ad",
+        "simulink/systems/system_root.xml": "57255a61c58ea0773c701252fbed4a5969e77be0e475b7856badb35c29992abd",
+        "simulink/systems/system_1363.xml": "dd9b558061a8524615a43696a014f0e44657275c335271c56c5ee352622c4b80",
+        "simulink/systems/system_1060.xml": "d7869de0965952d4024f02e1b50bcdbc61edba2bb44fa704b6435402aab836f6",
+        "simulink/systems/system_1327.xml": "fe2941f62ad3b901cf4c07dd591bc7777ae23556bacfd3099267f7876af4c1a4",
+        "simulink/systems/system_743.xml": "a4ef1b5e1b353fd25c12ffd3b31882143b44a867cfa1885bcbd2437600e4fe39",
+        "simulink/systems/system_162.xml": "c432f705c0499e4dad834944ae2c8b5c3580a77977311ce46c0b3d5443a1b190",
+        "simulink/systems/system_1103.xml": "e01b90dc32a741925e0d082748ffde28570e90ed7151dde7693c6fe73ba95d5f",
+        "simulink/systems/system_5.xml": "eb97f0f4809c05923be5bdc706032188ca6d93e735765387273fd1a6931c1c02",
+        "simulink/systems/system_7.xml": "33c3e372e3d12e166d442d89f0849a10d2da1794a5c114589103f85a5dcb8eda",
+        "simulink/systems/system_669.xml": "b4ce8c0e54d9e0f1df3c9cf7b01f1f211a8d34d00335ab80026829e3a72538b2",
+        "simulink/systems/system_673.xml": "1d34b72ed6e1fc86b137e1fad865a6a78021d423333d7d0cbe2e598f83a4b93c",
+        "simulink/systems/system_553.xml": "10423b2d7883b667730a21d9e4d72eb3837bd7dad0d8ea1490d4c56eaa6cf365",
+        "simulink/systems/system_559.xml": "06b8e84b1dcc7217e76f703a7748f37a97ab754292b2ddd335bb1c3fd80b67fe",
+        "simulink/systems/system_178.xml": "f61ae7d0595d6a22d8e64a47bc2f49a694f78b8340dc9ff64b83456c9e2e7c00",
+        "simulink/systems/system_609.xml": "783e8b76f862779a23cfd63fdce9b80b70ddf556bb405edca26eb20bc3bbeee1",
+        "simulink/systems/system_12.xml": "9f313e491e6de30a3842df4e70394f69209f5ccfdc173aef0f530b33917bebac",
+        "simulink/systems/system_14.xml": "76afbe8eaf04872dc638e89705c49da446194bceba615ef87a3ba421f6860b22",
+        "simulink/systems/system_1204.xml": "ac660006eed8c1ff9cb78d922a618bfbfdfe74ecb82af27d3db6d06129daf453",
+        "simulink/systems/system_679.xml": "2c24c0956829f9f54d76eb1f83a267254d94d3a84805bf35a8f80a8018e2aa3e",
+        "simulink/systems/system_683.xml": "6862978bc957c6a86521cb422f77410d78efa8bd3802ddf0cc6e9548460f6381",
+        "simulink/systems/system_565.xml": "08fa70df184204341ab29e14207fb078d934221419a92a9b815aaf0d692fab3b",
+        "simulink/systems/system_583.xml": "a1d07098afe0c2493a31dee22ff3456626493517a86f653073ef73e2f3b66ca5",
+        "simulink/systems/system_188.xml": "8a75f8015c192813dd8148040e95fd6564de064a7e134ca787db4f06a858a5c7",
+        "simulink/systems/system_616.xml": "7403289f510dd48230e42425a381a2a3a8ce9d91cd69222e74b190a762a8d282",
+        "simulink/systems/system_1208.xml": "41cc6855eebc124bb6dfd820bcb88508ce041d012679f92cd4aee6df967227c1",
+        "simulink/systems/system_16.xml": "20775003d6ae376f368373d3699de4a0170ea5e119359a8b984f74548b67261e",
+        "simulink/systems/system_18.xml": "f51415c149606157c271b410dadac5c238007dd368fdcb733f59124c5c8e9ba3",
+        "simulink/systems/system_687.xml": "4d530938dd3a92e2b280d496aba30cd1b4a84d573ffbff737327a09796a63398",
+        "simulink/systems/system_691.xml": "ffcd920fe2ed9e8282bbd608d372e987b3b4d761837a515a1d9ec8df2cc951b8",
+        "simulink/systems/system_571.xml": "5ed533bb551e340d042297ea3fbf4db807a0622883f7ab42b72bcb17d35cec89",
+        "simulink/systems/system_589.xml": "f8852815cd6485cee2f2fcdb48a34c71fa7b693f89444d5930854a144a67fa3c",
+        "simulink/systems/system_196.xml": "adf1cffd2fcfc86f13cfc674b09c1baa6063d13a2c33bbf1eb6d46e7fbc7c896",
+        "simulink/systems/system_602.xml": "908b6931ae153ff52947d0913f15c80bcc1ff8681d79d4acbab70feadd71cb4d",
+        "simulink/systems/system_1212.xml": "54577374fb9b7fc5b7a02cf8fc3a27fa4f1091dd6dfe38a407b71b8b78e80b7f",
+        "simulink/systems/system_26.xml": "e447e44a0477faa3471e679b0e3cd3500c67d92efabe3792e642fc81ada2300a",
+        "simulink/systems/system_28.xml": "548a8a9522a1b6271f782a90e0d51d420bab9b4519fb0664a74ccd493f631f96",
+        "simulink/systems/system_695.xml": "2e27cb4ae89d504c460a2346fc63e555fc96ffe7649ce1ef1d8e66ba2e03958e",
+        "simulink/systems/system_699.xml": "61d12ffef08cb24287ff8d01ab24d50c1ac282d4cd3365c86d75f3f5ec054811",
+        "simulink/systems/system_577.xml": "5db4baa7382f24b97a34b27c57145f970a62a7ddf8d53e661a1d573aa3b91379",
+        "simulink/systems/system_595.xml": "6ad93cb4b2fba192832b6b8010a141431cd88714ada7ff43b47b8eb7abc4ff75",
+        "simulink/systems/system_1107.xml": "6a82ad496287da9d6f7c67c392296c78389d573ca079855c861d7f6e4bddb4a5",
+        "simulink/systems/system_1.xml": "eb2bb7af06c9dce0ae0fd0a73130c132aeba20ffd36c93cbcef3773b57cb893e",
+        "simulink/systems/system_3.xml": "2cd1c84485966703ebbda648c23f9eba56436d9eb4f67f5c863616b40560a3c7",
+        "simulink/systems/system_9.xml": "40c71a87e8909de99fca66362a425b7c564a446c68887d8abd77fbf94db0f827",
+        "simulink/systems/system_11.xml": "e2c335b2e62facb115dacac377d587fccfbce126a2ebeaead594ba0405fd19c4",
+        "simulink/systems/system_649.xml": "9d61a429e848a89975bcac212eb45659c21c5a716e8c639ccbb935e101d00dbf",
+        "simulink/systems/system_653.xml": "d4df27e0af88f1fd4873c76eb44c698155897a166be95054cbae2b0aae257b5c",
+        "simulink/systems/system_657.xml": "f80a56f462d28795a44585407cc539d84b09729c54644ee6d0f965b35a976ce0",
+        "simulink/systems/system_661.xml": "0f5385031ce315780331177d6a899d7484f7ebbc37afca405def5039a6088a44",
+        "simulink/systems/system_1063.xml": "53affa44db5030a49347d0f5613b811d4fdb058c961235d7478f4d50e8ad328a",
+        "simulink/systems/system_1067.xml": "b1c8104b0445a542af24484e6ee7e0e933ade36a28a8587a5250ec60e5283689",
+        "simulink/systems/system_1071.xml": "77139c8909d29e8fd170556d21fa528e42b10152aba2ccc63cd1d91cb7073f14",
+        "simulink/systems/system_1075.xml": "c82fa21430ddd25481a1cd4b54662ccc2157d413a2fe724d4a8ef70ef9faf214",
+        "simulink/systems/system_1111.xml": "476b6cfbb9329393aba912ce3cdef5d14a78cd4a2cbd7a4f3ab3255c5e0fd473",
+        "simulink/systems/system_946.xml": "e9a534b4a912ec0b4864c77216859f03a53ddf31de019f32293f1d36fbd55e1e",
+        "simulink/systems/system_25.xml": "dcc8f780fd2d434f54681b62f3ee32bf293159a242bb28b4b2784862d6286a5c",
+        "simulink/systems/system_30.xml": "f23a7d6e95fd88797bbdb0435a8602f72e29d19cae716c9084075ba70fe8d8d0",
+        "simulink/systems/system_204.xml": "350810b4e2a016981f39e6588c5822dbacfe83f0e548aa6af060d4578cd0c929",
+        "simulink/systems/system_21.xml": "6c467bf4d4292268615fb1ef52c33ca775e7690945d40ed1a66f00e5935d06c6",
+        "simulink/systems/system_23.xml": "db51ae01f23be8bad70d3221354a2e8cb68ac3426503daea115bd007b922ae54",
+        "simulink/systems/system_633.xml": "bbaf56ff1eb156ad4126f4e2f806d5dc6feda25c8ffda237dc8334cc1685d0ac",
+        "simulink/systems/system_636.xml": "9d59ab4edfc9b830420dd8f519796c58b20f2b0a491feeaa06d8ac22f113e6f3",
+        "simulink/systems/system_1167.xml": "8b704800b1e94fd0f5bf73257cc86dabae9db782b32a40d27c28a6c0f158983a",
+        "simulink/systems/system_1040.xml": "c389da7a8b5303d62dc65157bb7bde9bafd6da143a2dc5ba7c9ca3131867646d",
+        "simulink/systems/system_703.xml": "43f6e0bcdbd00c2c0d72a795da2371dc56b7989bcf412ee933065b480e40c89e",
+        "simulink/systems/system_1007.xml": "536652e3d255e65f256b189a2ef8e32d69b0976c21c9ca682a629a4a70918b12",
+        "simulink/systems/system_981.xml": "6aaf08d1d13dae61df882e1065e75be66595dc52a7a64dfff6a1cfd147a12f90",
+        "simulink/systems/system_1233.xml": "b7f8392fd9db9c764169f48d02fbf406d25f14aa5472ce7fe3ed55a14a73c017",
+        "simulink/systems/system_1079.xml": "7fba478d2e6902a1d200c5fb72b9ff07735e55e755b15547f2ec01f73f62d92e",
+        "simulink/bdmxdata/UserData_1271.mxarray": "2320b21bbbc4c03c9c5c8c798263a4fac156d8672d37ec2f39fcb1248fbeffba",
+        "simulink/bdmxdata/UserData_907.mxarray": "63d7aea1da573581658f85254bc9c4195e1883d0a15c045281d2c1e48f352c47",
+        "simulink/bdmxdata/UserData_1061.mxarray": "74e5958957402f565cb4cb07cf55578d08c24502bb8b32fc3ab20746c17f5b6a",
+        "simulink/bdmxdata/UserData_1118.mxarray": "8cb4ee976d8647ddb7507740e51d43e8431d7fe650b64de72fef3fddb15c8202",
+        "simulink/systems/system_1150.xml": "fa919d98e25bca2506b0b217afc4fd07f5307f50298042525852b640f0425c7a",
+        "simulink/systems/system_909.xml": "7e208a966c51385b15f88376060835ba50c355581a740e8b51a3f1bfb31fbb1e",
+        "simulink/systems/system_852.xml": "4ceafc6aa5b2301a008b7cd85185e5d3d8f6258e0356a1461cf61afcd6c084ef",
+        "[Content_Types].xml": "252331a4bc32cdbd5e37b12dcb1fde070b014597ce7ec45aeb0f749fcc1b127c",
+        "_rels/.rels": "a07246461856535d256efc55004976949bba2aff62956463c36ab6c40807599f",
+        "simulink/_rels/blockdiagram.xml.rels": "cbd6b2ec9ca704be51a077af89950d34befb80f71af78c0b25a769b9ddf445e6",
+        "simulink/_rels/configSetInfo.xml.rels": "d8bfae8cf4787853a98f5f8da757608b7acad78ccea139714a5658e3d1810d31",
+        "simulink/stateflow/_rels/machine.xml.rels": "98dc8e078ccf4a1d01fccfe69f679fa1befc30d6966958034f88368b4dc93be6",
+        "simulink/systems/_rels/system_1167.xml.rels": "9e729c5216d8dad5d1b672a347ad6a4a856fa2a41a76acfaeebe192e2bd2dfcc",
+        "simulink/systems/_rels/system_162.xml.rels": "4c241b6b6da60959507cdc2d4be7780912c6f49a3cdb1eae06f2d875747c4e2c",
+        "simulink/systems/_rels/system_178.xml.rels": "12a2b45301b24d5d52fdbcc24ea016cfc090c77036c5d62f017b9f39750e65ca",
+        "simulink/systems/_rels/system_188.xml.rels": "db88a97a99ada12e9c3fd1c735c7302ee059b7cfa1bfeb40d18ffc6f7503aa8c",
+        "simulink/systems/_rels/system_196.xml.rels": "36cc982adfeb58b616409806842f61d2189b075ccc396b78d3b1adf2b3802f26",
+        "simulink/systems/_rels/system_204.xml.rels": "c05592fabcbea4ae66b2590c30c4458bc0c8d09660a21bb85cfff6490a50cd17",
+        "simulink/systems/_rels/system_633.xml.rels": "df03c16cf149662299b4ffdc82e41fee85e5f6aa41f177f112c0f13f1b2e80dd",
+        "simulink/systems/_rels/system_743.xml.rels": "cfd164e51533a1ffa30d16bf0d4a4e0133674d0f744ece0227c0bbf274549f28",
+        "simulink/systems/_rels/system_root.xml.rels": "b6fa240fbf1561f20da5ae797410502f5fb1227a70ec4e2c3f51f19585747e45",
+        "metadata/coreProperties.xml": "561923541b503f3684a2e85637381513fa2e7dcc4d0a6b1bae2b5ee31f1857af",
+        "metadata/mwcoreProperties.xml": "910091ade95e560c81b68beffd25003e010f326ee53c9facdf255eeb669f58b6",
+        "metadata/mwcorePropertiesExtension.xml": "faf04688110947fe284dbd898d1adb8036ae4977a286b50c0e8a2911acdd07b6",
+        "metadata/mwcorePropertiesReleaseInfo.xml": "baaf3f67165f64c6f345f3be3ed4f80c9ad7c13895eb8a850e980c198d666ff2",
+        "simulink/ScheduleCore.xml": "39fb05cda005815604f1b9853e672da989196506ea43e111f3eb61c1480b81ed",
+        "simulink/ScheduleEditor.xml": "c09d479da4d78724c06c37ef5afa80df3fe30fc7ec8c341a3f63e704a0172210",
+        "simulink/bddefaults.xml": "25932584c589321f8c08fd481dc29ce90c3efd07ff735bd8824d3adcf416b7de",
+        "simulink/blockdiagram.xml": "81e8a4adc2b90570d28593852220eb1ae0037dbf430363dbc091e223eda6641e",
+        "simulink/configSet0.xml": "1092cebd4f37df8e5a3dcf6a6fdcc30314851f9afa4bfbac2579058374a3d64a",
+        "simulink/configSet1.xml": "44dbb69b2b11b407e9f6f66ecc173a9bc770bec47a8c5921f85975f40f8dde83",
+        "simulink/configSet2.xml": "9ecdf837f6fd2e1242d392a34e4ef2f9b33903d4c7b5940244cdf9f676d2d372",
+        "simulink/configSet3.xml": "149edee3c35e76c98b4d5e2e211a5391f2d829054212a805a8a15c41f4729a5a",
+        "simulink/configSetInfo.xml": "e2dbcd64e90fa8792225e0097a5662bc9aa9ecf13c2a2c13abb5e9f5b9cb0173",
+        "simulink/graphicalInterface.xml": "f93406c5ec6f239e0a8f71cb27c1dbe47469205f8a92ea0fef784e122736714b",
+        "simulink/modelDictionary.xml": "8bdabe280a224833bfd2d35231e2e120eac58b5ce7a73610fea4987b2a7326f9",
+        "simulink/plugins/LogicAnalyzerPlugin.xml": "034edfa0193faf089c5b2c20d5d844adf7b78d3363652e3d16f410f2ec26ce8b",
+        "simulink/stateflow/chart_114.xml": "1e614d2debfb40aedcc62fc1bae55a85073baeae7214d693b2dee93b1d7536fb",
+        "simulink/stateflow/chart_123.xml": "c3019e84e07aa574964bfa39338e3d5921b67b8f20d89a63f28009acdc181518",
+        "simulink/stateflow/chart_135.xml": "0fa0d86880466d486a36863de0ce60585390d68dc2e8f422a6079f03cb5a5156",
+        "simulink/stateflow/machine.xml": "8b5309ca64f25299f8682bb929d779cae10ea04c7313bc5f4e7e1ec9530ba3db",
+        "simulink/windowsInfo.xml": "9dbcceeaa185f30ddf76282f6035469e4fd5fca57e130571cb566130d8fcfdb8"
+      }
+    },
+    {
+      "source": "custom_component_lib.slx",
+      "target": "models/experimental/custom_component_lib.slx",
+      "sha256": "d5e314ed949eb5a37f41a55c54f1a220a045f410467bcbd1572f1933c1c5a8c5",
+      "modified": false,
+      "changes": []
+    },
+    {
+      "source": "Models/actuator_design_testing.slx",
+      "target": "models/variants/actuator_design_testing.slx",
+      "sha256": "f35928bd6f69c8d5c1100c8db0505e597ae0c153f7664c5bebf15aaabb725da9",
+      "modified": true,
+      "changes": [
+        {
+          "member": "simulink/systems/system_root.xml",
+          "field": "ExtGeomFileName",
+          "old": "C:\\Users\\Kevin\\Desktop\\hydraulic_simscape_manipilator\\stl_files\\Hebezylinder_Rohr.stl",
+          "new": "robot/meshes/stl/Hebezylinder_Rohr.stl"
+        },
+        {
+          "member": "simulink/systems/system_root.xml",
+          "field": "ExtGeomFileName",
+          "old": "C:\\Users\\Kevin\\Desktop\\hydraulic_simscape_manipilator\\stl_files\\Hebezylinder_Kolben.stl",
+          "new": "robot/meshes/stl/Hebezylinder_Kolben.stl"
+        }
+      ],
+      "zip_member_sha256": {
+        "metadata/thumbnail.png": "8840d1b8f2b801e793c509f5367e5902d816c564594f91bd9b7d8a1ddcfc4303",
+        "simulink/systems/system_root.xml": "f2d2ef55c6ce958eefe93ae8a875fa57bc3d78dff8fbe220c615ccd95dffebbb",
+        "[Content_Types].xml": "d1665877b3aceb316020dbe08a30f96cb50d30c584d251aa3b52572142a0dff6",
+        "_rels/.rels": "b34f44b50ef39989ebc4fb9e2c88ef176611fee6608a51548366bc93da6fe250",
+        "simulink/_rels/blockdiagram.xml.rels": "deb14be63fd37d88226ab6b63c32a22858aeab8ea3a598df7f0e1b21cc310dc2",
+        "simulink/_rels/configSetInfo.xml.rels": "ff294230f90fb5958a7589fee32a06df1955ae63a3cfcbed4f4fa27d6b981c46",
+        "metadata/coreProperties.xml": "9e31ad9925a237b49bc5473a724b44a2e66bf59f30675be3fd382b7e178d23bb",
+        "metadata/mwcoreProperties.xml": "910091ade95e560c81b68beffd25003e010f326ee53c9facdf255eeb669f58b6",
+        "metadata/mwcorePropertiesExtension.xml": "a129148b96118309274b23fa63dc2a9083927e8990cf317b4c0e8cfb7adc6af0",
+        "metadata/mwcorePropertiesReleaseInfo.xml": "baaf3f67165f64c6f345f3be3ed4f80c9ad7c13895eb8a850e980c198d666ff2",
+        "simulink/ScheduleCore.xml": "0134e24240788aaa462c017d90e53e2681f3e8c1e75104b5dbb3b80067ec5a80",
+        "simulink/ScheduleEditor.xml": "dabe40eaae350cf98bafdea46bb43dcbd13b8373014f91c78ff7bb420470957d",
+        "simulink/bddefaults.xml": "25932584c589321f8c08fd481dc29ce90c3efd07ff735bd8824d3adcf416b7de",
+        "simulink/blockdiagram.xml": "7585a083aa32f3e9fac687441267f1b4089e1d990c3fa2a8326fad6907560345",
+        "simulink/configSet0.xml": "d53f5a4bd14973ef656036b8213a735a652c8a746b5d9062a6970cb6852c8e9e",
+        "simulink/configSetInfo.xml": "a799598882f1eef1572dd09032d33412042063abeebb977e490b53ea23bdcf0e",
+        "simulink/graphicalInterface.xml": "1cd1b5d07cfe7e5e3c9b27dfdddfb50d9783cfa6f35a81f547a53ba1df2f4229",
+        "simulink/modelDictionary.xml": "598bdad2b5cff4feadbfbd6db3d0a120fcf34f2e655766a0212e6783ead754f5",
+        "simulink/windowsInfo.xml": "1d114ab461966fdcfc80de222fcb677c356475d80c9822b35e7cde42d446d3d8"
+      }
+    },
+    {
+      "source": "Models/Mulag_FME500_kinematic.slx",
+      "target": "models/variants/Mulag_FME500_kinematic.slx",
+      "sha256": "1d3293b749248ac8cbcd65499fbec034230d3822668173a318da7e6e0bbcdca4",
+      "modified": true,
+      "changes": [
+        {
+          "member": "simulink/systems/system_1.xml",
+          "field": "ExtGeomFileName",
+          "old": "C:\\Users\\Kevin\\Desktop\\hydraulic_manipulator\\mulag_fme500_links\\E-026502_FME 500_AP_stl.004.stl",
+          "new": "robot/meshes/stl/E-026502_FME 500_AP_stl.004.stl"
+        },
+        {
+          "member": "simulink/systems/system_2.xml",
+          "field": "ExtGeomFileName",
+          "old": "C:\\Users\\Kevin\\Desktop\\hydraulic_manipulator\\mulag_fme500_links\\E-026502_FME 500_AP_stl.006.stl",
+          "new": "robot/meshes/stl/E-026502_FME 500_AP_stl.006.stl"
+        },
+        {
+          "member": "simulink/systems/system_5.xml",
+          "field": "ExtGeomFileName",
+          "old": "C:\\Users\\Kevin\\Desktop\\hydraulic_manipulator\\mulag_fme500_links\\E-026502_FME 500_AP_stl.002.stl",
+          "new": "robot/meshes/stl/E-026502_FME 500_AP_stl.002.stl"
+        },
+        {
+          "member": "simulink/systems/system_7.xml",
+          "field": "ExtGeomFileName",
+          "old": "C:\\Users\\Kevin\\Desktop\\hydraulic_manipulator\\mulag_fme500_links\\E-026502_FME 500_AP_stl.003.stl",
+          "new": "robot/meshes/stl/E-026502_FME 500_AP_stl.003.stl"
+        },
+        {
+          "member": "simulink/systems/system_9.xml",
+          "field": "ExtGeomFileName",
+          "old": "C:\\Users\\Kevin\\Desktop\\hydraulic_manipulator\\mulag_fme500_links\\E-026502_FME 500_AP_stl.009.stl",
+          "new": "robot/meshes/stl/E-026502_FME 500_AP_stl.009.stl"
+        },
+        {
+          "member": "simulink/systems/system_10.xml",
+          "field": "ExtGeomFileName",
+          "old": "C:\\Users\\Kevin\\Desktop\\hydraulic_manipulator\\mulag_fme500_links\\E-026502_FME 500_AP_stl.001.stl",
+          "new": "robot/meshes/stl/E-026502_FME 500_AP_stl.001.stl"
+        }
+      ],
+      "zip_member_sha256": {
+        "metadata/thumbnail.png": "ce48dc87c3d6f27a7f895e6f074312be12e6452509f2694ab09c0aaab20107ba",
+        "simulink/systems/system_root.xml": "02ad215f6f60ff18f401131f3f64329a807fe2b69e3b824ad5086d296eebb988",
+        "simulink/systems/system_1.xml": "9013efb716d8ca9055dca63c8037dacc3903082bd328b3008eb19f4ca106f888",
+        "simulink/systems/system_2.xml": "04da8f3ff78aec96f5cd3fdfcc9cdbee4f3be7d9e25b4c218a9e5b4aa24c6aae",
+        "simulink/systems/system_5.xml": "1461c1455326c6d9a0561a62ae36a400aaaaf3dc910f79687f370f8201d74954",
+        "simulink/systems/system_7.xml": "7684853d3e7bd90fa8d05ef4ad7bb2d35b5394b3bc71762ba26f1bae184a091a",
+        "simulink/systems/system_9.xml": "8747286adf94881cd73712b857ce7f064f813984859c65b4f509249d39e31c7a",
+        "simulink/systems/system_10.xml": "61a06cfcd78ec9bcc3fc90ec90812a1efd557c8549e1732b6e2677208ed58a6f",
+        "[Content_Types].xml": "d1665877b3aceb316020dbe08a30f96cb50d30c584d251aa3b52572142a0dff6",
+        "_rels/.rels": "b34f44b50ef39989ebc4fb9e2c88ef176611fee6608a51548366bc93da6fe250",
+        "simulink/_rels/blockdiagram.xml.rels": "deb14be63fd37d88226ab6b63c32a22858aeab8ea3a598df7f0e1b21cc310dc2",
+        "simulink/_rels/configSetInfo.xml.rels": "ff294230f90fb5958a7589fee32a06df1955ae63a3cfcbed4f4fa27d6b981c46",
+        "simulink/systems/_rels/system_root.xml.rels": "8f16921cef52315baf79763ec406a88215b8d7ad423a7644debeb69034379b3e",
+        "metadata/coreProperties.xml": "65476485a71c52117a4c8e138f98a3ab663eaeb8e5b6282a4ea2c25504e81099",
+        "metadata/mwcoreProperties.xml": "910091ade95e560c81b68beffd25003e010f326ee53c9facdf255eeb669f58b6",
+        "metadata/mwcorePropertiesExtension.xml": "028572f42fcccd3a45dc5ae8026e80d10751f4820a62f59eed39959e72ee2660",
+        "metadata/mwcorePropertiesReleaseInfo.xml": "baaf3f67165f64c6f345f3be3ed4f80c9ad7c13895eb8a850e980c198d666ff2",
+        "simulink/ScheduleCore.xml": "1f579a0233bbf3cd2d630895862f35fa2d22e7a46eab0b2d1b3a8021ced02fad",
+        "simulink/ScheduleEditor.xml": "e261beb19e809292a6014c412fce2956dfb08ccaaffc8224040c4d51a0ae32bb",
+        "simulink/bddefaults.xml": "25932584c589321f8c08fd481dc29ce90c3efd07ff735bd8824d3adcf416b7de",
+        "simulink/blockdiagram.xml": "fa3c534acb37249bad34c0bfd33ac073ef4d84cc6da07c1875cef7226d8b8715",
+        "simulink/configSet0.xml": "d53f5a4bd14973ef656036b8213a735a652c8a746b5d9062a6970cb6852c8e9e",
+        "simulink/configSetInfo.xml": "a799598882f1eef1572dd09032d33412042063abeebb977e490b53ea23bdcf0e",
+        "simulink/graphicalInterface.xml": "a9d8e3f17955b723cf93bc87a037e9a0c49d9c5ef84305b605696119eb271ebb",
+        "simulink/modelDictionary.xml": "b92226cea157492434a999ba791280cc85f639a738873badc4278e8d4847209e",
+        "simulink/windowsInfo.xml": "4fcb9cfe369c1ef9370daa42ef42fae7d4a6f1d50f9999d32620043e0aa25d8d"
+      }
+    },
+    {
+      "source": "Models/Mulag_FME500_dynamic.slx",
+      "target": "models/variants/Mulag_FME500_dynamic.slx",
+      "sha256": "53192e98dbaf77a1652c4c52d307da8beab2c9a46614c11b9180e6bed15435d9",
+      "modified": true,
+      "changes": [
+        {
+          "member": "simulink/systems/system_183.xml",
+          "field": "ExtGeomFileName",
+          "old": "C:\\Users\\Kevin\\Desktop\\hydraulic_manipulator\\CAD\\actuator_parts\\C_0.stl",
+          "new": "robot/meshes/stl/C_0.stl"
+        },
+        {
+          "member": "simulink/systems/system_189.xml",
+          "field": "ExtGeomFileName",
+          "old": "C:\\Users\\Kevin\\Desktop\\hydraulic_manipulator\\CAD\\actuator_parts\\R_0.stl",
+          "new": "robot/meshes/stl/R_0.stl"
+        },
+        {
+          "member": "simulink/systems/system_114.xml",
+          "field": "ExtGeomFileName",
+          "old": "C:\\Users\\Kevin\\Desktop\\hydraulic_manipulator\\CAD\\actuator_parts\\C_1.stl",
+          "new": "robot/meshes/stl/C_1.stl"
+        },
+        {
+          "member": "simulink/systems/system_122.xml",
+          "field": "ExtGeomFileName",
+          "old": "C:\\Users\\Kevin\\Desktop\\hydraulic_manipulator\\CAD\\actuator_parts\\R_1.stl",
+          "new": "robot/meshes/stl/R_1.stl"
+        },
+        {
+          "member": "simulink/systems/system_153.xml",
+          "field": "ExtGeomFileName",
+          "old": "C:\\Users\\Kevin\\Desktop\\hydraulic_manipulator\\CAD\\actuator_parts\\C_2.stl",
+          "new": "robot/meshes/stl/C_2.stl"
+        },
+        {
+          "member": "simulink/systems/system_159.xml",
+          "field": "ExtGeomFileName",
+          "old": "C:\\Users\\Kevin\\Desktop\\hydraulic_manipulator\\CAD\\actuator_parts\\R_2.stl",
+          "new": "robot/meshes/stl/R_2.stl"
+        },
+        {
+          "member": "simulink/systems/system_340.xml",
+          "field": "ExtGeomFileName",
+          "old": "C:\\Users\\Kevin\\Desktop\\hydraulic_manipulator\\CAD\\actuator_parts\\C_3.stl",
+          "new": "robot/meshes/stl/C_3.stl"
+        },
+        {
+          "member": "simulink/systems/system_345.xml",
+          "field": "ExtGeomFileName",
+          "old": "C:\\Users\\Kevin\\Desktop\\hydraulic_manipulator\\CAD\\actuator_parts\\R_3.stl",
+          "new": "robot/meshes/stl/R_3.stl"
+        },
+        {
+          "member": "simulink/systems/system_1.xml",
+          "field": "ExtGeomFileName",
+          "old": "C:\\Users\\Kevin\\Desktop\\hydraulic_manipulator\\mulag_fme500_links\\E-026502_FME 500_AP_stl.004.stl",
+          "new": "robot/meshes/stl/E-026502_FME 500_AP_stl.004.stl"
+        },
+        {
+          "member": "simulink/systems/system_2.xml",
+          "field": "ExtGeomFileName",
+          "old": "C:\\Users\\Kevin\\Desktop\\hydraulic_manipulator\\mulag_fme500_links\\E-026502_FME 500_AP_stl.006.stl",
+          "new": "robot/meshes/stl/E-026502_FME 500_AP_stl.006.stl"
+        },
+        {
+          "member": "simulink/systems/system_5.xml",
+          "field": "ExtGeomFileName",
+          "old": "C:\\Users\\Kevin\\Desktop\\hydraulic_manipulator\\mulag_fme500_links\\E-026502_FME 500_AP_stl.002.stl",
+          "new": "robot/meshes/stl/E-026502_FME 500_AP_stl.002.stl"
+        },
+        {
+          "member": "simulink/systems/system_7.xml",
+          "field": "ExtGeomFileName",
+          "old": "C:\\Users\\Kevin\\Desktop\\hydraulic_manipulator\\mulag_fme500_links\\E-026502_FME 500_AP_stl.003.stl",
+          "new": "robot/meshes/stl/E-026502_FME 500_AP_stl.003.stl"
+        },
+        {
+          "member": "simulink/systems/system_9.xml",
+          "field": "ExtGeomFileName",
+          "old": "C:\\Users\\Kevin\\Desktop\\hydraulic_manipulator\\mulag_fme500_links\\E-026502_FME 500_AP_stl.009.stl",
+          "new": "robot/meshes/stl/E-026502_FME 500_AP_stl.009.stl"
+        },
+        {
+          "member": "simulink/systems/system_259.xml",
+          "field": "ExtGeomFileName",
+          "old": "C:\\Users\\Kevin\\Desktop\\hydraulic_manipulator\\CAD\\actuator_parts\\Messerkopf-Schwenk_Link2.stl",
+          "new": "robot/meshes/stl/Messerkopf-Schwenk_Link2.stl"
+        },
+        {
+          "member": "simulink/systems/system_257.xml",
+          "field": "ExtGeomFileName",
+          "old": "C:\\Users\\Kevin\\Desktop\\hydraulic_manipulator\\CAD\\actuator_parts\\Messerkopf-Schwenk_Link1 .stl",
+          "new": "robot/meshes/stl/Messerkopf-Schwenk_Link1 .stl"
+        },
+        {
+          "member": "simulink/systems/system_10.xml",
+          "field": "ExtGeomFileName",
+          "old": "C:\\Users\\Kevin\\Desktop\\hydraulic_manipulator\\mulag_fme500_links\\E-026502_FME 500_AP_stl.001.stl",
+          "new": "robot/meshes/stl/E-026502_FME 500_AP_stl.001.stl"
+        }
+      ],
+      "zip_member_sha256": {
+        "simulink/systems/system_root.xml": "2f4f6aa4106b6052ee227d8b75deb4f753d23a248c39cf728e1a72d3287cd64f",
+        "simulink/systems/system_182.xml": "d634dd3ea68d4e3b1ce13ca328ba99c9bed7ede28230b6d196559d66b015efe0",
+        "simulink/systems/system_183.xml": "002cba55135c54dcf01eb6a373630b3cc8988632eff3f5a51e2e75b6b8bf154f",
+        "simulink/systems/system_189.xml": "d12617f6e4de2d88eeb37e46d6b54adf2704a98f4a9740bf6e9b32a56c9976af",
+        "simulink/systems/system_138.xml": "a9222d5faa32a4a57fe7b3bba1c4f1ca5cc934e05e4f4e26ad5ef9473a56e689",
+        "simulink/systems/system_114.xml": "be057d253462068a388cb591db1e755f57780b0e74934f08e5d89742b721cb97",
+        "simulink/systems/system_122.xml": "5cd79ca01ca77cab9ec42dc26262d2f4e2d2fd84a1cffa5b8b95efd4ee2489c5",
+        "simulink/systems/system_152.xml": "8feddbb1b2d3194b2a67e80402349be68ecef1fdbb4222f067ad86447ba6b607",
+        "simulink/systems/system_153.xml": "87b5cb3d9c64a074f28d8b442cd1640a038d7af4accab9142332846746a2e218",
+        "simulink/systems/system_159.xml": "4dd45d982dc1ce83abc7e7cd83735fadf5f9769e11a52071b70a95e0c64f24bc",
+        "simulink/systems/system_339.xml": "cdd85a7cedc4a0effa5a10da7f5277904eeac009d1d2e246e8531edb8643ec2a",
+        "simulink/systems/system_340.xml": "86b8a2d44e097baecdde91776d317635b834442c522e2b284dff0f09cff1f024",
+        "simulink/systems/system_345.xml": "f3f4f59dad9a8b727460afa7ce0d9fe1a4b1255bb109b16e0a3e6f37f947f521",
+        "simulink/systems/system_1.xml": "2fe2b7cdf4d30b9fd40d2f08306ecd8ad1485f3cbcb18668e9156a8bf720d1dd",
+        "simulink/systems/system_2.xml": "5cf973db624500f8404845b7ba47165e1e122cf1686964757a6b94025ed80eab",
+        "simulink/systems/system_5.xml": "c5d04f533f1768c2b0462e3255b4a4b1a0ffa438b6fc0cef9c6bf5b5a6a7fe56",
+        "simulink/systems/system_7.xml": "95c8257d5d5153d0854204bcb593558cc4fde8ebe8acd4b88cdaa415916619cb",
+        "simulink/systems/system_9.xml": "bd288ea43f40745fe8a6296f97b841a1b96dc63c3d8c044f9bdff4ce88c14579",
+        "simulink/systems/system_256.xml": "9c5c6eb0adcd2e1536b50bd9e3bc33f92295b43e3d5b2a4a73e753c704add16e",
+        "simulink/systems/system_259.xml": "5a1408c0bc97cc1d26ea33c87dd9a43eee6a20fd1de486fcb29fc15a0546eae0",
+        "simulink/systems/system_257.xml": "01d5c61e8ed9045d020e97b6f73d0c8167956324e1d1163da1c911473468cd1c",
+        "simulink/systems/system_10.xml": "747fd8494846e8b7463b58e588460691ecc420a40d8e277b4a747acc4aa29e14",
+        "[Content_Types].xml": "d1665877b3aceb316020dbe08a30f96cb50d30c584d251aa3b52572142a0dff6",
+        "_rels/.rels": "b34f44b50ef39989ebc4fb9e2c88ef176611fee6608a51548366bc93da6fe250",
+        "simulink/_rels/blockdiagram.xml.rels": "deb14be63fd37d88226ab6b63c32a22858aeab8ea3a598df7f0e1b21cc310dc2",
+        "simulink/_rels/configSetInfo.xml.rels": "ff294230f90fb5958a7589fee32a06df1955ae63a3cfcbed4f4fa27d6b981c46",
+        "simulink/systems/_rels/system_138.xml.rels": "a7797c9be37603c530ce13e7a89363cb066d8baedade7beaf851145b57d66bdf",
+        "simulink/systems/_rels/system_152.xml.rels": "ea2940b69b5d78ed49718fc5ca0fdb510ce5a5d0af2ebeeeb35f026b4735123b",
+        "simulink/systems/_rels/system_182.xml.rels": "c334fca2f20612c95d252f2df73487d9efb3e25674e47891254f4ba0831b1803",
+        "simulink/systems/_rels/system_256.xml.rels": "2a9aeeb6c7d13e7626a4041fdc9f20b8c682b60e4920323ef75af187e8938900",
+        "simulink/systems/_rels/system_339.xml.rels": "3f2fff237b9582217fe2178d3bba1af257cebec79414f15bfc036b1f5fa01626",
+        "simulink/systems/_rels/system_root.xml.rels": "e645a55a663c5105e03972bdcfa592a86796576afc381bdd2ac8d25f92276b7b",
+        "metadata/coreProperties.xml": "f15f809b5b79ffcd10457ea04a2c4b4df5b90225dd66451e0010dc4a669eb85d",
+        "metadata/mwcoreProperties.xml": "910091ade95e560c81b68beffd25003e010f326ee53c9facdf255eeb669f58b6",
+        "metadata/mwcorePropertiesExtension.xml": "028572f42fcccd3a45dc5ae8026e80d10751f4820a62f59eed39959e72ee2660",
+        "metadata/mwcorePropertiesReleaseInfo.xml": "baaf3f67165f64c6f345f3be3ed4f80c9ad7c13895eb8a850e980c198d666ff2",
+        "metadata/thumbnail.png": "007cf77fa59a2089b212f6a1ec73fb3c6f8f2e69ea2efa40d589fb32c7bd7143",
+        "simulink/ScheduleCore.xml": "4eeca4dbd8c0f52276db94c1ea5aa980d08c5f2b128c1fb312ab0ef337333ebe",
+        "simulink/ScheduleEditor.xml": "2a92e5c5ceb4a5b9bbb5edb63c7e0724dccaef7f32a77a8538a75287d7ff50bf",
+        "simulink/bddefaults.xml": "25932584c589321f8c08fd481dc29ce90c3efd07ff735bd8824d3adcf416b7de",
+        "simulink/blockdiagram.xml": "ba6fe6b2754b02d5076985d89869c624ef7c197f7cab8cffedae5e306c6656e0",
+        "simulink/configSet0.xml": "379d1890032b2074effe1cd1629dddfdaaa2c6f7803ae05f3d885b3d7f7ad24a",
+        "simulink/configSetInfo.xml": "a799598882f1eef1572dd09032d33412042063abeebb977e490b53ea23bdcf0e",
+        "simulink/graphicalInterface.xml": "15f52cd1c260de62641ac57af8ae8282ffdde111bb6caf53245796cccb094a16",
+        "simulink/modelDictionary.xml": "407c4cfb90db80cf80b3094e65c3051e6e3c7966fc60c85e044daff17864bd78",
+        "simulink/windowsInfo.xml": "f71cd6591a3ed3ef72cf7cfd5931ada6304bc9fc75985bb9e21a1183396aa983"
+      }
+    },
+    {
+      "source": "CAD/actuator_parts/Messerkopf-Schwenk_Link1 .stl",
+      "target": "robot/meshes/stl/Messerkopf-Shwenk_Link1.stl",
+      "sha256": "724f9f521680244d8783b50a95dcbcecb53e50aea2de9da5c3e239c91f5bb8b6",
+      "modified": false
+    },
+    {
+      "source": "Models/untitled1.slx",
+      "target": "models/experimental/untitled1.slx",
+      "sha256": "f69016ddae79417511338de9a22aed8e4b4fb32bd1d9d772481f2f2ee2b8069e",
+      "modified": true,
+      "changes": [
+        {
+          "member": "simulink/systems/system_root.xml",
+          "field": "ExtGeomFileName",
+          "old": "C:\\Users\\Kevin\\Desktop\\hydraulic_manipulator\\CAD\\actuator_parts\\Messerkopf-Shwenk_Link1.stl",
+          "new": "robot/meshes/stl/Messerkopf-Shwenk_Link1.stl"
+        },
+        {
+          "member": "simulink/systems/system_root.xml",
+          "field": "ExtGeomFileName",
+          "old": "C:\\Users\\Kevin\\Desktop\\hydraulic_manipulator\\CAD\\actuator_parts\\Messerkopf-Schwenk_Link2.stl",
+          "new": "robot/meshes/stl/Messerkopf-Schwenk_Link2.stl"
+        }
+      ],
+      "zip_member_sha256": {
+        "metadata/thumbnail.png": "a4985db33020dfe613ba006e82f9dfde5293118abcc90d6bdeb0c7390f40de1f",
+        "simulink/systems/system_root.xml": "86bd5df093cf0e3d09390b7751834c0f2ff26d2c027eed4a0bb1c1fb0f3da29a",
+        "[Content_Types].xml": "d1665877b3aceb316020dbe08a30f96cb50d30c584d251aa3b52572142a0dff6",
+        "_rels/.rels": "b34f44b50ef39989ebc4fb9e2c88ef176611fee6608a51548366bc93da6fe250",
+        "simulink/_rels/blockdiagram.xml.rels": "deb14be63fd37d88226ab6b63c32a22858aeab8ea3a598df7f0e1b21cc310dc2",
+        "simulink/_rels/configSetInfo.xml.rels": "ff294230f90fb5958a7589fee32a06df1955ae63a3cfcbed4f4fa27d6b981c46",
+        "metadata/coreProperties.xml": "756ebfd28514095a5c72b8d08d50842e958825a253b6f7600df996f32f327ca4",
+        "metadata/mwcoreProperties.xml": "910091ade95e560c81b68beffd25003e010f326ee53c9facdf255eeb669f58b6",
+        "metadata/mwcorePropertiesExtension.xml": "a129148b96118309274b23fa63dc2a9083927e8990cf317b4c0e8cfb7adc6af0",
+        "metadata/mwcorePropertiesReleaseInfo.xml": "baaf3f67165f64c6f345f3be3ed4f80c9ad7c13895eb8a850e980c198d666ff2",
+        "simulink/ScheduleCore.xml": "080d54ac6710a15fcfbbb463fcf6d1f9d49e488e58854bb51b9c98acb0b0549e",
+        "simulink/ScheduleEditor.xml": "92d864ea95ce0a50531dbef2733299c7d00dd9314c5095635ecf42f2366992a6",
+        "simulink/bddefaults.xml": "25932584c589321f8c08fd481dc29ce90c3efd07ff735bd8824d3adcf416b7de",
+        "simulink/blockdiagram.xml": "f8a8dcdef870d702e7d2df1c3c8b99c30134ffeea294917cf13f65705fd23b68",
+        "simulink/configSet0.xml": "d53f5a4bd14973ef656036b8213a735a652c8a746b5d9062a6970cb6852c8e9e",
+        "simulink/configSetInfo.xml": "a799598882f1eef1572dd09032d33412042063abeebb977e490b53ea23bdcf0e",
+        "simulink/graphicalInterface.xml": "24128a3bfbd422aab858668829eaed90e8e236d8cd9ab7d3735c1f32d5ad8c1a",
+        "simulink/modelDictionary.xml": "5c81f375faf4ec9f1224af0f6082f4105dd5d959704e52b8e4bb1dc44a07cbd2",
+        "simulink/windowsInfo.xml": "b989c63f4d6997b1614aaaed3360bd64a62b3c5e8b3940609d35e46596c96423"
+      }
+    },
+    {
+      "source": "Models/actuation_system.slx",
+      "target": "models/variants/actuation_system.slx",
+      "sha256": "5e89ab003ac956fecab43234823057c78c47e4f05e0120d94e6894a3271aabe7",
+      "modified": true,
+      "changes": [
+        {
+          "member": "simulink/systems/system_114.xml",
+          "field": "ExtGeomFileName",
+          "old": "C:\\Users\\Kevin\\Desktop\\hydraulic_manipulator\\CAD\\actuator_parts\\C_1.stl",
+          "new": "robot/meshes/stl/C_1.stl"
+        },
+        {
+          "member": "simulink/systems/system_122.xml",
+          "field": "ExtGeomFileName",
+          "old": "C:\\Users\\Kevin\\Desktop\\hydraulic_manipulator\\CAD\\actuator_parts\\R_1.stl",
+          "new": "robot/meshes/stl/R_1.stl"
+        },
+        {
+          "member": "simulink/systems/system_164.xml",
+          "field": "ExtGeomFileName",
+          "old": "C:\\Users\\Kevin\\Desktop\\hydraulic_manipulator\\CAD\\actuator_parts\\C_2.stl",
+          "new": "robot/meshes/stl/C_2.stl"
+        },
+        {
+          "member": "simulink/systems/system_170.xml",
+          "field": "ExtGeomFileName",
+          "old": "C:\\Users\\Kevin\\Desktop\\hydraulic_manipulator\\CAD\\actuator_parts\\R_2.stl",
+          "new": "robot/meshes/stl/R_2.stl"
+        },
+        {
+          "member": "simulink/systems/system_1.xml",
+          "field": "ExtGeomFileName",
+          "old": "C:\\Users\\Kevin\\Desktop\\hydraulic_manipulator\\mulag_fme500_links\\E-026502_FME 500_AP_stl.004.stl",
+          "new": "robot/meshes/stl/E-026502_FME 500_AP_stl.004.stl"
+        },
+        {
+          "member": "simulink/systems/system_2.xml",
+          "field": "ExtGeomFileName",
+          "old": "C:\\Users\\Kevin\\Desktop\\hydraulic_manipulator\\mulag_fme500_links\\E-026502_FME 500_AP_stl.006.stl",
+          "new": "robot/meshes/stl/E-026502_FME 500_AP_stl.006.stl"
+        },
+        {
+          "member": "simulink/systems/system_5.xml",
+          "field": "ExtGeomFileName",
+          "old": "C:\\Users\\Kevin\\Desktop\\hydraulic_manipulator\\mulag_fme500_links\\E-026502_FME 500_AP_stl.002.stl",
+          "new": "robot/meshes/stl/E-026502_FME 500_AP_stl.002.stl"
+        },
+        {
+          "member": "simulink/systems/system_7.xml",
+          "field": "ExtGeomFileName",
+          "old": "C:\\Users\\Kevin\\Desktop\\hydraulic_manipulator\\mulag_fme500_links\\E-026502_FME 500_AP_stl.003.stl",
+          "new": "robot/meshes/stl/E-026502_FME 500_AP_stl.003.stl"
+        },
+        {
+          "member": "simulink/systems/system_9.xml",
+          "field": "ExtGeomFileName",
+          "old": "C:\\Users\\Kevin\\Desktop\\hydraulic_manipulator\\mulag_fme500_links\\E-026502_FME 500_AP_stl.009.stl",
+          "new": "robot/meshes/stl/E-026502_FME 500_AP_stl.009.stl"
+        },
+        {
+          "member": "simulink/systems/system_10.xml",
+          "field": "ExtGeomFileName",
+          "old": "C:\\Users\\Kevin\\Desktop\\hydraulic_manipulator\\mulag_fme500_links\\E-026502_FME 500_AP_stl.001.stl",
+          "new": "robot/meshes/stl/E-026502_FME 500_AP_stl.001.stl"
+        }
+      ],
+      "zip_member_sha256": {
+        "metadata/thumbnail.png": "6976593fdfdd3e409fc31c749815bbcc0b56450ebcc97ed5bb8c834ca4781b71",
+        "simulink/systems/system_root.xml": "5e2e639c01489609650b140ed6b4768152889356955d2f6a289d97196ca9b8ea",
+        "simulink/systems/system_138.xml": "705b28a198270c4c4a0eb0592db96bf489609971211319520140788dc8019ffe",
+        "simulink/systems/system_114.xml": "a55fbf7c90501516eef866d1feb5b2178a56e0f94ca57664767b3d1350e3f3fc",
+        "simulink/systems/system_122.xml": "fa89c223bafca7a2edfca6a9294d95724c994d897cf40294ef4ae1ef58e3f84b",
+        "simulink/systems/system_163.xml": "edc7e6fa1333355a893393fad4cfd91b7ae483a42c91347d08da17a397b05fe4",
+        "simulink/systems/system_164.xml": "9703bd991549ea3f47eed08a9b5dad98d173690621915996da524945baf7089c",
+        "simulink/systems/system_170.xml": "2f6a7aadd55e2690e582673aafecace3f269f1ea49eaf05ff185cc80c7d81e3f",
+        "simulink/systems/system_1.xml": "344ff6c3d563b023ea662da640e7fa0bcf37de141f75c6aa70e065d64b3ce2ba",
+        "simulink/systems/system_2.xml": "a42c33a5b372248ddce22d71baad6d5f387c7ef643096df64cd8aa7def843efb",
+        "simulink/systems/system_5.xml": "de0ed81eb9e0bd53eab959df4e001513501896b981e5d40c3c94e058a0027a7a",
+        "simulink/systems/system_7.xml": "6bbcd091333857d540f33ade2e108314111bfea85ee518464664a99472a2fd18",
+        "simulink/systems/system_9.xml": "2daebfacb86a068a16323c9f4b9617c4b1fc113f4a82432fcf1c8086b33e7e51",
+        "simulink/systems/system_10.xml": "7b6b36e1c836d1bdcb0f7375111152047098fe1e691c2ce4fc3ff4d94830d2c2",
+        "[Content_Types].xml": "d1665877b3aceb316020dbe08a30f96cb50d30c584d251aa3b52572142a0dff6",
+        "_rels/.rels": "b34f44b50ef39989ebc4fb9e2c88ef176611fee6608a51548366bc93da6fe250",
+        "simulink/_rels/blockdiagram.xml.rels": "deb14be63fd37d88226ab6b63c32a22858aeab8ea3a598df7f0e1b21cc310dc2",
+        "simulink/_rels/configSetInfo.xml.rels": "ff294230f90fb5958a7589fee32a06df1955ae63a3cfcbed4f4fa27d6b981c46",
+        "simulink/systems/_rels/system_138.xml.rels": "a7797c9be37603c530ce13e7a89363cb066d8baedade7beaf851145b57d66bdf",
+        "simulink/systems/_rels/system_163.xml.rels": "bbb85ec2f4a5e294ac83690a48330ddf3315085818f22e05a35ef93743e58463",
+        "simulink/systems/_rels/system_root.xml.rels": "61b2a0c85810a430842e82090665af1e791551e004809f7b46ed1b1eeea72bd2",
+        "metadata/coreProperties.xml": "3c774e15d4699f315ad8fdcb613c2b5f9294146961b2d9869d291321bdcce687",
+        "metadata/mwcoreProperties.xml": "910091ade95e560c81b68beffd25003e010f326ee53c9facdf255eeb669f58b6",
+        "metadata/mwcorePropertiesExtension.xml": "028572f42fcccd3a45dc5ae8026e80d10751f4820a62f59eed39959e72ee2660",
+        "metadata/mwcorePropertiesReleaseInfo.xml": "baaf3f67165f64c6f345f3be3ed4f80c9ad7c13895eb8a850e980c198d666ff2",
+        "simulink/ScheduleCore.xml": "1f579a0233bbf3cd2d630895862f35fa2d22e7a46eab0b2d1b3a8021ced02fad",
+        "simulink/ScheduleEditor.xml": "e261beb19e809292a6014c412fce2956dfb08ccaaffc8224040c4d51a0ae32bb",
+        "simulink/bddefaults.xml": "25932584c589321f8c08fd481dc29ce90c3efd07ff735bd8824d3adcf416b7de",
+        "simulink/blockdiagram.xml": "113f30f46d1ba672c8ea6f8921b3f72ae0a4443fd7c2e4ec71466948226b186b",
+        "simulink/configSet0.xml": "d53f5a4bd14973ef656036b8213a735a652c8a746b5d9062a6970cb6852c8e9e",
+        "simulink/configSetInfo.xml": "a799598882f1eef1572dd09032d33412042063abeebb977e490b53ea23bdcf0e",
+        "simulink/graphicalInterface.xml": "4c95c461df22337c29f1dafa46243c57f8eb9a299760cb69cc22065aabb0aa7f",
+        "simulink/modelDictionary.xml": "d8a76abece971abd0360f3bce59724e3a9d0164ec42f8971284b918fb5e61d19",
+        "simulink/windowsInfo.xml": "4970f90a869eade5ec48e2670b6e043f045426f4311496a1b995e95dfd28404c"
+      }
+    }
+  ],
+  "supplementary_report": {
+    "source": "/Users/kevinmurera/Downloads/Mechanical_Hydraulic_Modeling.pdf",
+    "target": "docs/original/mechanical_hydraulic_modeling_preprint.pdf",
+    "sha256": "c7383d827ebc296ede7a56cc3d55da38d68f8ee1d612bc72a99a4349b3278744"
+  }
+}

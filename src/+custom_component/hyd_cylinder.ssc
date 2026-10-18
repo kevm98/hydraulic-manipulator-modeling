@@ -1,0 +1,84 @@
+% === FILE: +custom_component/hyd_cylinder_da.ssc ===
+component hyd_cylinder
+% Double-acting cylinder with compressibility + viscous/Coulomb friction
+
+nodes
+  A = foundation.hydraulic.hydraulic; % Cap chamber
+  B = foundation.hydraulic.hydraulic; % Rod chamber
+  C = foundation.mechanical.translational.translational; % Cylinder body
+  R = foundation.mechanical.translational.translational; % Rod
+end
+
+outputs
+  F = {0,'N'}; % Cylinder force (+ pulls R toward C)
+  pos_out = {0,'m'}; % Piston position monitor
+end
+
+parameters
+  A_piston = {0.00490167,'m^2'}; % <-- update if needed
+  A_rod = {0.00197808,'m^2'}; % <-- update if needed
+  l_cyl = {0.40,'m'}; % stroke
+  V0A = {2.0e-4,'m^3'}; % extra volume on A
+  V0B = {2.0e-4,'m^3'}; % extra volume on B
+  B_oil = {1.5e9,'Pa'};
+  B_cyl = {3.0e9,'Pa'};
+  b_visc = {500,'N*s/m'}; % viscous friction
+  F_coul = {200,'N'}; % Coulomb friction
+  v_eps = {1e-4,'m/s'}; % tanh regularizer
+  eta = {0.95,'1'}; % efficiency (optional)
+  pos_init = {0.20,'m'}; % initial position
+end
+
+variables(Access=private)
+  pA = {1e5,'Pa'}; pB = {1e5,'Pa'};
+  pos = {value=pos_init, priority=priority.high};
+  vel = {0,'m/s'};
+  VA = {0,'m^3'}; VB = {0,'m^3'};
+  Beff = {0,'Pa'};
+  Fint = {0,'N'};
+  QA = {0,'m^3/s'}; % Flow variable for A
+  QB = {0,'m^3/s'}; % Flow variable for B
+  Fbr = {0,'N'};    % Force branch variable - ADDED THIS
+end
+
+branches
+  QA : A.q -> *; % flow through A
+  QB : B.q -> *; % flow through B
+  Fbr : C.f -> R.f; % mechanical branch
+end
+
+equations
+  % Kinematics
+  vel == C.v - R.v;
+  pos.der == vel;
+  pos_out == pos;
+
+  % Effective bulk modulus
+  Beff == (B_oil*B_cyl)/(B_oil + B_cyl);
+
+  % Chamber volumes
+  VA == V0A + A_piston*pos;
+  VB == V0B + A_rod*(l_cyl - pos);
+
+  % Continuity (compressibility + piston flow)
+  pA.der == Beff/VA * ( QA - A_piston*vel );
+  pB.der == Beff/VB * ( QB + A_rod*vel );
+
+  % Force with viscous + Coulomb friction
+  Fint == eta*(A_piston*pA - A_rod*pB) - b_visc*vel - F_coul*tanh(vel/v_eps);
+
+  % Apply branch force and expose
+  Fbr == Fint;
+  F == Fint;
+
+  % Stroke limits with proper if-else structure
+  if pos < 0
+      pos == 0;
+  elseif pos > l_cyl
+      pos == l_cyl;
+  else
+      % Do nothing - position is within valid range
+      pos == pos; % This ensures the else branch exists
+  end
+end
+end

@@ -1,0 +1,1 @@
+smwrite('Mulag_FME500_kinematic', 'Mulag_FME500_kinematic.sxl')
